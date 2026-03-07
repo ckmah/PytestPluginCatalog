@@ -5,7 +5,7 @@ const path = require('path');
 
 const htmlPath = path.join(__dirname, '..', 'index.html');
 const outPath = path.join(__dirname, '..', 'plugins-data.json');
-const PAGES = 5;
+const PAGES = 10;
 const PAGE_DELAY_MS = 1200;
 const token = process.env.GITHUB_TOKEN;
 

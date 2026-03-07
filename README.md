@@ -1,48 +1,39 @@
-# pytest/plugins
+# Pytest Plugin Catalog
 
-A browser for the pytest plugin ecosystem — live data from GitHub, filterable by category, Windows compatibility, and pipeline relevance.
+Browse pytest plugins discovered from GitHub (topic: `pytest-plugin`), with categories, pipeline/Windows support, and links to GitHub and PyPI.
 
-**[→ Open the app](https://ckmah.github.io/PytestPluginCatalog/)**
+**Live site:** [GitHub Pages](https://clarencemah.github.io/PytestPluginCatalog/) (or your repo’s Pages URL).
 
-## Features
+## Run locally
 
-- **Live data** — scrapes the [`pytest-plugin` GitHub topic](https://github.com/topics/pytest-plugin) on load (~430 repos, sorted by stars)
-- **Curated enrichment** — 140 well-known plugins are tagged with category, Windows compatibility, and pipeline relevance
-- **12 categories** — Coverage, Performance, Execution, Mocking, I/O, Async, Reporting, Quality, Fixtures, Databases, DevEx, Web
-- **Filters** — by category, Windows compat (`WIN ✓` / `WIN ✗` / `WIN ?`), pipeline recommended
-- **Sort** — by category, stars, name, or recently updated
-- **Search** — live filter by name or description
-- **Dark / light mode**
-- **Mobile-friendly** — add to home screen on iOS/Android for an app-like experience
+Open `index.html` in a browser. The page fetches `plugins-data.json` from the same origin, so use a local server if needed:
 
-## Add to home screen (mobile)
+```bash
+# Python
+python3 -m http.server 8000
 
-**Android (Chrome):** Menu → *Add to Home screen*  
-**iOS (Safari):** Share → *Add to Home Screen*
-
-## How it works
-
-The app is a single self-contained HTML file. On load it fetches the GitHub topic page via the [allorigins](https://allorigins.win) CORS proxy, parses repo names, descriptions, and star counts, then enriches known plugins with curated metadata baked into the JS.
-
-The `KNOWLEDGE` object in the source maps ~140 plugin names to:
-- `cat` — category
-- `pipeline` — whether it's recommended for pipeline/library development
-- `win` — Windows compatibility (`true` / `false` / `"maybe"`)
-
-Plugins not in `KNOWLEDGE` appear in the **Other** category with `WIN ?`.
-
-## Development
-
-Just edit `index.html` — it's a single file with no build step.
-
-To add or correct a plugin's metadata, find the `KNOWLEDGE` object and add/update an entry:
-
-```js
-"pytest-myplugin": { cat: "mocking", pipeline: true, win: true },
+# Node (npx)
+npx serve .
 ```
 
-Categories: `coverage` · `performance` · `execution` · `mocking` · `io` · `async` · `reporting` · `quality` · `fixtures` · `db` · `devex` · `web`
+Then visit `http://localhost:8000`.
+
+## Data and scripts
+
+- **`plugins-data.json`** – Plugin list (name, summary, stars, category, pipeline, win, ghUrl, pypiUrl, latestDate). The UI reads this file.
+- **`scripts/refresh-plugins-data.js`** – Fetches up to 5 pages from GitHub’s search API (`topic:pytest-plugin`, by stars), merges with category/pipeline/win “knowledge” embedded in `index.html`, and overwrites `plugins-data.json`. Set `GITHUB_TOKEN` for higher rate limits.
+- **`scripts/generate-plugins-json.js`** – Builds `plugins-data.json` from the knowledge block in `index.html` only (no API); entries get placeholder summary/stars/dates.
+
+```bash
+node scripts/refresh-plugins-data.js   # full refresh from GitHub
+node scripts/generate-plugins-json.js   # from index.html knowledge only
+```
+
+## CI
+
+- **Refresh:** `.github/workflows/refresh-plugins.yml` runs on a daily schedule and on `workflow_dispatch`. It runs `refresh-plugins-data.js` and commits `plugins-data.json` if it changed.
+- **Deploy:** `.github/workflows/deploy.yml` runs on push to `main` (and manually). It copies `index.html` and `plugins-data.json` into `_site/` and deploys to GitHub Pages.
 
 ## License
 
-MIT
+MIT (see [LICENSE](LICENSE)).

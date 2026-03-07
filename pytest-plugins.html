@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>pytest plugins</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* ─── tokens ─────────────────────────────────────────────── */
+:root {
+  --radius: 6px;
+  --t: 140ms ease;
+  --page-pad: clamp(16px, 5vw, 48px);
+}
+
+[data-theme="dark"] {
+  --bg:        #111110;
+  --surface:   #161615;
+  --surface2:  #1c1c1a;
+  --border:    #252523;
+  --border2:   #2e2e2b;
+  --text:      #e8e6e1;
+  --text2:     #908e87;
+  --text3:     #4a4845;
+  --accent:    #d4a853;
+  --acc-bg:    #d4a85312;
+  --acc-bdr:   #d4a85330;
+  --win-y:     #6db89a;
+  --win-n:     #c97070;
+  --win-m:     #b89056;
+  --ca:        #e8e6e1;
+  --cat:       #111110;
+}
+[data-theme="light"] {
+  --bg:        #faf9f7;
+  --surface:   #ffffff;
+  --surface2:  #f5f4f1;
+  --border:    #e8e6e0;
+  --border2:   #d8d6cf;
+  --text:      #1a1917;
+  --text2:     #6b6860;
+  --text3:     #b5b3ab;
+  --accent:    #b5892a;
+  --acc-bg:    #b5892a0e;
+  --acc-bdr:   #b5892a28;
+  --win-y:     #3d8a6a;
+  --win-n:     #b05050;
+  --win-m:     #9a7030;
+  --ca:        #1a1917;
+  --cat:       #faf9f7;
+}
+
+/* ─── base ───────────────────────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:'Geist',system-ui,sans-serif;
+  font-size:13px;font-weight:400;line-height:1.5;
+  min-height:100vh;
+  transition:background var(--t),color var(--t);
+  -webkit-font-smoothing:antialiased;
+}
+a{text-decoration:none;color:inherit}
+
+/* ─── layout ─────────────────────────────────────────────── */
+.page{
+  max-width:1140px;
+  margin:0 auto;
+  padding:0 var(--page-pad) 80px;
+}
+
+/* ─── header ─────────────────────────────────────────────── */
+header{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:clamp(28px,6vw,52px) 0 clamp(24px,4vw,40px);
+  border-bottom:1px solid var(--border);
+  flex-wrap:wrap;
+}
+.wordmark{
+  font-family:'DM Mono',monospace;
+  font-weight:400;font-size:clamp(13px,2.5vw,15px);
+  letter-spacing:-0.02em;color:var(--text);
+}
+.wordmark em{font-style:normal;color:var(--text3)}
+.header-sub{font-size:11px;color:var(--text3);font-weight:300}
+.header-right{margin-left:auto;display:flex;align-items:center;gap:10px;flex-shrink:0}
+
+/* refresh status */
+.refresh-info{
+  font-family:'DM Mono',monospace;
+  font-size:10px;color:var(--text3);font-weight:300;
+  letter-spacing:0.02em;
+  display:flex;align-items:center;gap:6px;
+}
+.refresh-dot{
+  width:6px;height:6px;border-radius:50%;
+  background:var(--text3);
+  transition:background var(--t);
+}
+.refresh-dot.loading{background:var(--accent);animation:pulse 1s infinite}
+.refresh-dot.done{background:var(--win-y)}
+.refresh-dot.error{background:var(--win-n)}
+
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+
+.theme-btn{
+  width:30px;height:30px;
+  border-radius:var(--radius);
+  border:1px solid var(--border);
+  background:var(--surface);
+  color:var(--text2);
+  cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;
+  transition:all var(--t);
+}
+.theme-btn:hover{border-color:var(--border2);color:var(--text)}
+
+.refresh-btn{
+  height:30px;padding:0 10px;
+  border-radius:var(--radius);
+  border:1px solid var(--border);
+  background:var(--surface);
+  color:var(--text2);
+  cursor:pointer;
+  font-family:'DM Mono',monospace;
+  font-size:10px;font-weight:400;
+  letter-spacing:0.02em;
+  transition:all var(--t);
+  white-space:nowrap;
+}
+.refresh-btn:hover{border-color:var(--border2);color:var(--text)}
+.refresh-btn:disabled{opacity:0.4;cursor:not-allowed}
+
+/* ─── toolbar ────────────────────────────────────────────── */
+.toolbar{
+  display:flex;
+  align-items:flex-start;
+  gap:20px;
+  padding:clamp(16px,3vw,24px) 0 0;
+  flex-wrap:wrap;
+}
+
+/* search */
+.search-wrap{position:relative;width:min(220px,100%);flex-shrink:0}
+.search-ico{
+  position:absolute;left:9px;top:50%;transform:translateY(-50%);
+  color:var(--text3);font-size:12px;pointer-events:none;
+  font-family:'DM Mono',monospace;
+}
+input[type=text]{
+  width:100%;height:32px;
+  padding:0 10px 0 28px;
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius);
+  color:var(--text);
+  font-family:'DM Mono',monospace;font-size:12px;font-weight:300;
+  outline:none;transition:border-color var(--t);letter-spacing:0.01em;
+}
+input[type=text]::placeholder{color:var(--text3)}
+input[type=text]:focus{border-color:var(--border2)}
+
+/* sort */
+.sort-wrap{display:flex;align-items:center;gap:7px;flex-shrink:0}
+.sort-lbl{font-size:10px;color:var(--text3);font-weight:300;letter-spacing:0.06em;text-transform:uppercase;white-space:nowrap}
+select{
+  height:32px;padding:0 22px 0 10px;
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius);
+  color:var(--text2);
+  font-family:'DM Mono',monospace;font-size:11px;font-weight:300;
+  outline:none;cursor:pointer;appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' fill='none'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23666' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 7px center;
+  transition:border-color var(--t);letter-spacing:0.01em;
+}
+select:focus{border-color:var(--border2)}
+
+/* filters */
+.filters-area{display:flex;flex-direction:column;gap:7px;flex:1;min-width:0}
+.filter-row{display:flex;align-items:flex-start;gap:7px;flex-wrap:wrap}
+.filter-lbl{
+  font-size:10px;color:var(--text3);font-weight:300;
+  letter-spacing:0.06em;text-transform:uppercase;
+  white-space:nowrap;padding-top:5px;
+  width:52px;flex-shrink:0;
+}
+.chips{display:flex;gap:4px;flex-wrap:wrap}
+.chip{
+  height:26px;padding:0 10px;
+  border-radius:99px;border:1px solid var(--border);
+  background:transparent;color:var(--text3);
+  font-family:'Geist',system-ui,sans-serif;
+  font-size:11px;font-weight:400;
+  cursor:pointer;white-space:nowrap;
+  transition:all var(--t);user-select:none;
+  display:flex;align-items:center;
+}
+.chip:hover{border-color:var(--border2);color:var(--text2)}
+.chip.active{background:var(--ca);border-color:var(--ca);color:var(--cat)}
+.chip.win-y.active{background:var(--win-y);border-color:var(--win-y);color:var(--bg)}
+.chip.win-n.active{background:var(--win-n);border-color:var(--win-n);color:var(--bg)}
+.chip.win-m.active{background:var(--win-m);border-color:var(--win-m);color:var(--bg)}
+.chip.pip-c.active{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+
+/* ─── results bar ────────────────────────────────────────── */
+.results-bar{
+  display:flex;align-items:center;gap:12px;
+  padding:clamp(14px,2.5vw,20px) 0 0;
+  border-top:1px solid var(--border);
+  margin-top:clamp(14px,2.5vw,20px);
+  flex-wrap:wrap;
+}
+.results-count{
+  font-family:'DM Mono',monospace;
+  font-size:11px;color:var(--text3);font-weight:300;letter-spacing:0.02em;
+}
+.clear-btn{
+  font-size:11px;color:var(--text3);cursor:pointer;
+  background:none;border:none;
+  font-family:'Geist',system-ui,sans-serif;font-weight:300;
+  padding:0;transition:color var(--t);letter-spacing:0.01em;
+}
+.clear-btn:hover{color:var(--text2)}
+
+/* ─── loading overlay ───────────────────────────────────── */
+.loading-state{
+  padding:clamp(40px,8vw,80px) 0;
+  text-align:center;
+  display:flex;flex-direction:column;align-items:center;gap:16px;
+}
+.loading-spinner{
+  width:32px;height:32px;
+  border:2px solid var(--border2);
+  border-top-color:var(--accent);
+  border-radius:50%;
+  animation:spin 0.8s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading-label{
+  font-family:'DM Mono',monospace;
+  font-size:11px;color:var(--text3);font-weight:300;
+  letter-spacing:0.04em;
+}
+.loading-progress{
+  font-family:'DM Mono',monospace;
+  font-size:10px;color:var(--text3);font-weight:300;
+}
+
+/* ─── category section ───────────────────────────────────── */
+main{margin-top:0}
+.cat-section{padding:clamp(20px,4vw,32px) 0 0}
+.cat-header{
+  display:flex;align-items:baseline;gap:10px;
+  margin-bottom:clamp(10px,2vw,16px);
+  flex-wrap:wrap;gap:6px 10px;
+}
+.cat-name{font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--text2)}
+.cat-desc{font-size:11px;color:var(--text3);font-weight:300}
+.cat-count{margin-left:auto;font-family:'DM Mono',monospace;font-size:10px;color:var(--text3);font-weight:300}
+
+/* ─── plugin grid ────────────────────────────────────────── */
+.plugin-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr));
+  gap:1px;
+  background:var(--border);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;
+}
+
+/* ─── plugin card ────────────────────────────────────────── */
+.plugin-card{
+  background:var(--surface);
+  padding:clamp(12px,2.5vw,16px) clamp(14px,3vw,18px) clamp(16px,3vw,20px);
+  display:flex;flex-direction:column;gap:6px;
+  transition:background var(--t);
+  position:relative;cursor:pointer;
+}
+.plugin-card:hover{background:var(--surface2)}
+.plugin-card.pip::before{
+  content:'';position:absolute;
+  left:0;top:0;bottom:0;width:2px;
+  background:var(--accent);opacity:0.7;
+}
+.card-top{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.plugin-name{
+  font-family:'DM Mono',monospace;font-size:12px;font-weight:400;
+  color:var(--text);letter-spacing:-0.01em;flex-shrink:0;
+}
+.plugin-desc{
+  font-size:11px;color:var(--text2);
+  line-height:1.55;font-weight:300;
+}
+.card-meta{display:flex;align-items:center;gap:5px;margin-top:2px;flex-wrap:wrap}
+
+/* badges */
+.badge{
+  font-family:'DM Mono',monospace;font-size:9px;font-weight:400;
+  letter-spacing:0.03em;padding:2px 5px;
+  border-radius:3px;flex-shrink:0;
+}
+.badge.win-y{
+  color:var(--win-y);
+  background:color-mix(in srgb,var(--win-y) 10%,transparent);
+  border:1px solid color-mix(in srgb,var(--win-y) 25%,transparent);
+}
+.badge.win-n{
+  color:var(--win-n);
+  background:color-mix(in srgb,var(--win-n) 10%,transparent);
+  border:1px solid color-mix(in srgb,var(--win-n) 25%,transparent);
+}
+.badge.win-m{
+  color:var(--win-m);
+  background:color-mix(in srgb,var(--win-m) 10%,transparent);
+  border:1px solid color-mix(in srgb,var(--win-m) 25%,transparent);
+}
+.badge.pip-b{
+  color:var(--accent);
+  background:var(--acc-bg);
+  border:1px solid var(--acc-bdr);
+}
+.badge.version{color:var(--text3);background:transparent;border:none;font-size:9px}
+.rank-badge{
+  font-family:'DM Mono',monospace;font-size:9px;
+  color:var(--accent);font-weight:300;margin-left:auto;opacity:0.8;
+}
+
+/* ─── empty / error ──────────────────────────────────────── */
+.empty{
+  padding:clamp(40px,8vw,60px) 0;
+  text-align:center;color:var(--text3);
+  font-size:12px;font-weight:300;letter-spacing:0.02em;
+}
+
+/* ─── legend ─────────────────────────────────────────────── */
+.legend{
+  display:flex;gap:clamp(12px,3vw,20px);
+  padding:clamp(28px,5vw,40px) 0 0;
+  flex-wrap:wrap;
+}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text3);font-weight:300}
+
+.pypi-link{
+  font-family:'DM Mono',monospace;font-size:9px;color:var(--text3);
+  text-decoration:none;margin-left:auto;flex-shrink:0;
+  padding:2px 0;transition:color var(--t);
+}
+.pypi-link:hover{color:var(--text2)}
+
+/* ─── hidden ─────────────────────────────────────────────── */
+.hidden{display:none!important}
+
+/* ─── mobile overrides ───────────────────────────────────── */
+@media (max-width:540px){
+  .toolbar{gap:12px}
+  .search-wrap{width:100%}
+  .filters-area{width:100%}
+  .filter-lbl{width:44px;font-size:9px}
+  .sort-wrap{width:100%}
+  select{flex:1}
+  .cat-desc{display:none}
+  .plugin-grid{grid-template-columns:1fr}
+  .results-bar{gap:8px}
+  header{gap:8px}
+  .header-sub{display:none}
+}
+@media (max-width:360px){
+  .filter-lbl{display:none}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <span class="wordmark">pytest<em>/</em>plugins</span>
+    <span class="header-sub">live from GitHub</span>
+    <div class="header-right">
+      <div class="refresh-info">
+        <span class="refresh-dot" id="dot"></span>
+        <span id="refreshLabel">—</span>
+      </div>
+      <button class="refresh-btn" id="refreshBtn" disabled>↻ refresh</button>
+      <button class="theme-btn" id="themeBtn" title="Toggle theme">☽</button>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <div class="search-wrap">
+      <span class="search-ico">⌕</span>
+      <input type="text" id="search" placeholder="search…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="sort-wrap">
+      <span class="sort-lbl">Sort</span>
+      <select id="sortSel">
+        <option value="category">by category</option>
+        <option value="rank">by stars</option>
+        <option value="name">by name</option>
+        <option value="updated">recently updated</option>
+      </select>
+    </div>
+    <div class="filters-area">
+      <div class="filter-row">
+        <span class="filter-lbl">Category</span>
+        <div class="chips" id="catChips"></div>
+      </div>
+      <div class="filter-row">
+        <span class="filter-lbl">Tags</span>
+        <div class="chips" id="tagChips"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="results-bar">
+    <span class="results-count" id="resCount">—</span>
+    <button class="clear-btn hidden" id="clearBtn">clear ×</button>
+  </div>
+
+  <main id="main">
+    <div class="loading-state" id="loadingState">
+      <div class="loading-spinner"></div>
+      <div class="loading-label">fetching plugins from GitHub…</div>
+      <div class="loading-progress" id="loadProg"></div>
+    </div>
+  </main>
+
+  <div class="legend">
+    <div class="legend-item"><span class="badge win-y">WIN ✓</span> confirmed Windows</div>
+    <div class="legend-item"><span class="badge win-n">WIN ✗</span> Windows incompatible</div>
+    <div class="legend-item"><span class="badge win-m">WIN ?</span> uncertain</div>
+    <div class="legend-item"><span class="badge pip-b">pipeline</span> pipeline recommended</div>
+    <div class="legend-item"><span style="font-family:'DM Mono',monospace;font-size:10px;color:var(--accent)">★ N</span> GitHub stars</div>
+  </div>
+
+</div>
+
+<script>
+/* ═══════════════════════════════════════════════════════════
+   STATIC KNOWLEDGE BASE
+   PyPI gives us name/summary/version/date — we enrich with
+   category, pipeline relevance, and Windows compatibility.
+══════════════════════════════════════════════════════════════ */
+const KNOWLEDGE = {
+  // name → { cat, pipeline, win, rank }
+  // win: true=confirmed, false=known broken, "maybe"=uncertain
+  "pytest-cov":          { cat:"coverage",    pipeline:true,  win:true,    rank:1   },
+  "pytest-memray":       { cat:"coverage",    pipeline:true,  win:false,   rank:57  },
+  "pytest-pointers":     { cat:"coverage",    pipeline:false, win:"maybe", rank:null},
+  "pytest-benchmark":    { cat:"performance", pipeline:true,  win:true,    rank:15  },
+  "pytest-codspeed":     { cat:"performance", pipeline:true,  win:"maybe", rank:50  },
+  "pytest-profiling":    { cat:"performance", pipeline:true,  win:"maybe", rank:48  },
+  "pytest-durations":    { cat:"performance", pipeline:false, win:true,    rank:60  },
+  "pytest-timeout":      { cat:"performance", pipeline:true,  win:true,    rank:5   },
+  "pytest-timeouts":     { cat:"performance", pipeline:false, win:false,   rank:49  },
+  "pytest-monitor":      { cat:"performance", pipeline:true,  win:"maybe", rank:null},
+  "pytest-harvest":      { cat:"performance", pipeline:false, win:true,    rank:121 },
+  "pytest-xdist":        { cat:"execution",   pipeline:true,  win:true,    rank:3   },
+  "pytest-split":        { cat:"execution",   pipeline:true,  win:true,    rank:13  },
+  "pytest-randomly":     { cat:"execution",   pipeline:true,  win:true,    rank:29  },
+  "pytest-ordering":     { cat:"execution",   pipeline:false, win:true,    rank:28  },
+  "pytest-order":        { cat:"execution",   pipeline:false, win:true,    rank:30  },
+  "pytest-dependency":   { cat:"execution",   pipeline:true,  win:true,    rank:41  },
+  "pytest-depends":      { cat:"execution",   pipeline:false, win:true,    rank:155 },
+  "pytest-skip-slow":    { cat:"execution",   pipeline:false, win:true,    rank:124 },
+  "pytest-rerunfailures":{ cat:"execution",   pipeline:false, win:true,    rank:6   },
+  "pytest-retry":        { cat:"execution",   pipeline:false, win:true,    rank:36  },
+  "pytest-repeat":       { cat:"execution",   pipeline:true,  win:true,    rank:14  },
+  "pytest-flakefinder":  { cat:"execution",   pipeline:false, win:true,    rank:63  },
+  "pytest-testmon":      { cat:"execution",   pipeline:true,  win:true,    rank:56  },
+  "pytest-picked":       { cat:"execution",   pipeline:false, win:true,    rank:94  },
+  "pytest-incremental":  { cat:"execution",   pipeline:false, win:"maybe", rank:128 },
+  "pytest-watcher":      { cat:"execution",   pipeline:false, win:true,    rank:55  },
+  "pytest-watch":        { cat:"execution",   pipeline:false, win:"maybe", rank:67  },
+  "pytest-tagging":      { cat:"execution",   pipeline:false, win:true,    rank:129 },
+  "pytest-custom-exit-code":{ cat:"execution",pipeline:true,  win:true,    rank:20  },
+  "pytest-mock":         { cat:"mocking",     pipeline:true,  win:true,    rank:4   },
+  "pytest-socket":       { cat:"mocking",     pipeline:true,  win:true,    rank:16  },
+  "pytest-httpx":        { cat:"mocking",     pipeline:true,  win:true,    rank:27  },
+  "pytest-httpserver":   { cat:"mocking",     pipeline:true,  win:true,    rank:34  },
+  "pytest-recording":    { cat:"mocking",     pipeline:true,  win:true,    rank:35  },
+  "pytest-vcr":          { cat:"mocking",     pipeline:false, win:true,    rank:45  },
+  "pytest-responses":    { cat:"mocking",     pipeline:false, win:true,    rank:156 },
+  "pytest-subprocess":   { cat:"mocking",     pipeline:true,  win:true,    rank:84  },
+  "pytest-freezegun":    { cat:"mocking",     pipeline:true,  win:true,    rank:47  },
+  "pytest-freezer":      { cat:"mocking",     pipeline:false, win:true,    rank:69  },
+  "pytest-mock-resources":{ cat:"mocking",   pipeline:false, win:"maybe", rank:98  },
+  "pytest-datadir":      { cat:"io",          pipeline:true,  win:true,    rank:62  },
+  "pytest-shutil":       { cat:"io",          pipeline:false, win:"maybe", rank:97  },
+  "pytest-sftpserver":   { cat:"io",          pipeline:true,  win:"maybe", rank:74  },
+  "pytest-localserver":  { cat:"io",          pipeline:false, win:true,    rank:102 },
+  "pytest-remotedata":   { cat:"io",          pipeline:true,  win:true,    rank:99  },
+  "pytest-console-scripts":{ cat:"io",        pipeline:true,  win:"maybe", rank:118 },
+  "pytest-examples":     { cat:"io",          pipeline:false, win:true,    rank:78  },
+  "pytest-spark":        { cat:"io",          pipeline:false, win:"maybe", rank:103 },
+  "pytest-asyncio":      { cat:"async",       pipeline:true,  win:true,    rank:2   },
+  "pytest-aiohttp":      { cat:"async",       pipeline:false, win:true,    rank:37  },
+  "pytest-trio":         { cat:"async",       pipeline:false, win:true,    rank:90  },
+  "pytest-anyio":        { cat:"async",       pipeline:false, win:true,    rank:133 },
+  "pytest-tornado":      { cat:"async",       pipeline:false, win:true,    rank:123 },
+  "pytest-twisted":      { cat:"async",       pipeline:false, win:"maybe", rank:125 },
+  "pytest-race":         { cat:"async",       pipeline:true,  win:"maybe", rank:65  },
+  "pytest-reraise":      { cat:"async",       pipeline:true,  win:true,    rank:117 },
+  "pytest-html":         { cat:"reporting",   pipeline:true,  win:true,    rank:10  },
+  "pytest-json-ctrf":    { cat:"reporting",   pipeline:true,  win:true,    rank:8   },
+  "pytest-json-report":  { cat:"reporting",   pipeline:false, win:true,    rank:17  },
+  "pytest-metadata":     { cat:"reporting",   pipeline:true,  win:true,    rank:7   },
+  "pytest-opentelemetry":{ cat:"reporting",   pipeline:true,  win:true,    rank:73  },
+  "pytest-github-actions-annotate-failures":{ cat:"reporting", pipeline:true, win:true, rank:46 },
+  "pytest-azurepipelines":{ cat:"reporting",  pipeline:false, win:true,    rank:71  },
+  "allure-pytest":       { cat:"reporting",   pipeline:false, win:true,    rank:24  },
+  "pytest-reportportal": { cat:"reporting",   pipeline:false, win:true,    rank:79  },
+  "pytest-slack":        { cat:"reporting",   pipeline:false, win:true,    rank:140 },
+  "pytest-md-report":    { cat:"reporting",   pipeline:false, win:true,    rank:106 },
+  "pytest-nunit":        { cat:"reporting",   pipeline:false, win:true,    rank:81  },
+  "pytest-mypy":         { cat:"quality",     pipeline:true,  win:true,    rank:87  },
+  "pytest-ruff":         { cat:"quality",     pipeline:true,  win:true,    rank:154 },
+  "pytest-black":        { cat:"quality",     pipeline:false, win:true,    rank:151 },
+  "pytest-pylint":       { cat:"quality",     pipeline:false, win:true,    rank:88  },
+  "pytest-flake8":       { cat:"quality",     pipeline:false, win:true,    rank:92  },
+  "pytest-pep8":         { cat:"quality",     pipeline:false, win:true,    rank:135 },
+  "pytest-mypy-plugins": { cat:"quality",     pipeline:false, win:true,    rank:120 },
+  "hypothesis":          { cat:"quality",     pipeline:true,  win:true,    rank:9   },
+  "pytest-doctestplus":  { cat:"quality",     pipeline:false, win:true,    rank:82  },
+  "pytest-lazy-fixtures":{ cat:"fixtures",    pipeline:true,  win:true,    rank:72  },
+  "pytest-lazy-fixture": { cat:"fixtures",    pipeline:false, win:true,    rank:58  },
+  "pytest-cases":        { cat:"fixtures",    pipeline:true,  win:true,    rank:76  },
+  "pytest-factoryboy":   { cat:"fixtures",    pipeline:false, win:true,    rank:53  },
+  "pytest-subtests":     { cat:"fixtures",    pipeline:false, win:true,    rank:32  },
+  "pytest-check":        { cat:"fixtures",    pipeline:true,  win:true,    rank:38  },
+  "pytest-assume":       { cat:"fixtures",    pipeline:false, win:true,    rank:40  },
+  "pytest-deadfixtures": { cat:"fixtures",    pipeline:false, win:true,    rank:77  },
+  "pytest-env":          { cat:"fixtures",    pipeline:true,  win:true,    rank:11  },
+  "pytest-dotenv":       { cat:"fixtures",    pipeline:true,  win:true,    rank:33  },
+  "pytest-variables":    { cat:"fixtures",    pipeline:false, win:true,    rank:95  },
+  "pytest-regressions":  { cat:"fixtures",    pipeline:true,  win:true,    rank:86  },
+  "syrupy":              { cat:"fixtures",    pipeline:true,  win:true,    rank:19  },
+  "pytest-snapshot":     { cat:"fixtures",    pipeline:false, win:true,    rank:51  },
+  "pytest-parametrization":{ cat:"fixtures",  pipeline:false, win:true,    rank:145 },
+  "pytest-unordered":    { cat:"fixtures",    pipeline:true,  win:true,    rank:18  },
+  "pytest-arraydiff":    { cat:"fixtures",    pipeline:true,  win:true,    rank:112 },
+  "pytest-postgresql":   { cat:"db",          pipeline:true,  win:"maybe", rank:31  },
+  "pytest-redis":        { cat:"db",          pipeline:false, win:"maybe", rank:130 },
+  "pytest-mysql":        { cat:"db",          pipeline:false, win:"maybe", rank:108 },
+  "pytest-docker":       { cat:"db",          pipeline:true,  win:"maybe", rank:61  },
+  "pytest-docker-tools": { cat:"db",          pipeline:false, win:"maybe", rank:54  },
+  "pytest-celery":       { cat:"db",          pipeline:false, win:"maybe", rank:52  },
+  "pytest-alembic":      { cat:"db",          pipeline:false, win:true,    rank:68  },
+  "pytest-xprocess":     { cat:"db",          pipeline:true,  win:"maybe", rank:138 },
+  "pytest-sugar":        { cat:"devex",       pipeline:false, win:true,    rank:26  },
+  "pytest-icdiff":       { cat:"devex",       pipeline:false, win:true,    rank:21  },
+  "pytest-clarity":      { cat:"devex",       pipeline:false, win:true,    rank:89  },
+  "pytest-instafail":    { cat:"devex",       pipeline:false, win:true,    rank:22  },
+  "pytest-pretty":       { cat:"devex",       pipeline:false, win:true,    rank:66  },
+  "pytest-structlog":    { cat:"devex",       pipeline:true,  win:true,    rank:110 },
+  "pytest-loguru":       { cat:"devex",       pipeline:false, win:true,    rank:116 },
+  "pytest-logger":       { cat:"devex",       pipeline:false, win:true,    rank:132 },
+  "pytest-rng":          { cat:"devex",       pipeline:true,  win:true,    rank:158 },
+  "pytest-cache":        { cat:"devex",       pipeline:false, win:true,    rank:96  },
+  "pytest-describe":     { cat:"devex",       pipeline:false, win:true,    rank:93  },
+  // web & browser
+  "pytest-django":       { cat:"web",         pipeline:false, win:true,    rank:12  },
+  "pytest-flask":        { cat:"web",         pipeline:false, win:true,    rank:59  },
+  "pytest-playwright":   { cat:"web",         pipeline:false, win:true,    rank:25  },
+  "pytest-selenium":     { cat:"web",         pipeline:false, win:true,    rank:100 },
+  "pytest-base-url":     { cat:"web",         pipeline:false, win:true,    rank:23  },
+  "pytest-bdd":          { cat:"web",         pipeline:false, win:true,    rank:44  },
+  "pytest-qt":           { cat:"web",         pipeline:false, win:true,    rank:83  },
+  // execution additions
+  "pytest-random-order": { cat:"execution",   pipeline:false, win:true,    rank:42  },
+  "pytest-test-groups":  { cat:"execution",   pipeline:false, win:true,    rank:43  },
+  "pytest-find-dependencies":{ cat:"execution",pipeline:false,win:true,    rank:64  },
+  "pytest-filter-subpackage":{ cat:"execution",pipeline:false,win:true,   rank:107 },
+  // db / infra additions
+  "pytest-testinfra":    { cat:"db",          pipeline:false, win:"maybe", rank:70  },
+  "pytest-ansible":      { cat:"db",          pipeline:false, win:"maybe", rank:75  },
+  "pytest-alembic-extra":{ cat:"db",          pipeline:false, win:true,    rank:null},
+  // reporting additions
+  "pytest-reportlog":    { cat:"reporting",   pipeline:false, win:true,    rank:80  },
+  "pytest-csv":          { cat:"reporting",   pipeline:false, win:true,    rank:105 },
+  "pytest-timestamper":  { cat:"reporting",   pipeline:false, win:true,    rank:113 },
+  "pytest-astropy-header":{ cat:"reporting",  pipeline:false, win:true,    rank:115 },
+  // quality additions
+  "pytest-markdown-docs":{ cat:"quality",     pipeline:false, win:true,    rank:101 },
+  "pylint-pytest":       { cat:"quality",     pipeline:false, win:true,    rank:104 },
+  "pytest-astropy":      { cat:"quality",     pipeline:false, win:true,    rank:114 },
+  // fixtures additions
+  "pytest-mpl":          { cat:"fixtures",    pipeline:false, win:true,    rank:91  },
+  // devex additions
+  "pytest-homeassistant-custom-component":{ cat:"devex", pipeline:false, win:true, rank:39 },
+  "pytest-plus":         { cat:"devex",       pipeline:false, win:true,    rank:85  },
+  "pytest-cpp":          { cat:"devex",       pipeline:false, win:true,    rank:111 },
+  "pytest-tornado":      { cat:"async",       pipeline:false, win:true,    rank:109 },
+};
+
+const CAT_META = {
+  coverage:    { name:"Coverage & Quality Gates",    desc:"Measure what your pipeline actually executes" },
+  performance: { name:"Performance & Benchmarking",  desc:"Measure and track speed of pipeline stages" },
+  execution:   { name:"Test Execution & Ordering",   desc:"Run tests smarter — parallel, ordered, selective" },
+  mocking:     { name:"Mocking & Isolation",         desc:"Replace external dependencies in pipeline stages" },
+  io:          { name:"I/O, Files & Data",           desc:"Test data ingestion, file handling, pipeline I/O" },
+  async:       { name:"Async & Concurrency",         desc:"Test async pipeline stages and concurrent execution" },
+  reporting:   { name:"Reporting & CI Integration",  desc:"Publish results, integrate with CI/CD" },
+  quality:     { name:"Code Quality & Type Checking",desc:"Lint, type-check, and style-check your package" },
+  fixtures:    { name:"Fixtures & Parametrization",  desc:"Better test setup, teardown, and data variation" },
+  db:          { name:"Databases & External Services",desc:"Test pipeline integrations with data stores" },
+  devex:       { name:"Developer Experience",        desc:"Better output, logging, and debugging" },
+  web:         { name:"Web & Browser Testing",        desc:"Test web apps, APIs, browser automation, BDD" },
+  other:       { name:"Other",                         desc:"Uncategorized plugins from GitHub" },
+};
+
+/* ═══════════════════════════════════════════════════════════
+   STATE
+══════════════════════════════════════════════════════════════ */
+let plugins = []; // enriched with live PyPI data
+const state = {
+  search: '',
+  sort: 'category',
+  cats: new Set(),
+  tags: new Set(),
+};
+
+/* ═══════════════════════════════════════════════════════════
+   GITHUB TOPIC PAGE SCRAPING (via allorigins CORS proxy)
+   Scrapes github.com/topics/pytest-plugin sorted by stars.
+   Enriches with KNOWLEDGE base for cat/pipeline/win.
+══════════════════════════════════════════════════════════════ */
+
+const TOTAL_PAGES = 5; // ~430 repos across 5 pages of 20
+
+async function fetchTopicPage(page) {
+  const ghUrl = `https://github.com/topics/pytest-plugin?o=desc&s=stars&page=${page}`;
+  const r = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(ghUrl)}`);
+  if (!r.ok) throw new Error(`proxy ${r.status}`);
+  const json = await r.json();
+  return json.contents;
+}
+
+function parseTopicPage(html) {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(html, 'text/html');
+  const repos = [];
+
+  // Each repo card is an <article> element
+  doc.querySelectorAll('article.border').forEach(article => {
+    try {
+      // repo path like /owner/repo-name
+      const linkEl = article.querySelector('h3 a[href*="/"]');
+      if (!linkEl) return;
+      const path = linkEl.getAttribute('href').trim(); // e.g. /pytest-dev/pytest-xdist
+      const parts = path.split('/').filter(Boolean);
+      if (parts.length < 2) return;
+      const [owner, repoName] = parts;
+
+      // description
+      const descEl = article.querySelector('p.my-1, p[itemprop="description"]');
+      const description = descEl ? descEl.textContent.trim() : '';
+
+      // star count — the star link contains a formatted number
+      const starEl = article.querySelector('a[href$="/stargazers"]');
+      let stars = 0;
+      if (starEl) {
+        const raw = starEl.textContent.trim().replace(/,/g, '');
+        if (raw.endsWith('k')) stars = Math.round(parseFloat(raw) * 1000);
+        else stars = parseInt(raw, 10) || 0;
+      }
+
+      // last updated — <relative-time> element
+      const timeEl = article.querySelector('relative-time');
+      const pushedAt = timeEl ? timeEl.getAttribute('datetime') : null;
+
+      repos.push({
+        name: repoName,
+        full_name: `${owner}/${repoName}`,
+        description,
+        stars,
+        pushed_at: pushedAt,
+        html_url: `https://github.com/${owner}/${repoName}`,
+      });
+    } catch (e) { /* skip malformed entries */ }
+  });
+
+  return repos;
+}
+
+async function loadAllPlugins() {
+  setStatus('loading');
+  setLabel('fetching from GitHub…');
+  document.getElementById('refreshBtn').disabled = true;
+
+  const prog = document.getElementById('loadProg');
+  let allRepos = [];
+
+  try {
+    for (let p = 1; p <= TOTAL_PAGES; p++) {
+      if (prog) prog.textContent = `page ${p} / ${TOTAL_PAGES}`;
+      const html = await fetchTopicPage(p);
+      const repos = parseTopicPage(html);
+      if (!repos.length) break; // no more pages
+      allRepos = allRepos.concat(repos);
+      await new Promise(r => setTimeout(r, 200));
+    }
+    if (!allRepos.length) throw new Error('no repos parsed');
+  } catch (err) {
+    console.error('GitHub scrape failed:', err);
+    setLabel('GitHub unavailable — showing curated list');
+    // Fall back to KNOWLEDGE keys
+    allRepos = Object.keys(KNOWLEDGE).map(name => ({
+      name, full_name: `–/${name}`, description: '', stars: 0,
+      pushed_at: null, html_url: `https://pypi.org/project/${name}/`,
+    }));
+  }
+
+  // Deduplicate by lowercased repo name
+  const seen = new Set();
+  const repos = allRepos.filter(r => {
+    const n = r.name.toLowerCase();
+    if (seen.has(n)) return false;
+    seen.add(n); return true;
+  });
+
+  // Build plugin objects
+  plugins = repos.map(repo => {
+    const pkgName = repo.name.toLowerCase();
+    const k = KNOWLEDGE[pkgName] || {};
+    return {
+      name: pkgName,
+      summary: repo.description || `pytest plugin: ${pkgName}`,
+      latestDate: repo.pushed_at || null,
+      ghUrl: repo.html_url,
+      pypiUrl: `https://pypi.org/project/${pkgName}/`,
+      stars: repo.stars || 0,
+      cat: k.cat || 'other',
+      pipeline: k.pipeline || false,
+      win: k.win !== undefined ? k.win : 'maybe',
+    };
+  });
+
+  const now = new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});
+  setLabel(`${plugins.length} plugins · ${now}`);
+  setStatus('done');
+  document.getElementById('refreshBtn').disabled = false;
+  document.getElementById('loadingState')?.remove();
+  buildChips();
+  render();
+}
+
+function setStatus(s) {
+  const d = document.getElementById('dot');
+  d.className = 'refresh-dot ' + s;
+}
+function setLabel(t) {
+  document.getElementById('refreshLabel').textContent = t;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   CHIPS
+══════════════════════════════════════════════════════════════ */
+function buildChips() {
+  const catC = document.getElementById('catChips');
+  catC.innerHTML = '';
+  Object.entries(CAT_META).forEach(([id, m]) => {
+    const b = document.createElement('button');
+    b.className = 'chip';
+    b.dataset.val = id;
+    // Short labels to save space on mobile
+    const shortNames = {
+      coverage:'Coverage', performance:'Performance', execution:'Execution',
+      mocking:'Mocking', io:'I/O & Data', async:'Async',
+      reporting:'Reporting', quality:'Quality', fixtures:'Fixtures',
+      db:'Databases', devex:'Dev UX', web:'Web & Browser', web:'Web & Browser'
+    };
+    b.textContent = shortNames[id] || m.name.split(' ')[0];
+    b.title = m.name;
+    catC.appendChild(b);
+  });
+
+  const tagC = document.getElementById('tagChips');
+  tagC.innerHTML = '';
+  [
+    {val:'pipeline', lbl:'pipeline',  cls:'pip-c'},
+    {val:'win-y',    lbl:'Win ✓',     cls:'win-y'},
+    {val:'win-m',    lbl:'Win ?',     cls:'win-m'},
+    {val:'win-n',    lbl:'Win ✗',     cls:'win-n'},
+  ].forEach(t => {
+    const b = document.createElement('button');
+    b.className = `chip ${t.cls}`;
+    b.dataset.val = t.val;
+    b.textContent = t.lbl;
+    tagC.appendChild(b);
+  });
+
+  document.getElementById('catChips').addEventListener('click', e => {
+    const b = e.target.closest('.chip'); if (!b) return;
+    const v = b.dataset.val;
+    state.cats.has(v) ? state.cats.delete(v) : state.cats.add(v);
+    b.classList.toggle('active', state.cats.has(v));
+    render();
+  });
+  document.getElementById('tagChips').addEventListener('click', e => {
+    const b = e.target.closest('.chip'); if (!b) return;
+    const v = b.dataset.val;
+    state.tags.has(v) ? state.tags.delete(v) : state.tags.add(v);
+    b.classList.toggle('active', state.tags.has(v));
+    render();
+  });
+}
+
+/* ═══════════════════════════════════════════════════════════
+   FILTER + SORT
+══════════════════════════════════════════════════════════════ */
+function winVal(p) {
+  return p.win === true ? 'win-y' : p.win === false ? 'win-n' : 'win-m';
+}
+
+function visible(p) {
+  if (state.search) {
+    const q = state.search;
+    if (!p.name.toLowerCase().includes(q) && !p.summary.toLowerCase().includes(q)) return false;
+  }
+  if (state.cats.size > 0 && !state.cats.has(p.cat)) return false;
+  if (state.tags.has('pipeline') && !p.pipeline) return false;
+  const wv = winVal(p);
+  const winFilters = ['win-y','win-m','win-n'].filter(t => state.tags.has(t));
+  if (winFilters.length > 0 && !winFilters.includes(wv)) return false;
+  return true;
+}
+
+function sorted(list) {
+  const s = state.sort;
+  return [...list].sort((a, b) => {
+    if (s === 'rank') {
+      // sort by stars descending
+      return (b.stars || 0) - (a.stars || 0);
+    }
+    if (s === 'name') return a.name.localeCompare(b.name);
+    if (s === 'updated') {
+      if (!a.latestDate && !b.latestDate) return 0;
+      if (!a.latestDate) return 1;
+      if (!b.latestDate) return -1;
+      return new Date(b.latestDate) - new Date(a.latestDate);
+    }
+    // category: cat order then stars within cat
+    const cO = Object.keys(CAT_META);
+    const ca = cO.indexOf(a.cat), cb = cO.indexOf(b.cat);
+    if (ca !== cb) return ca - cb;
+    return (b.stars || 0) - (a.stars || 0);
+  });
+}
+
+/* ═══════════════════════════════════════════════════════════
+   RENDER
+══════════════════════════════════════════════════════════════ */
+function winBadge(p) {
+  const v = winVal(p);
+  const labels = {'win-y':'WIN ✓','win-n':'WIN ✗','win-m':'WIN ?'};
+  return `<span class="badge ${v}">${labels[v]}</span>`;
+}
+
+function makeCard(p, showCat = false) {
+  const card = document.createElement('a');
+  card.href = p.ghUrl || p.homepage || `https://pypi.org/project/${p.name}/`;
+  card.target = '_blank';
+  card.rel = 'noopener';
+  card.className = 'plugin-card' + (p.pipeline ? ' pip' : '');
+
+  const catLabel = showCat && CAT_META[p.cat]
+    ? `<span style="font-size:9px;color:var(--text3);font-family:'DM Mono',monospace;font-weight:300">${CAT_META[p.cat].name}</span>`
+    : '';
+
+  const dateStr = p.latestDate
+    ? `<span class="badge version">${p.latestDate.slice(0,10)}</span>`
+    : '';
+
+  const pypiLink = p.pypiUrl
+    ? `<a class="pypi-link" href="${p.pypiUrl}" target="_blank" rel="noopener" onclick="event.stopPropagation()">pypi ↗</a>`
+    : '';
+
+  const starsStr = p.stars > 0
+    ? `<span class="rank-badge">★ ${p.stars >= 1000 ? (p.stars/1000).toFixed(1)+'k' : p.stars}</span>`
+    : '';
+
+  card.innerHTML = `
+    <div class="card-top">
+      <span class="plugin-name">${p.name}</span>
+      ${starsStr}
+    </div>
+    <div class="plugin-desc">${p.summary}</div>
+    <div class="card-meta">
+      ${winBadge(p)}
+      ${p.pipeline ? '<span class="badge pip-b">pipeline</span>' : ''}
+      ${dateStr}
+      ${catLabel}
+      ${pypiLink}
+    </div>
+  `;
+  return card;
+}
+
+function render() {
+  if (!plugins.length) return;
+  const main = document.getElementById('main');
+  main.innerHTML = '';
+
+  const vis = sorted(plugins.filter(visible));
+  const hasFilters = state.search || state.cats.size > 0 || state.tags.size > 0;
+
+  if (state.sort === 'category') {
+    Object.entries(CAT_META).forEach(([id, m]) => {
+      const catPlugins = vis.filter(p => p.cat === id);
+      if (!catPlugins.length) return;
+      const sec = document.createElement('div');
+      sec.className = 'cat-section';
+      sec.innerHTML = `
+        <div class="cat-header">
+          <span class="cat-name">${m.name}</span>
+          <span class="cat-desc">— ${m.desc}</span>
+          <span class="cat-count">${catPlugins.length}</span>
+        </div>
+        <div class="plugin-grid" id="g-${id}"></div>
+      `;
+      main.appendChild(sec);
+      const grid = sec.querySelector(`#g-${id}`);
+      catPlugins.forEach(p => grid.appendChild(makeCard(p)));
+    });
+  } else {
+    if (vis.length) {
+      const sortLabels = {rank:'sorted by stars',name:'alphabetical',updated:'recently updated'};
+      const sec = document.createElement('div');
+      sec.className = 'cat-section';
+      sec.innerHTML = `
+        <div class="cat-header">
+          <span class="cat-name">${sortLabels[state.sort] || 'plugins'}</span>
+          <span class="cat-count">${vis.length}</span>
+        </div>
+        <div class="plugin-grid" id="flat-g"></div>
+      `;
+      main.appendChild(sec);
+      const grid = sec.querySelector('#flat-g');
+      vis.forEach(p => grid.appendChild(makeCard(p, true)));
+    }
+  }
+
+  if (!vis.length) {
+    main.innerHTML = '<div class="empty">no plugins match</div>';
+  }
+
+  document.getElementById('resCount').textContent =
+    `${vis.length} plugin${vis.length !== 1 ? 's' : ''}`;
+  document.getElementById('clearBtn').classList.toggle('hidden', !hasFilters);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   CONTROLS
+══════════════════════════════════════════════════════════════ */
+document.getElementById('search').addEventListener('input', e => {
+  state.search = e.target.value.toLowerCase().trim();
+  render();
+});
+document.getElementById('sortSel').addEventListener('change', e => {
+  state.sort = e.target.value;
+  render();
+});
+document.getElementById('clearBtn').addEventListener('click', () => {
+  state.search = ''; state.cats.clear(); state.tags.clear(); state.sort = 'category';
+  document.getElementById('search').value = '';
+  document.getElementById('sortSel').value = 'category';
+  document.querySelectorAll('.chip.active').forEach(c => c.classList.remove('active'));
+  render();
+});
+document.getElementById('refreshBtn').addEventListener('click', () => {
+  plugins = [];
+  document.getElementById('main').innerHTML = `
+    <div class="loading-state" id="loadingState">
+      <div class="loading-spinner"></div>
+      <div class="loading-label">re-fetching from GitHub…</div>
+      <div class="loading-progress" id="loadProg"></div>
+    </div>`;
+  loadAllPlugins();
+});
+
+/* ─── theme ──────────────────────────────────────────────── */
+let dark = true;
+document.getElementById('themeBtn').addEventListener('click', () => {
+  dark = !dark;
+  document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+  document.getElementById('themeBtn').textContent = dark ? '☽' : '○';
+});
+
+/* ─── init ───────────────────────────────────────────────── */
+loadAllPlugins();
+</script>
+</body>
+</html>

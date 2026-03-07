@@ -89,23 +89,11 @@ header{
 .header-sub{font-size:11px;color:var(--text3);font-weight:300}
 .header-right{margin-left:auto;display:flex;align-items:center;gap:10px;flex-shrink:0}
 
-/* refresh status */
-.refresh-info{
+.header-status{
   font-family:'DM Mono',monospace;
   font-size:10px;color:var(--text3);font-weight:300;
   letter-spacing:0.02em;
-  display:flex;align-items:center;gap:6px;
 }
-.refresh-dot{
-  width:6px;height:6px;border-radius:50%;
-  background:var(--text3);
-  transition:background var(--t);
-}
-.refresh-dot.loading{background:var(--accent);animation:pulse 1s infinite}
-.refresh-dot.done{background:var(--win-y)}
-.refresh-dot.error{background:var(--win-n)}
-
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
 
 .theme-btn{
   width:30px;height:30px;
@@ -119,22 +107,6 @@ header{
   transition:all var(--t);
 }
 .theme-btn:hover{border-color:var(--border2);color:var(--text)}
-
-.refresh-btn{
-  height:30px;padding:0 10px;
-  border-radius:var(--radius);
-  border:1px solid var(--border);
-  background:var(--surface);
-  color:var(--text2);
-  cursor:pointer;
-  font-family:'DM Mono',monospace;
-  font-size:10px;font-weight:400;
-  letter-spacing:0.02em;
-  transition:all var(--t);
-  white-space:nowrap;
-}
-.refresh-btn:hover{border-color:var(--border2);color:var(--text)}
-.refresh-btn:disabled{opacity:0.4;cursor:not-allowed}
 
 /* ─── toolbar ────────────────────────────────────────────── */
 .toolbar{
@@ -380,13 +352,9 @@ main{margin-top:0}
 
   <header>
     <span class="wordmark">pytest<em>/</em>plugins</span>
-    <span class="header-sub">live from GitHub</span>
+    <span class="header-sub">updated daily</span>
     <div class="header-right">
-      <div class="refresh-info">
-        <span class="refresh-dot" id="dot"></span>
-        <span id="refreshLabel">—</span>
-      </div>
-      <button class="refresh-btn" id="refreshBtn" disabled>↻ refresh</button>
+      <span class="header-status" id="statusLabel">—</span>
       <button class="theme-btn" id="themeBtn" title="Toggle theme">☽</button>
     </div>
   </header>
@@ -425,8 +393,7 @@ main{margin-top:0}
   <main id="main">
     <div class="loading-state" id="loadingState">
       <div class="loading-spinner"></div>
-      <div class="loading-label">fetching plugins from GitHub…</div>
-      <div class="loading-progress" id="loadProg"></div>
+      <div class="loading-label">loading…</div>
     </div>
   </main>
 
@@ -595,7 +562,6 @@ const KNOWLEDGE = {
   "pytest-homeassistant-custom-component":{ cat:"devex", pipeline:false, win:true, rank:39 },
   "pytest-plus":         { cat:"devex",       pipeline:false, win:true,    rank:85  },
   "pytest-cpp":          { cat:"devex",       pipeline:false, win:true,    rank:111 },
-  "pytest-tornado":      { cat:"async",       pipeline:false, win:true,    rank:109 },
 };
 
 const CAT_META = {
@@ -625,137 +591,81 @@ const state = {
   tags: new Set(),
 };
 
-/* ═══════════════════════════════════════════════════════════
-   GITHUB TOPIC PAGE SCRAPING (via allorigins CORS proxy)
-   Scrapes github.com/topics/pytest-plugin sorted by stars.
-   Enriches with KNOWLEDGE base for cat/pipeline/win.
-══════════════════════════════════════════════════════════════ */
+const CACHE_KEY = 'pytest-plugins-data';
+const CACHE_TTL_MS = 60 * 60 * 1000; // 1 hour
 
-const TOTAL_PAGES = 5; // ~430 repos across 5 pages of 20
-
-async function fetchTopicPage(page) {
-  const ghUrl = `https://github.com/topics/pytest-plugin?o=desc&s=stars&page=${page}`;
-  const r = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(ghUrl)}`);
-  if (!r.ok) throw new Error(`proxy ${r.status}`);
-  const json = await r.json();
-  return json.contents;
-}
-
-function parseTopicPage(html) {
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(html, 'text/html');
-  const repos = [];
-
-  // Each repo card is an <article> element
-  doc.querySelectorAll('article.border').forEach(article => {
-    try {
-      // repo path like /owner/repo-name
-      const linkEl = article.querySelector('h3 a[href*="/"]');
-      if (!linkEl) return;
-      const path = linkEl.getAttribute('href').trim(); // e.g. /pytest-dev/pytest-xdist
-      const parts = path.split('/').filter(Boolean);
-      if (parts.length < 2) return;
-      const [owner, repoName] = parts;
-
-      // description
-      const descEl = article.querySelector('p.my-1, p[itemprop="description"]');
-      const description = descEl ? descEl.textContent.trim() : '';
-
-      // star count — the star link contains a formatted number
-      const starEl = article.querySelector('a[href$="/stargazers"]');
-      let stars = 0;
-      if (starEl) {
-        const raw = starEl.textContent.trim().replace(/,/g, '');
-        if (raw.endsWith('k')) stars = Math.round(parseFloat(raw) * 1000);
-        else stars = parseInt(raw, 10) || 0;
-      }
-
-      // last updated — <relative-time> element
-      const timeEl = article.querySelector('relative-time');
-      const pushedAt = timeEl ? timeEl.getAttribute('datetime') : null;
-
-      repos.push({
-        name: repoName,
-        full_name: `${owner}/${repoName}`,
-        description,
-        stars,
-        pushed_at: pushedAt,
-        html_url: `https://github.com/${owner}/${repoName}`,
-      });
-    } catch (e) { /* skip malformed entries */ }
-  });
-
-  return repos;
-}
-
-async function loadAllPlugins() {
-  setStatus('loading');
-  setLabel('fetching from GitHub…');
-  document.getElementById('refreshBtn').disabled = true;
-
-  const prog = document.getElementById('loadProg');
-  let allRepos = [];
-
+function getCachedPlugins() {
   try {
-    for (let p = 1; p <= TOTAL_PAGES; p++) {
-      if (prog) prog.textContent = `page ${p} / ${TOTAL_PAGES}`;
-      const html = await fetchTopicPage(p);
-      const repos = parseTopicPage(html);
-      if (!repos.length) break; // no more pages
-      allRepos = allRepos.concat(repos);
-      await new Promise(r => setTimeout(r, 200));
-    }
-    if (!allRepos.length) throw new Error('no repos parsed');
-  } catch (err) {
-    console.error('GitHub scrape failed:', err);
-    setLabel('GitHub unavailable — showing curated list');
-    // Fall back to KNOWLEDGE keys
-    allRepos = Object.keys(KNOWLEDGE).map(name => ({
-      name, full_name: `–/${name}`, description: '', stars: 0,
-      pushed_at: null, html_url: `https://pypi.org/project/${name}/`,
-    }));
+    const raw = localStorage.getItem(CACHE_KEY);
+    if (!raw) return null;
+    const { plugins: cached, fetchedAt } = JSON.parse(raw);
+    if (!Array.isArray(cached) || !cached.length || !fetchedAt) return null;
+    if (Date.now() - fetchedAt > CACHE_TTL_MS) return null;
+    return cached;
+  } catch (e) {
+    return null;
   }
+}
 
-  // Deduplicate by lowercased repo name
-  const seen = new Set();
-  const repos = allRepos.filter(r => {
-    const n = r.name.toLowerCase();
-    if (seen.has(n)) return false;
-    seen.add(n); return true;
-  });
+function setCachedPlugins(list) {
+  try {
+    localStorage.setItem(CACHE_KEY, JSON.stringify({
+      plugins: list,
+      fetchedAt: Date.now(),
+    }));
+  } catch (e) { /* quota or disabled */ }
+}
 
-  // Build plugin objects
-  plugins = repos.map(repo => {
-    const pkgName = repo.name.toLowerCase();
-    const k = KNOWLEDGE[pkgName] || {};
-    return {
-      name: pkgName,
-      summary: repo.description || `pytest plugin: ${pkgName}`,
-      latestDate: repo.pushed_at || null,
-      ghUrl: repo.html_url,
-      pypiUrl: `https://pypi.org/project/${pkgName}/`,
-      stars: repo.stars || 0,
-      cat: k.cat || 'other',
-      pipeline: k.pipeline || false,
-      win: k.win !== undefined ? k.win : 'maybe',
-    };
-  });
+const LOCAL_CACHE_FILE = 'plugins-data.json';
 
-  const now = new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});
-  setLabel(`${plugins.length} plugins · ${now}`);
-  setStatus('done');
-  document.getElementById('refreshBtn').disabled = false;
+async function loadLocalCacheFile() {
+  try {
+    const r = await fetch(LOCAL_CACHE_FILE);
+    if (!r.ok) return null;
+    const data = await r.json();
+    const list = Array.isArray(data) ? data : (data.plugins);
+    if (!Array.isArray(list) || !list.length) return null;
+    return list;
+  } catch (e) {
+    return null;
+  }
+}
+
+function applyPluginsAndRender(list, labelSuffix = '') {
+  plugins = list;
+  const el = document.getElementById('statusLabel');
+  if (el) el.textContent = `${plugins.length} plugins${labelSuffix}`;
   document.getElementById('loadingState')?.remove();
   buildChips();
   render();
 }
 
-function setStatus(s) {
-  const d = document.getElementById('dot');
-  d.className = 'refresh-dot ' + s;
-}
-function setLabel(t) {
-  document.getElementById('refreshLabel').textContent = t;
+async function loadAllPlugins() {
+  const cached = getCachedPlugins();
+  if (cached) {
+    applyPluginsAndRender(cached, ' (cached)');
+    return;
+  }
+  const local = await loadLocalCacheFile();
+  if (local) {
+    applyPluginsAndRender(local);
+    return;
+  }
+  const fallback = Object.keys(KNOWLEDGE).map((pkgName) => {
+    const k = KNOWLEDGE[pkgName] || {};
+    return {
+      name: pkgName,
+      summary: `pytest plugin: ${pkgName}`,
+      latestDate: null,
+      ghUrl: `https://pypi.org/project/${pkgName}/`,
+      pypiUrl: `https://pypi.org/project/${pkgName}/`,
+      stars: 0,
+      cat: k.cat || 'other',
+      pipeline: k.pipeline || false,
+      win: k.win !== undefined ? k.win : 'maybe',
+    };
+  });
+  applyPluginsAndRender(fallback, ' (curated)');
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -773,7 +683,7 @@ function buildChips() {
       coverage:'Coverage', performance:'Performance', execution:'Execution',
       mocking:'Mocking', io:'I/O & Data', async:'Async',
       reporting:'Reporting', quality:'Quality', fixtures:'Fixtures',
-      db:'Databases', devex:'Dev UX', web:'Web & Browser', web:'Web & Browser'
+      db:'Databases', devex:'Dev UX', web:'Web & Browser'
     };
     b.textContent = shortNames[id] || m.name.split(' ')[0];
     b.title = m.name;
@@ -794,7 +704,9 @@ function buildChips() {
     b.textContent = t.lbl;
     tagC.appendChild(b);
   });
+}
 
+function bindChipListeners() {
   document.getElementById('catChips').addEventListener('click', e => {
     const b = e.target.closest('.chip'); if (!b) return;
     const v = b.dataset.val;
@@ -973,16 +885,6 @@ document.getElementById('clearBtn').addEventListener('click', () => {
   document.querySelectorAll('.chip.active').forEach(c => c.classList.remove('active'));
   render();
 });
-document.getElementById('refreshBtn').addEventListener('click', () => {
-  plugins = [];
-  document.getElementById('main').innerHTML = `
-    <div class="loading-state" id="loadingState">
-      <div class="loading-spinner"></div>
-      <div class="loading-label">re-fetching from GitHub…</div>
-      <div class="loading-progress" id="loadProg"></div>
-    </div>`;
-  loadAllPlugins();
-});
 
 /* ─── theme ──────────────────────────────────────────────── */
 let dark = true;
@@ -993,6 +895,7 @@ document.getElementById('themeBtn').addEventListener('click', () => {
 });
 
 /* ─── init ───────────────────────────────────────────────── */
+bindChipListeners();
 loadAllPlugins();
 </script>
 </body>

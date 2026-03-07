@@ -33,7 +33,7 @@ Plugins not in `KNOWLEDGE` appear in the **Other** category with `WIN ?`.
 
 ## Development
 
-Just edit `pytest-plugins.html` — it's a single file with no build step. (It's automatically renamed to `index.html` during GitHub Pages deployment.)
+Just edit `index.html` — it's a single file with no build step.
 
 To add or correct a plugin's metadata, find the `KNOWLEDGE` object and add/update an entry:
 

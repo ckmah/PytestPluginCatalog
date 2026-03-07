@@ -24,8 +24,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Rename to index.html
-        run: cp pytest-plugins.html index.html
+      - name: Prepare site
+        run: |
+          mkdir -p _site
+          cp index.html plugins-data.json _site/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -33,7 +35,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment

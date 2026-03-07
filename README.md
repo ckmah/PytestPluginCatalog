@@ -2,9 +2,7 @@
 
 A browser for the pytest plugin ecosystem — live data from GitHub, filterable by category, Windows compatibility, and pipeline relevance.
 
-**[→ Open the app](https://YOUR-USERNAME.github.io/pytest-plugins/)**
-
-![dark mode screenshot](https://via.placeholder.com/800x400?text=screenshot)
+**[→ Open the app](https://ckmah.github.io/PytestPluginCatalog/)**
 
 ## Features
 
@@ -35,7 +33,7 @@ Plugins not in `KNOWLEDGE` appear in the **Other** category with `WIN ?`.
 
 ## Development
 
-Just edit `index.html` — it's a single file with no build step.
+Just edit `pytest-plugins.html` — it's a single file with no build step. (It's automatically renamed to `index.html` during GitHub Pages deployment.)
 
 To add or correct a plugin's metadata, find the `KNOWLEDGE` object and add/update an entry:
 

@@ -2,25 +2,12 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const { inferCat, inferOS } = require('./metadata-inference.js');
 
-const htmlPath = path.join(__dirname, '..', 'index.html');
 const outPath = path.join(__dirname, '..', 'plugins-data.json');
 const PAGES = 10;
 const PAGE_DELAY_MS = 1200;
 const token = process.env.GITHUB_TOKEN;
-
-const html = fs.readFileSync(htmlPath, 'utf8');
-const re = /^\s*"([^"]+)"\s*:\s*\{\s*cat:\s*"([^"]+)"\s*,\s*pipeline:\s*(true|false)\s*,\s*win:\s*(true|false|"maybe")/gm;
-const knowledge = {};
-let m;
-while ((m = re.exec(html)) !== null) {
-  const [, name, cat, pipeline, win] = m;
-  knowledge[name] = {
-    cat,
-    pipeline: pipeline === 'true',
-    win: win === '"maybe"' ? 'maybe' : win === 'true',
-  };
-}
 
 async function fetchPage(page) {
   const url = `https://api.github.com/search/repositories?q=topic:pytest-plugin&sort=stars&order=desc&per_page=100&page=${page}`;
@@ -60,17 +47,18 @@ async function main() {
 
   const plugins = repos.map((repo) => {
     const pkgName = repo.name.toLowerCase();
-    const k = knowledge[pkgName] || {};
+    const summary = repo.description || `pytest plugin: ${pkgName}`;
+    const cat = inferCat(pkgName, summary);
+    const os = inferOS(pkgName, summary, null);
     return {
       name: pkgName,
-      summary: repo.description || `pytest plugin: ${pkgName}`,
+      summary,
       latestDate: repo.pushed_at || null,
       ghUrl: repo.html_url,
       pypiUrl: `https://pypi.org/project/${pkgName}/`,
       stars: repo.stars || 0,
-      cat: k.cat || 'other',
-      pipeline: k.pipeline || false,
-      win: k.win !== undefined ? k.win : 'maybe',
+      cat,
+      os,
     };
   });
 

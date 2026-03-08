@@ -177,7 +177,6 @@ select:focus{border-color:var(--border2)}
 .chip.win-y.active{background:var(--win-y);border-color:var(--win-y);color:var(--bg)}
 .chip.win-n.active{background:var(--win-n);border-color:var(--win-n);color:var(--bg)}
 .chip.win-m.active{background:var(--win-m);border-color:var(--win-m);color:var(--bg)}
-.chip.pip-c.active{background:var(--accent);border-color:var(--accent);color:var(--bg)}
 
 /* ─── results bar ────────────────────────────────────────── */
 .results-bar{
@@ -255,11 +254,6 @@ main{margin-top:0}
   position:relative;cursor:pointer;
 }
 .plugin-card:hover{background:var(--surface2)}
-.plugin-card.pip::before{
-  content:'';position:absolute;
-  left:0;top:0;bottom:0;width:2px;
-  background:var(--accent);opacity:0.7;
-}
 .card-top{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
 .plugin-name{
   font-family:'DM Mono',monospace;font-size:12px;font-weight:400;
@@ -292,11 +286,7 @@ main{margin-top:0}
   background:color-mix(in srgb,var(--win-m) 10%,transparent);
   border:1px solid color-mix(in srgb,var(--win-m) 25%,transparent);
 }
-.badge.pip-b{
-  color:var(--accent);
-  background:var(--acc-bg);
-  border:1px solid var(--acc-bdr);
-}
+.badge.os-label{font-size:9px;color:var(--text3);margin-right:2px}
 .badge.version{color:var(--text3);background:transparent;border:none;font-size:9px}
 .rank-badge{
   font-family:'DM Mono',monospace;font-size:9px;
@@ -398,186 +388,30 @@ main{margin-top:0}
   </main>
 
   <div class="legend">
-    <div class="legend-item"><span class="badge win-y">WIN ✓</span> confirmed Windows</div>
-    <div class="legend-item"><span class="badge win-n">WIN ✗</span> Windows incompatible</div>
-    <div class="legend-item"><span class="badge win-m">WIN ?</span> uncertain</div>
-    <div class="legend-item"><span class="badge pip-b">pipeline</span> pipeline recommended</div>
+    <div class="legend-item"><span class="badge win-y">✓</span> supported</div>
+    <div class="legend-item"><span class="badge win-n">✗</span> unsupported</div>
+    <div class="legend-item"><span class="badge win-m">?</span> uncertain</div>
     <div class="legend-item"><span style="font-family:'DM Mono',monospace;font-size:10px;color:var(--accent)">★ N</span> GitHub stars</div>
   </div>
 
 </div>
 
 <script>
-/* ═══════════════════════════════════════════════════════════
-   STATIC KNOWLEDGE BASE
-   PyPI gives us name/summary/version/date — we enrich with
-   category, pipeline relevance, and Windows compatibility.
-══════════════════════════════════════════════════════════════ */
-const KNOWLEDGE = {
-  // name → { cat, pipeline, win, rank }
-  // win: true=confirmed, false=known broken, "maybe"=uncertain
-  "pytest-cov":          { cat:"coverage",    pipeline:true,  win:true,    rank:1   },
-  "pytest-memray":       { cat:"coverage",    pipeline:true,  win:false,   rank:57  },
-  "pytest-pointers":     { cat:"coverage",    pipeline:false, win:"maybe", rank:null},
-  "pytest-benchmark":    { cat:"performance", pipeline:true,  win:true,    rank:15  },
-  "pytest-codspeed":     { cat:"performance", pipeline:true,  win:"maybe", rank:50  },
-  "pytest-profiling":    { cat:"performance", pipeline:true,  win:"maybe", rank:48  },
-  "pytest-durations":    { cat:"performance", pipeline:false, win:true,    rank:60  },
-  "pytest-timeout":      { cat:"performance", pipeline:true,  win:true,    rank:5   },
-  "pytest-timeouts":     { cat:"performance", pipeline:false, win:false,   rank:49  },
-  "pytest-monitor":      { cat:"performance", pipeline:true,  win:"maybe", rank:null},
-  "pytest-harvest":      { cat:"performance", pipeline:false, win:true,    rank:121 },
-  "pytest-xdist":        { cat:"execution",   pipeline:true,  win:true,    rank:3   },
-  "pytest-split":        { cat:"execution",   pipeline:true,  win:true,    rank:13  },
-  "pytest-randomly":     { cat:"execution",   pipeline:true,  win:true,    rank:29  },
-  "pytest-ordering":     { cat:"execution",   pipeline:false, win:true,    rank:28  },
-  "pytest-order":        { cat:"execution",   pipeline:false, win:true,    rank:30  },
-  "pytest-dependency":   { cat:"execution",   pipeline:true,  win:true,    rank:41  },
-  "pytest-depends":      { cat:"execution",   pipeline:false, win:true,    rank:155 },
-  "pytest-skip-slow":    { cat:"execution",   pipeline:false, win:true,    rank:124 },
-  "pytest-rerunfailures":{ cat:"execution",   pipeline:false, win:true,    rank:6   },
-  "pytest-retry":        { cat:"execution",   pipeline:false, win:true,    rank:36  },
-  "pytest-repeat":       { cat:"execution",   pipeline:true,  win:true,    rank:14  },
-  "pytest-flakefinder":  { cat:"execution",   pipeline:false, win:true,    rank:63  },
-  "pytest-testmon":      { cat:"execution",   pipeline:true,  win:true,    rank:56  },
-  "pytest-picked":       { cat:"execution",   pipeline:false, win:true,    rank:94  },
-  "pytest-incremental":  { cat:"execution",   pipeline:false, win:"maybe", rank:128 },
-  "pytest-watcher":      { cat:"execution",   pipeline:false, win:true,    rank:55  },
-  "pytest-watch":        { cat:"execution",   pipeline:false, win:"maybe", rank:67  },
-  "pytest-tagging":      { cat:"execution",   pipeline:false, win:true,    rank:129 },
-  "pytest-custom-exit-code":{ cat:"execution",pipeline:true,  win:true,    rank:20  },
-  "pytest-mock":         { cat:"mocking",     pipeline:true,  win:true,    rank:4   },
-  "pytest-socket":       { cat:"mocking",     pipeline:true,  win:true,    rank:16  },
-  "pytest-httpx":        { cat:"mocking",     pipeline:true,  win:true,    rank:27  },
-  "pytest-httpserver":   { cat:"mocking",     pipeline:true,  win:true,    rank:34  },
-  "pytest-recording":    { cat:"mocking",     pipeline:true,  win:true,    rank:35  },
-  "pytest-vcr":          { cat:"mocking",     pipeline:false, win:true,    rank:45  },
-  "pytest-responses":    { cat:"mocking",     pipeline:false, win:true,    rank:156 },
-  "pytest-subprocess":   { cat:"mocking",     pipeline:true,  win:true,    rank:84  },
-  "pytest-freezegun":    { cat:"mocking",     pipeline:true,  win:true,    rank:47  },
-  "pytest-freezer":      { cat:"mocking",     pipeline:false, win:true,    rank:69  },
-  "pytest-mock-resources":{ cat:"mocking",   pipeline:false, win:"maybe", rank:98  },
-  "pytest-datadir":      { cat:"io",          pipeline:true,  win:true,    rank:62  },
-  "pytest-shutil":       { cat:"io",          pipeline:false, win:"maybe", rank:97  },
-  "pytest-sftpserver":   { cat:"io",          pipeline:true,  win:"maybe", rank:74  },
-  "pytest-localserver":  { cat:"io",          pipeline:false, win:true,    rank:102 },
-  "pytest-remotedata":   { cat:"io",          pipeline:true,  win:true,    rank:99  },
-  "pytest-console-scripts":{ cat:"io",        pipeline:true,  win:"maybe", rank:118 },
-  "pytest-examples":     { cat:"io",          pipeline:false, win:true,    rank:78  },
-  "pytest-spark":        { cat:"io",          pipeline:false, win:"maybe", rank:103 },
-  "pytest-asyncio":      { cat:"async",       pipeline:true,  win:true,    rank:2   },
-  "pytest-aiohttp":      { cat:"async",       pipeline:false, win:true,    rank:37  },
-  "pytest-trio":         { cat:"async",       pipeline:false, win:true,    rank:90  },
-  "pytest-anyio":        { cat:"async",       pipeline:false, win:true,    rank:133 },
-  "pytest-tornado":      { cat:"async",       pipeline:false, win:true,    rank:123 },
-  "pytest-twisted":      { cat:"async",       pipeline:false, win:"maybe", rank:125 },
-  "pytest-race":         { cat:"async",       pipeline:true,  win:"maybe", rank:65  },
-  "pytest-reraise":      { cat:"async",       pipeline:true,  win:true,    rank:117 },
-  "pytest-html":         { cat:"reporting",   pipeline:true,  win:true,    rank:10  },
-  "pytest-json-ctrf":    { cat:"reporting",   pipeline:true,  win:true,    rank:8   },
-  "pytest-json-report":  { cat:"reporting",   pipeline:false, win:true,    rank:17  },
-  "pytest-metadata":     { cat:"reporting",   pipeline:true,  win:true,    rank:7   },
-  "pytest-opentelemetry":{ cat:"reporting",   pipeline:true,  win:true,    rank:73  },
-  "pytest-github-actions-annotate-failures":{ cat:"reporting", pipeline:true, win:true, rank:46 },
-  "pytest-azurepipelines":{ cat:"reporting",  pipeline:false, win:true,    rank:71  },
-  "allure-pytest":       { cat:"reporting",   pipeline:false, win:true,    rank:24  },
-  "pytest-reportportal": { cat:"reporting",   pipeline:false, win:true,    rank:79  },
-  "pytest-slack":        { cat:"reporting",   pipeline:false, win:true,    rank:140 },
-  "pytest-md-report":    { cat:"reporting",   pipeline:false, win:true,    rank:106 },
-  "pytest-nunit":        { cat:"reporting",   pipeline:false, win:true,    rank:81  },
-  "pytest-mypy":         { cat:"quality",     pipeline:true,  win:true,    rank:87  },
-  "pytest-ruff":         { cat:"quality",     pipeline:true,  win:true,    rank:154 },
-  "pytest-black":        { cat:"quality",     pipeline:false, win:true,    rank:151 },
-  "pytest-pylint":       { cat:"quality",     pipeline:false, win:true,    rank:88  },
-  "pytest-flake8":       { cat:"quality",     pipeline:false, win:true,    rank:92  },
-  "pytest-pep8":         { cat:"quality",     pipeline:false, win:true,    rank:135 },
-  "pytest-mypy-plugins": { cat:"quality",     pipeline:false, win:true,    rank:120 },
-  "hypothesis":          { cat:"quality",     pipeline:true,  win:true,    rank:9   },
-  "pytest-doctestplus":  { cat:"quality",     pipeline:false, win:true,    rank:82  },
-  "pytest-lazy-fixtures":{ cat:"fixtures",    pipeline:true,  win:true,    rank:72  },
-  "pytest-lazy-fixture": { cat:"fixtures",    pipeline:false, win:true,    rank:58  },
-  "pytest-cases":        { cat:"fixtures",    pipeline:true,  win:true,    rank:76  },
-  "pytest-factoryboy":   { cat:"fixtures",    pipeline:false, win:true,    rank:53  },
-  "pytest-subtests":     { cat:"fixtures",    pipeline:false, win:true,    rank:32  },
-  "pytest-check":        { cat:"fixtures",    pipeline:true,  win:true,    rank:38  },
-  "pytest-assume":       { cat:"fixtures",    pipeline:false, win:true,    rank:40  },
-  "pytest-deadfixtures": { cat:"fixtures",    pipeline:false, win:true,    rank:77  },
-  "pytest-env":          { cat:"fixtures",    pipeline:true,  win:true,    rank:11  },
-  "pytest-dotenv":       { cat:"fixtures",    pipeline:true,  win:true,    rank:33  },
-  "pytest-variables":    { cat:"fixtures",    pipeline:false, win:true,    rank:95  },
-  "pytest-regressions":  { cat:"fixtures",    pipeline:true,  win:true,    rank:86  },
-  "syrupy":              { cat:"fixtures",    pipeline:true,  win:true,    rank:19  },
-  "pytest-snapshot":     { cat:"fixtures",    pipeline:false, win:true,    rank:51  },
-  "pytest-parametrization":{ cat:"fixtures",  pipeline:false, win:true,    rank:145 },
-  "pytest-unordered":    { cat:"fixtures",    pipeline:true,  win:true,    rank:18  },
-  "pytest-arraydiff":    { cat:"fixtures",    pipeline:true,  win:true,    rank:112 },
-  "pytest-postgresql":   { cat:"db",          pipeline:true,  win:"maybe", rank:31  },
-  "pytest-redis":        { cat:"db",          pipeline:false, win:"maybe", rank:130 },
-  "pytest-mysql":        { cat:"db",          pipeline:false, win:"maybe", rank:108 },
-  "pytest-docker":       { cat:"db",          pipeline:true,  win:"maybe", rank:61  },
-  "pytest-docker-tools": { cat:"db",          pipeline:false, win:"maybe", rank:54  },
-  "pytest-celery":       { cat:"db",          pipeline:false, win:"maybe", rank:52  },
-  "pytest-alembic":      { cat:"db",          pipeline:false, win:true,    rank:68  },
-  "pytest-xprocess":     { cat:"db",          pipeline:true,  win:"maybe", rank:138 },
-  "pytest-sugar":        { cat:"devex",       pipeline:false, win:true,    rank:26  },
-  "pytest-icdiff":       { cat:"devex",       pipeline:false, win:true,    rank:21  },
-  "pytest-clarity":      { cat:"devex",       pipeline:false, win:true,    rank:89  },
-  "pytest-instafail":    { cat:"devex",       pipeline:false, win:true,    rank:22  },
-  "pytest-pretty":       { cat:"devex",       pipeline:false, win:true,    rank:66  },
-  "pytest-structlog":    { cat:"devex",       pipeline:true,  win:true,    rank:110 },
-  "pytest-loguru":       { cat:"devex",       pipeline:false, win:true,    rank:116 },
-  "pytest-logger":       { cat:"devex",       pipeline:false, win:true,    rank:132 },
-  "pytest-rng":          { cat:"devex",       pipeline:true,  win:true,    rank:158 },
-  "pytest-cache":        { cat:"devex",       pipeline:false, win:true,    rank:96  },
-  "pytest-describe":     { cat:"devex",       pipeline:false, win:true,    rank:93  },
-  // web & browser
-  "pytest-django":       { cat:"web",         pipeline:false, win:true,    rank:12  },
-  "pytest-flask":        { cat:"web",         pipeline:false, win:true,    rank:59  },
-  "pytest-playwright":   { cat:"web",         pipeline:false, win:true,    rank:25  },
-  "pytest-selenium":     { cat:"web",         pipeline:false, win:true,    rank:100 },
-  "pytest-base-url":     { cat:"web",         pipeline:false, win:true,    rank:23  },
-  "pytest-bdd":          { cat:"web",         pipeline:false, win:true,    rank:44  },
-  "pytest-qt":           { cat:"web",         pipeline:false, win:true,    rank:83  },
-  // execution additions
-  "pytest-random-order": { cat:"execution",   pipeline:false, win:true,    rank:42  },
-  "pytest-test-groups":  { cat:"execution",   pipeline:false, win:true,    rank:43  },
-  "pytest-find-dependencies":{ cat:"execution",pipeline:false,win:true,    rank:64  },
-  "pytest-filter-subpackage":{ cat:"execution",pipeline:false,win:true,   rank:107 },
-  // db / infra additions
-  "pytest-testinfra":    { cat:"db",          pipeline:false, win:"maybe", rank:70  },
-  "pytest-ansible":      { cat:"db",          pipeline:false, win:"maybe", rank:75  },
-  "pytest-alembic-extra":{ cat:"db",          pipeline:false, win:true,    rank:null},
-  // reporting additions
-  "pytest-reportlog":    { cat:"reporting",   pipeline:false, win:true,    rank:80  },
-  "pytest-csv":          { cat:"reporting",   pipeline:false, win:true,    rank:105 },
-  "pytest-timestamper":  { cat:"reporting",   pipeline:false, win:true,    rank:113 },
-  "pytest-astropy-header":{ cat:"reporting",  pipeline:false, win:true,    rank:115 },
-  // quality additions
-  "pytest-markdown-docs":{ cat:"quality",     pipeline:false, win:true,    rank:101 },
-  "pylint-pytest":       { cat:"quality",     pipeline:false, win:true,    rank:104 },
-  "pytest-astropy":      { cat:"quality",     pipeline:false, win:true,    rank:114 },
-  // fixtures additions
-  "pytest-mpl":          { cat:"fixtures",    pipeline:false, win:true,    rank:91  },
-  // devex additions
-  "pytest-homeassistant-custom-component":{ cat:"devex", pipeline:false, win:true, rank:39 },
-  "pytest-plus":         { cat:"devex",       pipeline:false, win:true,    rank:85  },
-  "pytest-cpp":          { cat:"devex",       pipeline:false, win:true,    rank:111 },
-};
-
 const CAT_META = {
-  coverage:    { name:"Coverage & Quality Gates",    desc:"Measure what your pipeline actually executes" },
-  performance: { name:"Performance & Benchmarking",  desc:"Measure and track speed of pipeline stages" },
-  execution:   { name:"Test Execution & Ordering",   desc:"Run tests smarter — parallel, ordered, selective" },
-  mocking:     { name:"Mocking & Isolation",         desc:"Replace external dependencies in pipeline stages" },
-  io:          { name:"I/O, Files & Data",           desc:"Test data ingestion, file handling, pipeline I/O" },
-  async:       { name:"Async & Concurrency",         desc:"Test async pipeline stages and concurrent execution" },
-  reporting:   { name:"Reporting & CI Integration",  desc:"Publish results, integrate with CI/CD" },
-  quality:     { name:"Code Quality & Type Checking",desc:"Lint, type-check, and style-check your package" },
-  fixtures:    { name:"Fixtures & Parametrization",  desc:"Better test setup, teardown, and data variation" },
-  db:          { name:"Databases & External Services",desc:"Test pipeline integrations with data stores" },
-  devex:       { name:"Developer Experience",        desc:"Better output, logging, and debugging" },
-  web:         { name:"Web & Browser Testing",        desc:"Test web apps, APIs, browser automation, BDD" },
-  other:       { name:"Other",                         desc:"Uncategorized plugins from GitHub" },
+  async:       { name:'Async & Concurrency',     desc:'Asyncio, trio, anyio, tornado, twisted' },
+  browser:     { name:'Browser & E2E',            desc:'Playwright, Selenium, BDD, end-to-end' },
+  coverage:    { name:'Coverage & Profiling',     desc:'Code coverage, memray, quality gates' },
+  databases:   { name:'Databases & Services',     desc:'PostgreSQL, Redis, Docker, testinfra' },
+  devex:       { name:'Developer Experience',    desc:'Output, logging, progress, diffs' },
+  execution:   { name:'Test Execution',           desc:'Parallel, timeout, retry, order' },
+  fixtures:    { name:'Fixtures & Snapshots',     desc:'Parametrization, snapshots, env' },
+  io:          { name:'I/O & Data',               desc:'Datadir, remotedata, localserver' },
+  mocking:     { name:'Mocking & Isolation',     desc:'Mock, VCR, httpx, freezegun' },
+  performance: { name:'Performance',             desc:'Benchmark, duration, profiling' },
+  quality:     { name:'Code Quality',            desc:'Mypy, ruff, black, hypothesis' },
+  reporting:   { name:'Reporting',               desc:'HTML/JSON reports, CI integration' },
+  web:         { name:'Web Frameworks',          desc:'Django, Flask' },
+  other:       { name:'Other',                   desc:'Uncategorized plugins' },
 };
 
 /* ═══════════════════════════════════════════════════════════
@@ -631,8 +465,15 @@ async function loadLocalCacheFile() {
   }
 }
 
+function normalizePlugin(p) {
+  if (p.os) return p;
+  const w = p.win;
+  p.os = { Mac: true, Linux: true, Windows: w === false ? false : w === true ? true : 'maybe' };
+  return p;
+}
+
 function applyPluginsAndRender(list, labelSuffix = '') {
-  plugins = list;
+  plugins = list.map(normalizePlugin);
   const el = document.getElementById('statusLabel');
   if (el) el.textContent = `${plugins.length} plugins${labelSuffix}`;
   document.getElementById('loadingState')?.remove();
@@ -651,21 +492,7 @@ async function loadAllPlugins() {
     applyPluginsAndRender(local);
     return;
   }
-  const fallback = Object.keys(KNOWLEDGE).map((pkgName) => {
-    const k = KNOWLEDGE[pkgName] || {};
-    return {
-      name: pkgName,
-      summary: `pytest plugin: ${pkgName}`,
-      latestDate: null,
-      ghUrl: `https://pypi.org/project/${pkgName}/`,
-      pypiUrl: `https://pypi.org/project/${pkgName}/`,
-      stars: 0,
-      cat: k.cat || 'other',
-      pipeline: k.pipeline || false,
-      win: k.win !== undefined ? k.win : 'maybe',
-    };
-  });
-  applyPluginsAndRender(fallback, ' (curated)');
+  applyPluginsAndRender([], ' (no data)');
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -680,10 +507,10 @@ function buildChips() {
     b.dataset.val = id;
     // Short labels to save space on mobile
     const shortNames = {
-      coverage:'Coverage', performance:'Performance', execution:'Execution',
-      mocking:'Mocking', io:'I/O & Data', async:'Async',
-      reporting:'Reporting', quality:'Quality', fixtures:'Fixtures',
-      db:'Databases', devex:'Dev UX', web:'Web & Browser'
+      async:'Async', browser:'Browser', coverage:'Coverage', databases:'Databases',
+      devex:'Dev UX', execution:'Execution', fixtures:'Fixtures', io:'I/O',
+      mocking:'Mocking', performance:'Perf', quality:'Quality', reporting:'Reporting',
+      web:'Web', other:'Other'
     };
     b.textContent = shortNames[id] || m.name.split(' ')[0];
     b.title = m.name;
@@ -693,10 +520,9 @@ function buildChips() {
   const tagC = document.getElementById('tagChips');
   tagC.innerHTML = '';
   [
-    {val:'pipeline', lbl:'pipeline',  cls:'pip-c'},
-    {val:'win-y',    lbl:'Win ✓',     cls:'win-y'},
-    {val:'win-m',    lbl:'Win ?',     cls:'win-m'},
-    {val:'win-n',    lbl:'Win ✗',     cls:'win-n'},
+    {val:'win-y', lbl:'Win ✓', cls:'win-y'},
+    {val:'win-m', lbl:'Win ?', cls:'win-m'},
+    {val:'win-n', lbl:'Win ✗', cls:'win-n'},
   ].forEach(t => {
     const b = document.createElement('button');
     b.className = `chip ${t.cls}`;
@@ -726,8 +552,9 @@ function bindChipListeners() {
 /* ═══════════════════════════════════════════════════════════
    FILTER + SORT
 ══════════════════════════════════════════════════════════════ */
-function winVal(p) {
-  return p.win === true ? 'win-y' : p.win === false ? 'win-n' : 'win-m';
+function osVal(p, platform) {
+  const v = p.os && p.os[platform];
+  return v === true ? 'win-y' : v === false ? 'win-n' : 'win-m';
 }
 
 function visible(p) {
@@ -736,8 +563,7 @@ function visible(p) {
     if (!p.name.toLowerCase().includes(q) && !p.summary.toLowerCase().includes(q)) return false;
   }
   if (state.cats.size > 0 && !state.cats.has(p.cat)) return false;
-  if (state.tags.has('pipeline') && !p.pipeline) return false;
-  const wv = winVal(p);
+  const wv = osVal(p, 'Windows');
   const winFilters = ['win-y','win-m','win-n'].filter(t => state.tags.has(t));
   if (winFilters.length > 0 && !winFilters.includes(wv)) return false;
   return true;
@@ -768,10 +594,10 @@ function sorted(list) {
 /* ═══════════════════════════════════════════════════════════
    RENDER
 ══════════════════════════════════════════════════════════════ */
-function winBadge(p) {
-  const v = winVal(p);
-  const labels = {'win-y':'WIN ✓','win-n':'WIN ✗','win-m':'WIN ?'};
-  return `<span class="badge ${v}">${labels[v]}</span>`;
+function osBadges(p) {
+  if (!p.os) return '';
+  const sym = (v) => v === true ? '<span class="badge win-y">Y</span>' : v === false ? '<span class="badge win-n">N</span>' : '<span class="badge win-m">?</span>';
+  return `<span class="badge os-label">Mac</span>${sym(p.os.Mac)} <span class="badge os-label">Linux</span>${sym(p.os.Linux)} <span class="badge os-label">Win</span>${sym(p.os.Windows)}`;
 }
 
 function makeCard(p, showCat = false) {
@@ -779,7 +605,7 @@ function makeCard(p, showCat = false) {
   card.href = p.ghUrl || p.homepage || `https://pypi.org/project/${p.name}/`;
   card.target = '_blank';
   card.rel = 'noopener';
-  card.className = 'plugin-card' + (p.pipeline ? ' pip' : '');
+  card.className = 'plugin-card';
 
   const catLabel = showCat && CAT_META[p.cat]
     ? `<span style="font-size:9px;color:var(--text3);font-family:'DM Mono',monospace;font-weight:300">${CAT_META[p.cat].name}</span>`
@@ -804,8 +630,7 @@ function makeCard(p, showCat = false) {
     </div>
     <div class="plugin-desc">${p.summary}</div>
     <div class="card-meta">
-      ${winBadge(p)}
-      ${p.pipeline ? '<span class="badge pip-b">pipeline</span>' : ''}
+      ${osBadges(p)}
       ${dateStr}
       ${catLabel}
       ${pypiLink}

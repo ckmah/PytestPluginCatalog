@@ -2,9 +2,9 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const { inferCat, inferOS } = require('./metadata-inference.js');
 
-const htmlPath = path.join(__dirname, '..', 'index.html');
-const outPath = path.join(__dirname, '..', 'plugins-data.json');
+const dataPath = path.join(__dirname, '..', 'plugins-data.json');
 
 const html = fs.readFileSync(htmlPath, 'utf8');
 // Match each "name": { cat:"...", pipeline:..., win:... } line (optional rank at end)
@@ -33,5 +33,5 @@ const plugins = Object.keys(knowledge).map((pkgName) => {
   };
 });
 
-fs.writeFileSync(outPath, JSON.stringify({ plugins }, null, 2), 'utf8');
-console.log('Wrote', plugins.length, 'plugins to', outPath);
+fs.writeFileSync(dataPath, JSON.stringify({ plugins }, null, 2), 'utf8');
+console.log('Wrote', plugins.length, 'plugins to', dataPath);

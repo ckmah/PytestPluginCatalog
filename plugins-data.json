@@ -3,7 +3,7 @@
     {
       "name": "pudb",
       "summary": "Full-screen console debugger for Python",
-      "latestDate": "2026-03-03T14:13:59Z",
+      "latestDate": "2026-03-08T18:41:42Z",
       "ghUrl": "https://github.com/inducer/pudb",
       "pypiUrl": "https://pypi.org/project/pudb/",
       "stars": 3215,
@@ -34,7 +34,7 @@
       "latestDate": "2026-03-03T05:34:15Z",
       "ghUrl": "https://github.com/pytest-dev/pytest-xdist",
       "pypiUrl": "https://pypi.org/project/pytest-xdist/",
-      "stars": 1809,
+      "stars": 1810,
       "cat": "execution",
       "os": {
         "Mac": true,
@@ -146,7 +146,7 @@
       "latestDate": "2026-03-06T08:16:28Z",
       "ghUrl": "https://github.com/15r10nk/inline-snapshot",
       "pypiUrl": "https://pypi.org/project/inline-snapshot/",
-      "stars": 704,
+      "stars": 705,
       "cat": "fixtures",
       "os": {
         "Mac": true,
@@ -185,7 +185,7 @@
     {
       "name": "pytest-postgresql",
       "summary": "This is a pytest plugin, that enables you to test your code that relies on a running PostgreSQL Database. It allows you to specify fixtures for PostgreSQL process and client.",
-      "latestDate": "2026-03-05T21:06:00Z",
+      "latestDate": "2026-03-08T06:13:56Z",
       "ghUrl": "https://github.com/dbfixtures/pytest-postgresql",
       "pypiUrl": "https://pypi.org/project/pytest-postgresql/",
       "stars": 513,
@@ -440,7 +440,7 @@
       "latestDate": "2023-07-31T16:31:55Z",
       "ghUrl": "https://github.com/numirias/pytest-json-report",
       "pypiUrl": "https://pypi.org/project/pytest-json-report/",
-      "stars": 153,
+      "stars": 154,
       "cat": "other",
       "os": {
         "Mac": true,
@@ -563,7 +563,7 @@
     {
       "name": "pytest-subprocess",
       "summary": "Pytest plugin to fake subprocess.",
-      "latestDate": "2026-02-24T08:02:48Z",
+      "latestDate": "2026-03-08T15:36:50Z",
       "ghUrl": "https://github.com/aklajnert/pytest-subprocess",
       "pypiUrl": "https://pypi.org/project/pytest-subprocess/",
       "stars": 117,
@@ -594,7 +594,7 @@
       "latestDate": "2026-02-22T21:29:57Z",
       "ghUrl": "https://github.com/pchomik/pytest-spec",
       "pypiUrl": "https://pypi.org/project/pytest-spec/",
-      "stars": 110,
+      "stars": 111,
       "cat": "other",
       "os": {
         "Mac": true,
@@ -799,12 +799,12 @@
       }
     },
     {
-      "name": "pytest-workflow",
-      "summary": "Configure workflow/pipeline tests using yaml files.",
-      "latestDate": "2024-08-04T23:43:53Z",
-      "ghUrl": "https://github.com/LUMC/pytest-workflow",
-      "pypiUrl": "https://pypi.org/project/pytest-workflow/",
-      "stars": 70,
+      "name": "pytest-elasticsearch",
+      "summary": "This is a pytest plugin that enables you to test your code that relies on a running Elasticsearch search engine. It allows you to specify fixtures for Elasticsearch process and client.",
+      "latestDate": "2026-03-08T04:58:53Z",
+      "ghUrl": "https://github.com/dbfixtures/pytest-elasticsearch",
+      "pypiUrl": "https://pypi.org/project/pytest-elasticsearch/",
+      "stars": 71,
       "cat": "other",
       "os": {
         "Mac": true,
@@ -813,11 +813,11 @@
       }
     },
     {
-      "name": "pytest-elasticsearch",
-      "summary": "This is a pytest plugin that enables you to test your code that relies on a running Elasticsearch search engine. It allows you to specify fixtures for Elasticsearch process and client.",
-      "latestDate": "2026-03-06T22:04:07Z",
-      "ghUrl": "https://github.com/dbfixtures/pytest-elasticsearch",
-      "pypiUrl": "https://pypi.org/project/pytest-elasticsearch/",
+      "name": "pytest-workflow",
+      "summary": "Configure workflow/pipeline tests using yaml files.",
+      "latestDate": "2024-08-04T23:43:53Z",
+      "ghUrl": "https://github.com/LUMC/pytest-workflow",
+      "pypiUrl": "https://pypi.org/project/pytest-workflow/",
       "stars": 70,
       "cat": "other",
       "os": {
@@ -834,20 +834,6 @@
       "pypiUrl": "https://pypi.org/project/pytest-messenger/",
       "stars": 67,
       "cat": "reporting",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "pytest-mimesis",
-      "summary": "Mimesis integration with the pytest test runner. This plugin provider useful fixtures based on providers from Mimesis.",
-      "latestDate": "2024-01-31T14:22:47Z",
-      "ghUrl": "https://github.com/pytest-dev/pytest-mimesis",
-      "pypiUrl": "https://pypi.org/project/pytest-mimesis/",
-      "stars": 62,
-      "cat": "other",
       "os": {
         "Mac": true,
         "Linux": true,
@@ -1543,7 +1529,7 @@
     {
       "name": "extra-platforms",
       "summary": "🔎 Detect architectures, platforms, shells, terminals, CI systems and agents, grouped by family",
-      "latestDate": "2026-03-07T20:36:06Z",
+      "latestDate": "2026-03-08T11:05:46Z",
       "ghUrl": "https://github.com/kdeldycke/extra-platforms",
       "pypiUrl": "https://pypi.org/project/extra-platforms/",
       "stars": 20,
@@ -1585,7 +1571,7 @@
     {
       "name": "pytest-dynamodb",
       "summary": "This is a pytest plugin, that enables you to test your code that relies on a running DynamoDB Database. It allows you to specify fixtures for DynamoDB process and client (resource in AWS boto terms).",
-      "latestDate": "2026-03-07T21:26:53Z",
+      "latestDate": "2026-03-08T22:01:37Z",
       "ghUrl": "https://github.com/dbfixtures/pytest-dynamodb",
       "pypiUrl": "https://pypi.org/project/pytest-dynamodb/",
       "stars": 19,
@@ -1653,20 +1639,6 @@
       }
     },
     {
-      "name": "pytest-check-links",
-      "summary": "pytest plugin that checks URLs",
-      "latestDate": "2024-05-16T23:34:32Z",
-      "ghUrl": "https://github.com/jupyterlab/pytest-check-links",
-      "pypiUrl": "https://pypi.org/project/pytest-check-links/",
-      "stars": 18,
-      "cat": "fixtures",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
       "name": "pytest-localftpserver",
       "summary": "A PyTest  plugin  which gives you a local ftp server for your tests",
       "latestDate": "2026-03-07T05:44:29Z",
@@ -1681,13 +1653,13 @@
       }
     },
     {
-      "name": "pytest-visual",
-      "summary": "A pytest plugin to organize and track algorithm visualizations",
-      "latestDate": "2024-12-01T12:59:00Z",
-      "ghUrl": "https://github.com/pytest-visual/pytest-visual",
-      "pypiUrl": "https://pypi.org/project/pytest-visual/",
+      "name": "pytest-check-links",
+      "summary": "pytest plugin that checks URLs",
+      "latestDate": "2024-05-16T23:34:32Z",
+      "ghUrl": "https://github.com/jupyterlab/pytest-check-links",
+      "pypiUrl": "https://pypi.org/project/pytest-check-links/",
       "stars": 18,
-      "cat": "other",
+      "cat": "fixtures",
       "os": {
         "Mac": true,
         "Linux": true,
@@ -1695,11 +1667,11 @@
       }
     },
     {
-      "name": "pytest-docker-db",
-      "summary": "A pytest plugin to use docker databases when running pytest",
-      "latestDate": "2025-05-18T13:41:31Z",
-      "ghUrl": "https://github.com/kprestel/pytest-docker-db",
-      "pypiUrl": "https://pypi.org/project/pytest-docker-db/",
+      "name": "pytest-visual",
+      "summary": "A pytest plugin to organize and track algorithm visualizations",
+      "latestDate": "2024-12-01T12:59:00Z",
+      "ghUrl": "https://github.com/pytest-visual/pytest-visual",
+      "pypiUrl": "https://pypi.org/project/pytest-visual/",
       "stars": 18,
       "cat": "other",
       "os": {
@@ -1863,11 +1835,11 @@
       }
     },
     {
-      "name": "pytest_network",
-      "summary": "A simple pytest plugin to disable network on socket level.",
-      "latestDate": "2021-01-12T13:14:44Z",
-      "ghUrl": "https://github.com/best-doctor/pytest_network",
-      "pypiUrl": "https://pypi.org/project/pytest_network/",
+      "name": "pytest-pyright",
+      "summary": "Pytest plugin for type checking code with Pyright",
+      "latestDate": "2024-01-26T09:23:34Z",
+      "ghUrl": "https://github.com/RobertCraigie/pytest-pyright",
+      "pypiUrl": "https://pypi.org/project/pytest-pyright/",
       "stars": 15,
       "cat": "fixtures",
       "os": {
@@ -1877,11 +1849,11 @@
       }
     },
     {
-      "name": "pytest-pyright",
-      "summary": "Pytest plugin for type checking code with Pyright",
-      "latestDate": "2024-01-26T09:23:34Z",
-      "ghUrl": "https://github.com/RobertCraigie/pytest-pyright",
-      "pypiUrl": "https://pypi.org/project/pytest-pyright/",
+      "name": "pytest_network",
+      "summary": "A simple pytest plugin to disable network on socket level.",
+      "latestDate": "2021-01-12T13:14:44Z",
+      "ghUrl": "https://github.com/best-doctor/pytest_network",
+      "pypiUrl": "https://pypi.org/project/pytest_network/",
       "stars": 15,
       "cat": "fixtures",
       "os": {
@@ -2269,11 +2241,11 @@
       }
     },
     {
-      "name": "pytest-resource-path",
-      "summary": "Pytest plugin to provide path for uniform access to test resources.",
-      "latestDate": "2025-10-30T10:12:43Z",
-      "ghUrl": "https://github.com/yukihiko-shinoda/pytest-resource-path",
-      "pypiUrl": "https://pypi.org/project/pytest-resource-path/",
+      "name": "pytest-test-categories",
+      "summary": "Pytest plugin enforcing Google's hermetic testing best practices. Test categorization (small/medium/large), timing limits, resource isolation, and test pyramid validation. No escape hatches.",
+      "latestDate": "2026-03-04T04:16:01Z",
+      "ghUrl": "https://github.com/mikelane/pytest-test-categories",
+      "pypiUrl": "https://pypi.org/project/pytest-test-categories/",
       "stars": 8,
       "cat": "other",
       "os": {
@@ -2283,11 +2255,11 @@
       }
     },
     {
-      "name": "pytest-test-categories",
-      "summary": "Pytest plugin enforcing Google's hermetic testing best practices. Test categorization (small/medium/large), timing limits, resource isolation, and test pyramid validation. No escape hatches.",
-      "latestDate": "2026-03-04T04:16:01Z",
-      "ghUrl": "https://github.com/mikelane/pytest-test-categories",
-      "pypiUrl": "https://pypi.org/project/pytest-test-categories/",
+      "name": "pytest-resource-path",
+      "summary": "Pytest plugin to provide path for uniform access to test resources.",
+      "latestDate": "2025-10-30T10:12:43Z",
+      "ghUrl": "https://github.com/yukihiko-shinoda/pytest-resource-path",
+      "pypiUrl": "https://pypi.org/project/pytest-resource-path/",
       "stars": 8,
       "cat": "other",
       "os": {
@@ -2316,20 +2288,6 @@
       "latestDate": "2018-11-08T09:03:12Z",
       "ghUrl": "https://github.com/xinzhen2015/pytest",
       "pypiUrl": "https://pypi.org/project/pytest/",
-      "stars": 8,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "pytest-test-categories",
-      "summary": "Pytest plugin enforcing Google's hermetic testing best practices. Test categorization (small/medium/large), timing limits, resource isolation, and test pyramid validation. No escape hatches.",
-      "latestDate": "2026-03-04T04:16:01Z",
-      "ghUrl": "https://github.com/mikelane/pytest-test-categories",
-      "pypiUrl": "https://pypi.org/project/pytest-test-categories/",
       "stars": 8,
       "cat": "other",
       "os": {
@@ -2507,20 +2465,6 @@
       }
     },
     {
-      "name": "pytest-describe-it",
-      "summary": "pytest plugin: pytest-describe-it",
-      "latestDate": "2019-08-05T11:09:30Z",
-      "ghUrl": "https://github.com/tkukushkin/pytest-describe-it",
-      "pypiUrl": "https://pypi.org/project/pytest-describe-it/",
-      "stars": 6,
-      "cat": "devex",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
       "name": "pytest-buildkite",
       "summary": "Plugin for pytest that automatically publishes coverage and pytest report annotations to Buildkite",
       "latestDate": "2022-05-24T21:51:37Z",
@@ -2542,6 +2486,20 @@
       "pypiUrl": "https://pypi.org/project/discovery-pytestautomation/",
       "stars": 6,
       "cat": "other",
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
+    },
+    {
+      "name": "pytest-describe-it",
+      "summary": "pytest plugin: pytest-describe-it",
+      "latestDate": "2019-08-05T11:09:30Z",
+      "ghUrl": "https://github.com/tkukushkin/pytest-describe-it",
+      "pypiUrl": "https://pypi.org/project/pytest-describe-it/",
+      "stars": 6,
+      "cat": "devex",
       "os": {
         "Mac": true,
         "Linux": true,
@@ -2737,7 +2695,7 @@
       "ghUrl": "https://github.com/g-bon/pytest-jinja",
       "pypiUrl": "https://pypi.org/project/pytest-jinja/",
       "stars": 5,
-      "cat": "other",
+      "cat": "reporting",
       "os": {
         "Mac": true,
         "Linux": true,
@@ -2759,23 +2717,9 @@
       }
     },
     {
-      "name": "pytest-jinja",
-      "summary": "Plugin for generating customizable HTML reports for pytest results",
-      "latestDate": "2022-10-09T18:55:46Z",
-      "ghUrl": "https://github.com/g-bon/pytest-jinja",
-      "pypiUrl": "https://pypi.org/project/pytest-jinja/",
-      "stars": 5,
-      "cat": "reporting",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
       "name": "saritasa-s3-tools",
       "summary": "Tools For S3 Used By Saritasa",
-      "latestDate": "2026-03-02T08:35:25Z",
+      "latestDate": "2026-03-09T00:10:36Z",
       "ghUrl": "https://github.com/saritasa-nest/saritasa-s3-tools",
       "pypiUrl": "https://pypi.org/project/saritasa-s3-tools/",
       "stars": 5,
@@ -2983,20 +2927,6 @@
       }
     },
     {
-      "name": "pytest-pinpoint",
-      "summary": ":mag: A Pytest plugin that runs SBFL algorithms to locate potential faults given test suite status and coverage information",
-      "latestDate": "2020-09-25T15:04:33Z",
-      "ghUrl": "https://github.com/Generalized-SBFL/pytest-pinpoint",
-      "pypiUrl": "https://pypi.org/project/pytest-pinpoint/",
-      "stars": 4,
-      "cat": "coverage",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
       "name": "flask_fixture",
       "summary": "Start and stop the flask server for your tests",
       "latestDate": "2025-11-24T10:48:52Z",
@@ -3004,6 +2934,20 @@
       "pypiUrl": "https://pypi.org/project/flask_fixture/",
       "stars": 4,
       "cat": "web",
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
+    },
+    {
+      "name": "pytest-pinpoint",
+      "summary": ":mag: A Pytest plugin that runs SBFL algorithms to locate potential faults given test suite status and coverage information",
+      "latestDate": "2020-09-25T15:04:33Z",
+      "ghUrl": "https://github.com/Generalized-SBFL/pytest-pinpoint",
+      "pypiUrl": "https://pypi.org/project/pytest-pinpoint/",
+      "stars": 4,
+      "cat": "coverage",
       "os": {
         "Mac": true,
         "Linux": true,
@@ -3179,20 +3123,6 @@
       }
     },
     {
-      "name": "type_comparable",
-      "summary": "Helper for checking variable equivalence by type. Useful for tests.",
-      "latestDate": "2025-01-19T15:37:28Z",
-      "ghUrl": "https://github.com/sirkonst/type_comparable",
-      "pypiUrl": "https://pypi.org/project/type_comparable/",
-      "stars": 3,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
       "name": "pytest-pytestrail",
       "summary": "Pytest plugin for interaction with TestRail",
       "latestDate": "2022-01-15T14:36:53Z",
@@ -3265,7 +3195,7 @@
     {
       "name": "saritasa-drf-tools",
       "summary": "Tools For DRF Used By Saritasa",
-      "latestDate": "2026-03-05T06:13:14Z",
+      "latestDate": "2026-03-09T00:12:00Z",
       "ghUrl": "https://github.com/saritasa-nest/saritasa-drf-tools",
       "pypiUrl": "https://pypi.org/project/saritasa-drf-tools/",
       "stars": 3,
@@ -3347,6 +3277,20 @@
       }
     },
     {
+      "name": "pytest-nginx",
+      "summary": "A pytest plugin managing an instance of the nginx web server",
+      "latestDate": "2025-05-03T19:33:45Z",
+      "ghUrl": "https://github.com/lahwaacz/pytest-nginx",
+      "pypiUrl": "https://pypi.org/project/pytest-nginx/",
+      "stars": 2,
+      "cat": "other",
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
+    },
+    {
       "name": "pytest-shared-session-scope",
       "summary": "Session scoped fixture that does what you want - also with xdist.",
       "latestDate": "2025-10-31T22:47:24Z",
@@ -3366,20 +3310,6 @@
       "latestDate": "2025-11-20T08:46:11Z",
       "ghUrl": "https://github.com/minddistrict/pytest-remove-stale-bytecode",
       "pypiUrl": "https://pypi.org/project/pytest-remove-stale-bytecode/",
-      "stars": 2,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "pytest-nginx",
-      "summary": "A pytest plugin managing an instance of the nginx web server",
-      "latestDate": "2025-05-03T19:33:45Z",
-      "ghUrl": "https://github.com/lahwaacz/pytest-nginx",
-      "pypiUrl": "https://pypi.org/project/pytest-nginx/",
       "stars": 2,
       "cat": "other",
       "os": {
@@ -3479,7 +3409,7 @@
       "ghUrl": "https://github.com/ixm-one/pytest-cmake-presets",
       "pypiUrl": "https://pypi.org/project/pytest-cmake-presets/",
       "stars": 2,
-      "cat": "coverage",
+      "cat": "other",
       "os": {
         "Mac": true,
         "Linux": true,
@@ -3507,7 +3437,7 @@
       "ghUrl": "https://github.com/BarnabasG/api-coverage",
       "pypiUrl": "https://pypi.org/project/api-coverage/",
       "stars": 2,
-      "cat": "other",
+      "cat": "coverage",
       "os": {
         "Mac": true,
         "Linux": true,
@@ -3521,7 +3451,7 @@
       "ghUrl": "https://github.com/GoodRx/pytest-mark-no-py3",
       "pypiUrl": "https://pypi.org/project/pytest-mark-no-py3/",
       "stars": 2,
-      "cat": "fixtures",
+      "cat": "other",
       "os": {
         "Mac": true,
         "Linux": true,
@@ -3534,6 +3464,34 @@
       "latestDate": "2018-04-28T16:18:56Z",
       "ghUrl": "https://github.com/Aluriak/pytest-asptest",
       "pypiUrl": "https://pypi.org/project/pytest-asptest/",
+      "stars": 2,
+      "cat": "other",
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
+    },
+    {
+      "name": "pytest-focus",
+      "summary": ":electric_plug: Pytest Plugin for Focusing while Test Cases are Made",
+      "latestDate": "2022-12-08T05:03:11Z",
+      "ghUrl": "https://github.com/inTestiGator/pytest-focus",
+      "pypiUrl": "https://pypi.org/project/pytest-focus/",
+      "stars": 2,
+      "cat": "fixtures",
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
+    },
+    {
+      "name": "pytest-html-dashboard",
+      "summary": "Beautiful dashboard-style HTML reports for pytest with charts, error analysis, and visual insights",
+      "latestDate": "2025-11-25T06:34:58Z",
+      "ghUrl": "https://github.com/nireshs/pytest-html-dashboard",
+      "pypiUrl": "https://pypi.org/project/pytest-html-dashboard/",
       "stars": 2,
       "cat": "reporting",
       "os": {
@@ -3562,48 +3520,6 @@
       "latestDate": "2026-01-11T03:59:31Z",
       "ghUrl": "https://github.com/natsukium/pytest-sandbox",
       "pypiUrl": "https://pypi.org/project/pytest-sandbox/",
-      "stars": 2,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "pytest-mark-no-py3",
-      "summary": "pytest plugin and bowler codemod to help migrate tests to Python 3",
-      "latestDate": "2019-05-22T00:01:17Z",
-      "ghUrl": "https://github.com/GoodRx/pytest-mark-no-py3",
-      "pypiUrl": "https://pypi.org/project/pytest-mark-no-py3/",
-      "stars": 2,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "pytest-asptest",
-      "summary": "pytest plugin to test ASP code",
-      "latestDate": "2018-04-28T16:18:56Z",
-      "ghUrl": "https://github.com/Aluriak/pytest-asptest",
-      "pypiUrl": "https://pypi.org/project/pytest-asptest/",
-      "stars": 2,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "pytest-requests",
-      "summary": "A simple plugin to collects *.yml files to execute `python-requests` based tests",
-      "latestDate": "2021-10-01T21:11:32Z",
-      "ghUrl": "https://github.com/mariocesar/pytest-requests",
-      "pypiUrl": "https://pypi.org/project/pytest-requests/",
       "stars": 2,
       "cat": "other",
       "os": {
@@ -3949,31 +3865,6 @@
       }
     },
     {
-      "name": "tinyvdiff",
-      "summary": "Minimalist visual regression testing plugin for pytest",
-      "latestDate": "2026-01-02T23:03:28Z",
-      "ghUrl": "https://github.com/nanxstats/tinyvdiff",
-      "pypiUrl": "https://pypi.org/project/tinyvdiff/",
-      "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
-    },
-    {
-      "name": "agentprobe-framework",
-      "summary": "A pytest-native testing and evaluation framework for software agents. Trace recording, cost tracking, safety scanning, regression detection.",
-      "latestDate": "2026-02-16T08:25:27Z",
-      "ghUrl": "https://github.com/dyrach1o/agentprobe-framework",
-      "pypiUrl": "https://pypi.org/project/agentprobe-framework/",
-      "stars": 1,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
       "name": "pytest-shabang",
       "summary": "Example on how to run non python code as pytest tests",
       "latestDate": "2019-07-05T11:51:07Z",
@@ -4009,6 +3900,34 @@
       "pypiUrl": "https://pypi.org/project/pytest-owner/",
       "stars": 1,
       "cat": "other",
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
+    },
+    {
+      "name": "pytest-xmlcomp",
+      "summary": "A pytest plugin for testing XPath expression on modified XML files",
+      "latestDate": "2018-11-30T13:01:09Z",
+      "ghUrl": "https://github.com/openSUSE/pytest-xmlcomp",
+      "pypiUrl": "https://pypi.org/project/pytest-xmlcomp/",
+      "stars": 1,
+      "cat": "other",
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
+    },
+    {
+      "name": "selenium-framework-python",
+      "summary": "This is Selenium testing Pytest Framework",
+      "latestDate": "2022-08-21T05:01:31Z",
+      "ghUrl": "https://github.com/Tesseract-coder/Selenium-Framework-Python",
+      "pypiUrl": "https://pypi.org/project/selenium-framework-python/",
+      "stars": 1,
+      "cat": "browser",
       "os": {
         "Mac": true,
         "Linux": true,
@@ -4058,11 +3977,11 @@
       }
     },
     {
-      "name": "pytest-xmlcomp",
-      "summary": "A pytest plugin for testing XPath expression on modified XML files",
-      "latestDate": "2018-11-30T13:01:09Z",
-      "ghUrl": "https://github.com/openSUSE/pytest-xmlcomp",
-      "pypiUrl": "https://pypi.org/project/pytest-xmlcomp/",
+      "name": "pytest-instrument",
+      "summary": "pytest plugin to instrument tests",
+      "latestDate": "2020-04-05T10:24:09Z",
+      "ghUrl": "https://github.com/j19sch/pytest-instrument",
+      "pypiUrl": "https://pypi.org/project/pytest-instrument/",
       "stars": 1,
       "cat": "other",
       "os": {
@@ -4072,13 +3991,13 @@
       }
     },
     {
-      "name": "selenium-framework-python",
-      "summary": "This is Selenium testing Pytest Framework",
-      "latestDate": "2022-08-21T05:01:31Z",
-      "ghUrl": "https://github.com/Tesseract-coder/Selenium-Framework-Python",
-      "pypiUrl": "https://pypi.org/project/selenium-framework-python/",
+      "name": "pytest-errxfail",
+      "summary": "pytest plugin to mark a test as xfailed if it fails with the specified error message in the captured output",
+      "latestDate": "2025-01-06T14:56:49Z",
+      "ghUrl": "https://github.com/eltimen/pytest-errxfail",
+      "pypiUrl": "https://pypi.org/project/pytest-errxfail/",
       "stars": 1,
-      "cat": "browser",
+      "cat": "other",
       "os": {
         "Mac": true,
         "Linux": true,
@@ -4086,13 +4005,41 @@
       }
     },
     {
-      "name": "pytest-remote-response",
-      "summary": "Project for capturing and mocking connection requests during a pytest-run.",
-      "latestDate": "2024-02-02T16:02:51Z",
-      "ghUrl": "https://github.com/devanshshukla99/pytest-remote-response",
-      "pypiUrl": "https://pypi.org/project/pytest-remote-response/",
+      "name": "pytest-kasima",
+      "summary": "Display horizontal lines above and below the captured standard output for easy viewing.",
+      "latestDate": "2023-01-26T06:55:07Z",
+      "ghUrl": "https://github.com/k4sima/pytest-kasima",
+      "pypiUrl": "https://pypi.org/project/pytest-kasima/",
       "stars": 1,
-      "cat": "mocking",
+      "cat": "other",
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
+    },
+    {
+      "name": "pytest-evm",
+      "summary": "The testing package containing tools to test Web3-based projects",
+      "latestDate": "2024-09-23T16:32:54Z",
+      "ghUrl": "https://github.com/CrocoFactory/pytest-evm",
+      "pypiUrl": "https://pypi.org/project/pytest-evm/",
+      "stars": 1,
+      "cat": "other",
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
+    },
+    {
+      "name": "bypass-bot-api",
+      "summary": "🚀 Access high-speed, reliable APIs for cloud bypass and OTT poster extraction. Streamline your projects with stable endpoints for seamless integration.",
+      "latestDate": "2026-03-09T01:45:29Z",
+      "ghUrl": "https://github.com/karolekk001/Bypass-Bot-Api",
+      "pypiUrl": "https://pypi.org/project/bypass-bot-api/",
+      "stars": 1,
+      "cat": "other",
       "os": {
         "Mac": true,
         "Linux": true,
@@ -4121,6 +4068,20 @@
       "pypiUrl": "https://pypi.org/project/pytest-rt/",
       "stars": 1,
       "cat": "other",
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
+    },
+    {
+      "name": "pytest-remote-response",
+      "summary": "Project for capturing and mocking connection requests during a pytest-run.",
+      "latestDate": "2024-02-02T16:02:51Z",
+      "ghUrl": "https://github.com/devanshshukla99/pytest-remote-response",
+      "pypiUrl": "https://pypi.org/project/pytest-remote-response/",
+      "stars": 1,
+      "cat": "mocking",
       "os": {
         "Mac": true,
         "Linux": true,
@@ -4198,34 +4159,6 @@
       }
     },
     {
-      "name": "pytest-instrument",
-      "summary": "pytest plugin to instrument tests",
-      "latestDate": "2020-04-05T10:24:09Z",
-      "ghUrl": "https://github.com/j19sch/pytest-instrument",
-      "pypiUrl": "https://pypi.org/project/pytest-instrument/",
-      "stars": 1,
-      "cat": "execution",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "pytest-errxfail",
-      "summary": "pytest plugin to mark a test as xfailed if it fails with the specified error message in the captured output",
-      "latestDate": "2025-01-06T14:56:49Z",
-      "ghUrl": "https://github.com/eltimen/pytest-errxfail",
-      "pypiUrl": "https://pypi.org/project/pytest-errxfail/",
-      "stars": 1,
-      "cat": "fixtures",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
       "name": "pytest-isolate-mpi",
       "summary": "Pytest Extension for MPI-Parallel Tests",
       "latestDate": "2025-11-13T07:27:58Z",
@@ -4233,48 +4166,6 @@
       "pypiUrl": "https://pypi.org/project/pytest-isolate-mpi/",
       "stars": 1,
       "cat": "execution",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "pytest-update-test-results",
-      "summary": "Pytest plugin that merge test results in an existing JUnit XML file",
-      "latestDate": "2024-04-08T19:27:40Z",
-      "ghUrl": "https://github.com/ESSS/pytest-update-test-results",
-      "pypiUrl": "https://pypi.org/project/pytest-update-test-results/",
-      "stars": 1,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "ragaliq",
-      "summary": "LLM & RAG evaluation testing framework✨",
-      "latestDate": "2026-02-27T04:53:08Z",
-      "ghUrl": "https://github.com/dariero/RagaliQ",
-      "pypiUrl": "https://pypi.org/project/ragaliq/",
-      "stars": 1,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "pytest-isolate-mpi",
-      "summary": "Pytest Extension for MPI-Parallel Tests",
-      "latestDate": "2025-11-13T07:27:58Z",
-      "ghUrl": "https://github.com/dlr-sp/pytest-isolate-mpi",
-      "pypiUrl": "https://pypi.org/project/pytest-isolate-mpi/",
-      "stars": 1,
-      "cat": "other",
       "os": {
         "Mac": true,
         "Linux": true,
@@ -4366,27 +4257,13 @@
       }
     },
     {
-      "name": "pytest-evm",
-      "summary": "The testing package containing tools to test Web3-based projects",
-      "latestDate": "2024-09-23T16:32:54Z",
-      "ghUrl": "https://github.com/CrocoFactory/pytest-evm",
-      "pypiUrl": "https://pypi.org/project/pytest-evm/",
+      "name": "hypothesis-property-based-testing",
+      "summary": "Trying out the hypothesis library for property-based testing",
+      "latestDate": "2024-03-02T06:45:23Z",
+      "ghUrl": "https://github.com/JBris/hypothesis-property-based-testing",
+      "pypiUrl": "https://pypi.org/project/hypothesis-property-based-testing/",
       "stars": 1,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "bypass-bot-api",
-      "summary": "🚀 Access high-speed, reliable APIs for cloud bypass and OTT poster extraction. Streamline your projects with stable endpoints for seamless integration.",
-      "latestDate": "2026-03-07T19:41:41Z",
-      "ghUrl": "https://github.com/karolekk001/Bypass-Bot-Api",
-      "pypiUrl": "https://pypi.org/project/bypass-bot-api/",
-      "stars": 1,
-      "cat": "other",
+      "cat": "quality",
       "os": {
         "Mac": true,
         "Linux": true,
@@ -4464,76 +4341,6 @@
       }
     },
     {
-      "name": "pytest-nogarbage",
-      "summary": "Ensure a test produces no garbage.",
-      "latestDate": "2025-02-24T23:14:19Z",
-      "ghUrl": "https://github.com/mvollrath/pytest-nogarbage",
-      "pypiUrl": "https://pypi.org/project/pytest-nogarbage/",
-      "stars": 1,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "hypothesis-property-based-testing",
-      "summary": "Trying out the hypothesis library for property-based testing",
-      "latestDate": "2024-03-02T06:45:23Z",
-      "ghUrl": "https://github.com/JBris/hypothesis-property-based-testing",
-      "pypiUrl": "https://pypi.org/project/hypothesis-property-based-testing/",
-      "stars": 1,
-      "cat": "quality",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "pytest-ckan",
-      "summary": "  Backport of CKAN 2.9 Pytest plugin and fixtures so that they can be used to write pytest based tests for CKAN 2.8+ extensions",
-      "latestDate": "2021-03-22T14:12:03Z",
-      "ghUrl": "https://github.com/datopian/pytest-ckan",
-      "pypiUrl": "https://pypi.org/project/pytest-ckan/",
-      "stars": 1,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "loxygen",
-      "summary": "A Python Lox interpreter featuring a pytest plugin to easily run the official test suite.",
-      "latestDate": "2025-10-01T00:43:53Z",
-      "ghUrl": "https://github.com/HomoKubrickus/loxygen",
-      "pypiUrl": "https://pypi.org/project/loxygen/",
-      "stars": 1,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "pytest-odc",
-      "summary": "Pytest database fixtures for ODC Application Testing",
-      "latestDate": "2023-08-04T02:57:52Z",
-      "ghUrl": "https://github.com/opendatacube/pytest-odc",
-      "pypiUrl": "https://pypi.org/project/pytest-odc/",
-      "stars": 1,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
       "name": "pytest-intercept-remote",
       "summary": "Intercept outgoing connection requests during a pytest run.",
       "latestDate": "2021-08-06T11:59:37Z",
@@ -4604,17 +4411,6 @@
       }
     },
     {
-      "name": "pytest-odc",
-      "summary": "Pytest database fixtures for ODC Application Testing",
-      "latestDate": "2023-08-04T02:57:52Z",
-      "ghUrl": "https://github.com/opendatacube/pytest-odc",
-      "pypiUrl": "https://pypi.org/project/pytest-odc/",
-      "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
-    },
-    {
       "name": "pytest-ckan",
       "summary": "  Backport of CKAN 2.9 Pytest plugin and fixtures so that they can be used to write pytest based tests for CKAN 2.8+ extensions",
       "latestDate": "2021-03-22T14:12:03Z",
@@ -4622,8 +4418,11 @@
       "pypiUrl": "https://pypi.org/project/pytest-ckan/",
       "stars": 1,
       "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
     },
     {
       "name": "loxygen",
@@ -4631,6 +4430,20 @@
       "latestDate": "2025-10-01T00:43:53Z",
       "ghUrl": "https://github.com/HomoKubrickus/loxygen",
       "pypiUrl": "https://pypi.org/project/loxygen/",
+      "stars": 1,
+      "cat": "other",
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
+    },
+    {
+      "name": "pytest-odc",
+      "summary": "Pytest database fixtures for ODC Application Testing",
+      "latestDate": "2023-08-04T02:57:52Z",
+      "ghUrl": "https://github.com/opendatacube/pytest-odc",
+      "pypiUrl": "https://pypi.org/project/pytest-odc/",
       "stars": 1,
       "cat": "other",
       "os": {
@@ -4673,6 +4486,20 @@
       "latestDate": "2025-06-09T08:29:10Z",
       "ghUrl": "https://github.com/dingo-actual/failextract",
       "pypiUrl": "https://pypi.org/project/failextract/",
+      "stars": 1,
+      "cat": "other",
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
+    },
+    {
+      "name": "pytest-elegant",
+      "summary": "A pytest plugin to make it look beautiful - Inspired by Pest",
+      "latestDate": "2026-03-08T16:35:04Z",
+      "ghUrl": "https://github.com/einenlum/pytest-elegant",
+      "pypiUrl": "https://pypi.org/project/pytest-elegant/",
       "stars": 1,
       "cat": "other",
       "os": {
@@ -4757,20 +4584,6 @@
       "latestDate": "2026-03-06T08:46:22Z",
       "ghUrl": "https://github.com/abelcheung/pytest-revealtype-injector",
       "pypiUrl": "https://pypi.org/project/pytest-revealtype-injector/",
-      "stars": 1,
-      "cat": "fixtures",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "pytest-lockable",
-      "summary": "pytest plugin for lockable resources",
-      "latestDate": "2025-09-08T14:09:04Z",
-      "ghUrl": "https://github.com/jupe/pytest-lockable",
-      "pypiUrl": "https://pypi.org/project/pytest-lockable/",
       "stars": 1,
       "cat": "fixtures",
       "os": {
@@ -4948,20 +4761,6 @@
       }
     },
     {
-      "name": "qmetry-pytest",
-      "summary": "A PyTest plugin that provides seamless integration with QMetry Test Management Platform.",
-      "latestDate": "2026-03-02T17:01:27Z",
-      "ghUrl": "https://github.com/prashanth-sams/qmetry-pytest",
-      "pypiUrl": "https://pypi.org/project/qmetry-pytest/",
-      "stars": 0,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
       "name": "sqla-plugins",
       "summary": "Pytest fixtures for SQLAlchemy",
       "latestDate": "2025-09-11T06:34:15Z",
@@ -5046,34 +4845,6 @@
       }
     },
     {
-      "name": "pytest-logfest",
-      "summary": "Pytest plugin to write test logs to file(s)",
-      "latestDate": "2021-08-20T16:25:33Z",
-      "ghUrl": "https://github.com/j19sch/pytest-logfest",
-      "pypiUrl": "https://pypi.org/project/pytest-logfest/",
-      "stars": 0,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "pytest-jupyter_kernel",
-      "summary": "A Jupyter kernel fixture for pytest",
-      "latestDate": "2021-07-29T18:41:34Z",
-      "ghUrl": "https://github.com/yitzchak/pytest-jupyter_kernel",
-      "pypiUrl": "https://pypi.org/project/pytest-jupyter_kernel/",
-      "stars": 0,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
       "name": "pytest-rerunclassfailures",
       "summary": "pytest rerun class failures plugin",
       "latestDate": "2025-01-17T23:50:46Z",
@@ -5116,11 +4887,11 @@
       }
     },
     {
-      "name": "pytest-extra-markers",
-      "summary": "Additional pytest markers to dynamically enable/disable tests via CLI flags",
-      "latestDate": "2024-06-17T22:00:23Z",
-      "ghUrl": "https://github.com/iwishiwasaneagle/pytest-extra-markers",
-      "pypiUrl": "https://pypi.org/project/pytest-extra-markers/",
+      "name": "pytest-logfest",
+      "summary": "Pytest plugin to write test logs to file(s)",
+      "latestDate": "2021-08-20T16:25:33Z",
+      "ghUrl": "https://github.com/j19sch/pytest-logfest",
+      "pypiUrl": "https://pypi.org/project/pytest-logfest/",
       "stars": 0,
       "cat": "other",
       "os": {
@@ -5130,13 +4901,13 @@
       }
     },
     {
-      "name": "pytest-object-getter",
-      "summary": "Dynamically import any object from a python (3rd party) module, while mocking its namespace on demand.",
-      "latestDate": "2024-05-23T19:17:21Z",
-      "ghUrl": "https://github.com/boromir674/pytest-object-getter",
-      "pypiUrl": "https://pypi.org/project/pytest-object-getter/",
+      "name": "pytest-jupyter_kernel",
+      "summary": "A Jupyter kernel fixture for pytest",
+      "latestDate": "2021-07-29T18:41:34Z",
+      "ghUrl": "https://github.com/yitzchak/pytest-jupyter_kernel",
+      "pypiUrl": "https://pypi.org/project/pytest-jupyter_kernel/",
       "stars": 0,
-      "cat": "mocking",
+      "cat": "other",
       "os": {
         "Mac": true,
         "Linux": true,
@@ -5144,11 +4915,39 @@
       }
     },
     {
-      "name": "pytest-prefer-nested-dup-tests",
-      "summary": "A Pytest plugin to drop duplicated tests during collection, preferring nested packages",
-      "latestDate": "2023-03-06T16:09:38Z",
-      "ghUrl": "https://github.com/MarximusMaximus/pytest-prefer-nested-dup-tests",
-      "pypiUrl": "https://pypi.org/project/pytest-prefer-nested-dup-tests/",
+      "name": "llm-assert",
+      "summary": "Behavioral assertion testing for LLM applications. Drop-in pytest plugin, any provider, no account required.",
+      "latestDate": "2026-03-08T22:29:12Z",
+      "ghUrl": "https://github.com/moonrunnerkc/llm-assert",
+      "pypiUrl": "https://pypi.org/project/llm-assert/",
+      "stars": 0,
+      "cat": "other",
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
+    },
+    {
+      "name": "python-testing",
+      "summary": "Runtime-aware pytest extensions.",
+      "latestDate": "2026-02-03T12:28:16Z",
+      "ghUrl": "https://github.com/apathetic-tools/python-testing",
+      "pypiUrl": "https://pypi.org/project/python-testing/",
+      "stars": 0,
+      "cat": "other",
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
+    },
+    {
+      "name": "pytest-httpchain",
+      "summary": "Integration testing framework for HTTP endpoints, based on pytest.",
+      "latestDate": "2026-02-27T03:54:13Z",
+      "ghUrl": "https://github.com/aeresov/pytest-httpchain",
+      "pypiUrl": "https://pypi.org/project/pytest-httpchain/",
       "stars": 0,
       "cat": "other",
       "os": {
@@ -5233,6 +5032,48 @@
       "latestDate": "2025-08-31T11:21:24Z",
       "ghUrl": "https://github.com/jgfranco17/errodex",
       "pypiUrl": "https://pypi.org/project/errodex/",
+      "stars": 0,
+      "cat": "other",
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
+    },
+    {
+      "name": "pytest-extra-markers",
+      "summary": "Additional pytest markers to dynamically enable/disable tests via CLI flags",
+      "latestDate": "2024-06-17T22:00:23Z",
+      "ghUrl": "https://github.com/iwishiwasaneagle/pytest-extra-markers",
+      "pypiUrl": "https://pypi.org/project/pytest-extra-markers/",
+      "stars": 0,
+      "cat": "other",
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
+    },
+    {
+      "name": "pytest-object-getter",
+      "summary": "Dynamically import any object from a python (3rd party) module, while mocking its namespace on demand.",
+      "latestDate": "2024-05-23T19:17:21Z",
+      "ghUrl": "https://github.com/boromir674/pytest-object-getter",
+      "pypiUrl": "https://pypi.org/project/pytest-object-getter/",
+      "stars": 0,
+      "cat": "mocking",
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
+    },
+    {
+      "name": "pytest-prefer-nested-dup-tests",
+      "summary": "A Pytest plugin to drop duplicated tests during collection, preferring nested packages",
+      "latestDate": "2023-03-06T16:09:38Z",
+      "ghUrl": "https://github.com/MarximusMaximus/pytest-prefer-nested-dup-tests",
+      "pypiUrl": "https://pypi.org/project/pytest-prefer-nested-dup-tests/",
       "stars": 0,
       "cat": "other",
       "os": {
@@ -5354,31 +5195,6 @@
       }
     },
     {
-      "name": "python-testing",
-      "summary": "Runtime-aware pytest extensions.",
-      "latestDate": "2026-02-03T12:28:16Z",
-      "ghUrl": "https://github.com/apathetic-tools/python-testing",
-      "pypiUrl": "https://pypi.org/project/python-testing/",
-      "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
-    },
-    {
-      "name": "pytest-httpchain",
-      "summary": "Integration testing framework for HTTP endpoints, based on pytest.",
-      "latestDate": "2026-02-27T03:54:13Z",
-      "ghUrl": "https://github.com/aeresov/pytest-httpchain",
-      "pypiUrl": "https://pypi.org/project/pytest-httpchain/",
-      "stars": 0,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
       "name": "pytest-lets-explore",
       "summary": "A foray into the features of pytest.",
       "latestDate": "2017-11-26T19:50:44Z",
@@ -5426,20 +5242,6 @@
       "latestDate": "2026-01-23T04:43:29Z",
       "ghUrl": "https://github.com/amyodov/pytest-claude-agent-sdk",
       "pypiUrl": "https://pypi.org/project/pytest-claude-agent-sdk/",
-      "stars": 0,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "pytest-jsonverdict",
-      "summary": "creates json result file from pytest with some extras",
-      "latestDate": "2018-03-26T17:02:10Z",
-      "ghUrl": "https://github.com/dzerrenner/pytest-jsonverdict",
-      "pypiUrl": "https://pypi.org/project/pytest-jsonverdict/",
       "stars": 0,
       "cat": "other",
       "os": {
@@ -5511,20 +5313,6 @@
       "ghUrl": "https://github.com/mwchase/divide-and-cover",
       "pypiUrl": "https://pypi.org/project/divide-and-cover/",
       "stars": 0,
-      "cat": "devex",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "python-testing",
-      "summary": "Runtime-aware pytest extensions.",
-      "latestDate": "2026-02-03T12:28:16Z",
-      "ghUrl": "https://github.com/apathetic-tools/python-testing",
-      "pypiUrl": "https://pypi.org/project/python-testing/",
-      "stars": 0,
       "cat": "other",
       "os": {
         "Mac": true,
@@ -5533,11 +5321,25 @@
       }
     },
     {
-      "name": "pytest-httpchain",
-      "summary": "Integration testing framework for HTTP endpoints, based on pytest.",
-      "latestDate": "2026-02-27T03:54:13Z",
-      "ghUrl": "https://github.com/aeresov/pytest-httpchain",
-      "pypiUrl": "https://pypi.org/project/pytest-httpchain/",
+      "name": "pytest-html-object-storage",
+      "summary": "Pytest report plugin for send HTML report on object storage",
+      "latestDate": "2025-03-20T10:47:05Z",
+      "ghUrl": "https://github.com/treussart/pytest-html-object-storage",
+      "pypiUrl": "https://pypi.org/project/pytest-html-object-storage/",
+      "stars": 0,
+      "cat": "reporting",
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
+    },
+    {
+      "name": "pytest-terra-fixt",
+      "summary": "Pytest plugin containing fixtures that executes and captures Terraform commands to be used for testing",
+      "latestDate": "2022-10-08T18:43:33Z",
+      "ghUrl": "https://github.com/marshall7m/pytest-terra-fixt",
+      "pypiUrl": "https://pypi.org/project/pytest-terra-fixt/",
       "stars": 0,
       "cat": "other",
       "os": {
@@ -5553,7 +5355,7 @@
       "ghUrl": "https://github.com/marshall7m/pytest-regex-dependency",
       "pypiUrl": "https://pypi.org/project/pytest-regex-dependency/",
       "stars": 0,
-      "cat": "other",
+      "cat": "execution",
       "os": {
         "Mac": true,
         "Linux": true,
@@ -5609,7 +5411,7 @@
       "ghUrl": "https://github.com/avielKogan1/OrangeHRM_Automation",
       "pypiUrl": "https://pypi.org/project/orangehrm_automation/",
       "stars": 0,
-      "cat": "other",
+      "cat": "browser",
       "os": {
         "Mac": true,
         "Linux": true,
@@ -5623,7 +5425,7 @@
       "ghUrl": "https://github.com/Krixna-Kant/Mini-Doc-Validator",
       "pypiUrl": "https://pypi.org/project/mini-doc-validator/",
       "stars": 0,
-      "cat": "reporting",
+      "cat": "other",
       "os": {
         "Mac": true,
         "Linux": true,
@@ -5651,7 +5453,21 @@
       "ghUrl": "https://github.com/QAStudio-Dev/playwright-reporter-python",
       "pypiUrl": "https://pypi.org/project/playwright-reporter-python/",
       "stars": 0,
-      "cat": "execution",
+      "cat": "browser",
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
+    },
+    {
+      "name": "bynry",
+      "summary": "a Testing Scrtpts of a a B2B project management SaaS platform. The platform serves multiple clients (multi-tenant), works across web browsers and mobile devices, and integrates with various third-party services.",
+      "latestDate": "2026-01-29T12:19:35Z",
+      "ghUrl": "https://github.com/MitanshuDS23/Bynry",
+      "pypiUrl": "https://pypi.org/project/bynry/",
+      "stars": 0,
+      "cat": "other",
       "os": {
         "Mac": true,
         "Linux": true,
@@ -5785,76 +5601,6 @@
       }
     },
     {
-      "name": "pytest-alt-reg",
-      "summary": "A pytest plugin to create regression tests for Altair charts.",
-      "latestDate": "2021-04-14T00:46:55Z",
-      "ghUrl": "https://github.com/joaopalmeiro/pytest-alt-reg",
-      "pypiUrl": "https://pypi.org/project/pytest-alt-reg/",
-      "stars": 0,
-      "cat": "browser",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "pytest-uuid",
-      "summary": "A pytest plugin for mocking UUID generation (uuid1-uuid8)",
-      "latestDate": "2026-03-02T07:30:23Z",
-      "ghUrl": "https://github.com/CaptainDriftwood/pytest-uuid",
-      "pypiUrl": "https://pypi.org/project/pytest-uuid/",
-      "stars": 0,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "pytest-case-start-from",
-      "summary": "A pytest plugin to start test execution from a specific test case, skipping all tests before the matched test. Supports pattern matching and logical operators (and/or/not).",
-      "latestDate": "2025-10-28T03:35:33Z",
-      "ghUrl": "https://github.com/joe0731/pytest-case-start-from",
-      "pypiUrl": "https://pypi.org/project/pytest-case-start-from/",
-      "stars": 0,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "playwright-reporter-python",
-      "summary": "A pytest plugin for QAStudio.dev test management platform. Automatically report test results, link test cases, capture screenshots and traces, with support for Playwright integration.",
-      "latestDate": "2025-12-16T19:51:46Z",
-      "ghUrl": "https://github.com/QAStudio-Dev/playwright-reporter-python",
-      "pypiUrl": "https://pypi.org/project/playwright-reporter-python/",
-      "stars": 0,
-      "cat": "browser",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
-      "name": "bynry",
-      "summary": "a Testing Scrtpts of a a B2B project management SaaS platform. The platform serves multiple clients (multi-tenant), works across web browsers and mobile devices, and integrates with various third-party services.",
-      "latestDate": "2026-01-29T12:19:35Z",
-      "ghUrl": "https://github.com/MitanshuDS23/Bynry",
-      "pypiUrl": "https://pypi.org/project/bynry/",
-      "stars": 0,
-      "cat": "other",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
       "name": "bugsafe",
       "summary": "Share bugs, not secrets",
       "latestDate": "2026-01-09T09:47:49Z",
@@ -5939,20 +5685,6 @@
       }
     },
     {
-      "name": "agentassay",
-      "summary": "Token-efficient stochastic testing for AI agents. 5-20x cost reduction. 10 framework adapters. Paper: arXiv:2603.02601",
-      "latestDate": "2026-03-06T16:38:19Z",
-      "ghUrl": "https://github.com/qualixar/agentassay",
-      "pypiUrl": "https://pypi.org/project/agentassay/",
-      "stars": 0,
-      "cat": "databases",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": "maybe"
-      }
-    },
-    {
       "name": "pytest-pings",
       "summary": "🦊 The pytest plugin for Firefox Telemetry 📊",
       "latestDate": "2019-06-29T21:06:55Z",
@@ -5995,20 +5727,6 @@
       }
     },
     {
-      "name": "pytest-playwright-artifacts",
-      "summary": "Capture screenshots, HTML, and console logs on Playwright test failures",
-      "latestDate": "2026-03-06T22:31:37Z",
-      "ghUrl": "https://github.com/iloveitaly/pytest-playwright-artifacts",
-      "pypiUrl": "https://pypi.org/project/pytest-playwright-artifacts/",
-      "stars": 0,
-      "cat": "browser",
-      "os": {
-        "Mac": true,
-        "Linux": true,
-        "Windows": true
-      }
-    },
-    {
       "name": "arkham-asylum-backend",
       "summary": "REST API simulation of a Forensic Psychiatric Hospital (FPH) registry, managing the secure intake, containment, medical care, and monitoring of high-risk criminal patients across a multi-clearance staff hierarchy.",
       "latestDate": "2026-03-03T14:37:13Z",
@@ -6016,6 +5734,20 @@
       "pypiUrl": "https://pypi.org/project/arkham-asylum-backend/",
       "stars": 0,
       "cat": "performance",
+      "os": {
+        "Mac": true,
+        "Linux": true,
+        "Windows": true
+      }
+    },
+    {
+      "name": "pytest-playwright-artifacts",
+      "summary": "Capture screenshots, HTML, and console logs on Playwright test failures",
+      "latestDate": "2026-03-06T22:31:37Z",
+      "ghUrl": "https://github.com/iloveitaly/pytest-playwright-artifacts",
+      "pypiUrl": "https://pypi.org/project/pytest-playwright-artifacts/",
+      "stars": 0,
+      "cat": "browser",
       "os": {
         "Mac": true,
         "Linux": true,
@@ -6122,8 +5854,8 @@
     },
     {
       "name": "bigfoot",
-      "summary": "Full-certainty test mocking: every external call intercepted, recorded, and verified",
-      "latestDate": "2026-03-07T19:43:24Z",
+      "summary": "Full-certainty test mocking: every call recorded and verified",
+      "latestDate": "2026-03-08T22:24:49Z",
       "ghUrl": "https://github.com/axiomantic/bigfoot",
       "pypiUrl": "https://pypi.org/project/bigfoot/",
       "stars": 0,

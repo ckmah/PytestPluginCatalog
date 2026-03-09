@@ -7,9 +7,7 @@
       "ghUrl": "https://github.com/inducer/pudb",
       "pypiUrl": "https://pypi.org/project/pudb/",
       "stars": 3215,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-testinfra",
@@ -18,9 +16,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-testinfra",
       "pypiUrl": "https://pypi.org/project/pytest-testinfra/",
       "stars": 2456,
-      "cat": "db",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "db"
     },
     {
       "name": "pytest-xdist",
@@ -29,9 +25,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-xdist",
       "pypiUrl": "https://pypi.org/project/pytest-xdist/",
       "stars": 1809,
-      "cat": "execution",
-      "pipeline": true,
-      "win": true
+      "cat": "execution"
     },
     {
       "name": "pytest-asyncio",
@@ -40,9 +34,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-asyncio",
       "pypiUrl": "https://pypi.org/project/pytest-asyncio/",
       "stars": 1620,
-      "cat": "async",
-      "pipeline": true,
-      "win": true
+      "cat": "async"
     },
     {
       "name": "pytest-django",
@@ -51,9 +43,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-django",
       "pypiUrl": "https://pypi.org/project/pytest-django/",
       "stars": 1520,
-      "cat": "web",
-      "pipeline": false,
-      "win": true
+      "cat": "web"
     },
     {
       "name": "pytest-sugar",
@@ -62,9 +52,7 @@
       "ghUrl": "https://github.com/Teemu/pytest-sugar",
       "pypiUrl": "https://pypi.org/project/pytest-sugar/",
       "stars": 1516,
-      "cat": "devex",
-      "pipeline": false,
-      "win": true
+      "cat": "devex"
     },
     {
       "name": "pytest-bdd",
@@ -73,9 +61,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-bdd",
       "pypiUrl": "https://pypi.org/project/pytest-bdd/",
       "stars": 1433,
-      "cat": "web",
-      "pipeline": false,
-      "win": true
+      "cat": "web"
     },
     {
       "name": "syrupy",
@@ -84,9 +70,7 @@
       "ghUrl": "https://github.com/syrupy-project/syrupy",
       "pypiUrl": "https://pypi.org/project/syrupy/",
       "stars": 803,
-      "cat": "fixtures",
-      "pipeline": true,
-      "win": true
+      "cat": "fixtures"
     },
     {
       "name": "pytest-html",
@@ -95,9 +79,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-html",
       "pypiUrl": "https://pypi.org/project/pytest-html/",
       "stars": 768,
-      "cat": "reporting",
-      "pipeline": true,
-      "win": true
+      "cat": "reporting"
     },
     {
       "name": "pyfakefs",
@@ -106,9 +88,7 @@
       "ghUrl": "https://github.com/pytest-dev/pyfakefs",
       "pypiUrl": "https://pypi.org/project/pyfakefs/",
       "stars": 741,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "inline-snapshot",
@@ -117,9 +97,7 @@
       "ghUrl": "https://github.com/15r10nk/inline-snapshot",
       "pypiUrl": "https://pypi.org/project/inline-snapshot/",
       "stars": 705,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "django-test-migrations",
@@ -128,9 +106,7 @@
       "ghUrl": "https://github.com/wemake-services/django-test-migrations",
       "pypiUrl": "https://pypi.org/project/django-test-migrations/",
       "stars": 570,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "playwright-pytest",
@@ -139,9 +115,7 @@
       "ghUrl": "https://github.com/microsoft/playwright-pytest",
       "pypiUrl": "https://pypi.org/project/playwright-pytest/",
       "stars": 541,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-postgresql",
@@ -150,9 +124,7 @@
       "ghUrl": "https://github.com/dbfixtures/pytest-postgresql",
       "pypiUrl": "https://pypi.org/project/pytest-postgresql/",
       "stars": 513,
-      "cat": "db",
-      "pipeline": true,
-      "win": "maybe"
+      "cat": "db"
     },
     {
       "name": "pytest-flask",
@@ -161,9 +133,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-flask",
       "pypiUrl": "https://pypi.org/project/pytest-flask/",
       "stars": 500,
-      "cat": "web",
-      "pipeline": false,
-      "win": true
+      "cat": "web"
     },
     {
       "name": "pytest-clarity",
@@ -172,9 +142,7 @@
       "ghUrl": "https://github.com/darrenburns/pytest-clarity",
       "pypiUrl": "https://pypi.org/project/pytest-clarity/",
       "stars": 456,
-      "cat": "devex",
-      "pipeline": false,
-      "win": true
+      "cat": "devex"
     },
     {
       "name": "nbval",
@@ -183,9 +151,7 @@
       "ghUrl": "https://github.com/computationalmodelling/nbval",
       "pypiUrl": "https://pypi.org/project/nbval/",
       "stars": 452,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-check",
@@ -194,9 +160,7 @@
       "ghUrl": "https://github.com/okken/pytest-check",
       "pypiUrl": "https://pypi.org/project/pytest-check/",
       "stars": 409,
-      "cat": "fixtures",
-      "pipeline": true,
-      "win": true
+      "cat": "fixtures"
     },
     {
       "name": "pytest-lazy-fixture",
@@ -205,9 +169,7 @@
       "ghUrl": "https://github.com/TvoroG/pytest-lazy-fixture",
       "pypiUrl": "https://pypi.org/project/pytest-lazy-fixture/",
       "stars": 395,
-      "cat": "fixtures",
-      "pipeline": false,
-      "win": true
+      "cat": "fixtures"
     },
     {
       "name": "pytest-socket",
@@ -216,9 +178,7 @@
       "ghUrl": "https://github.com/miketheman/pytest-socket",
       "pypiUrl": "https://pypi.org/project/pytest-socket/",
       "stars": 333,
-      "cat": "mocking",
-      "pipeline": true,
-      "win": true
+      "cat": "mocking"
     },
     {
       "name": "pytest-split",
@@ -227,9 +187,7 @@
       "ghUrl": "https://github.com/jerry-git/pytest-split",
       "pypiUrl": "https://pypi.org/project/pytest-split/",
       "stars": 303,
-      "cat": "execution",
-      "pipeline": true,
-      "win": true
+      "cat": "execution"
     },
     {
       "name": "datatest",
@@ -238,9 +196,7 @@
       "ghUrl": "https://github.com/shawnbrown/datatest",
       "pypiUrl": "https://pypi.org/project/datatest/",
       "stars": 295,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-describe",
@@ -249,9 +205,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-describe",
       "pypiUrl": "https://pypi.org/project/pytest-describe/",
       "stars": 229,
-      "cat": "devex",
-      "pipeline": false,
-      "win": true
+      "cat": "devex"
     },
     {
       "name": "xdoctest",
@@ -260,9 +214,7 @@
       "ghUrl": "https://github.com/Erotemic/xdoctest",
       "pypiUrl": "https://pypi.org/project/xdoctest/",
       "stars": 220,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "kubetest",
@@ -271,9 +223,7 @@
       "ghUrl": "https://github.com/vapor-ware/kubetest",
       "pypiUrl": "https://pypi.org/project/kubetest/",
       "stars": 207,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "nbmake",
@@ -282,9 +232,7 @@
       "ghUrl": "https://github.com/treebeardtech/nbmake",
       "pypiUrl": "https://pypi.org/project/nbmake/",
       "stars": 207,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-order",
@@ -293,9 +241,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-order",
       "pypiUrl": "https://pypi.org/project/pytest-order/",
       "stars": 205,
-      "cat": "execution",
-      "pipeline": false,
-      "win": true
+      "cat": "execution"
     },
     {
       "name": "locust-grasshopper",
@@ -304,9 +250,7 @@
       "ghUrl": "https://github.com/alteryx/locust-grasshopper",
       "pypiUrl": "https://pypi.org/project/locust-grasshopper/",
       "stars": 189,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-monitor",
@@ -315,9 +259,7 @@
       "ghUrl": "https://github.com/CFMTech/pytest-monitor",
       "pypiUrl": "https://pypi.org/project/pytest-monitor/",
       "stars": 180,
-      "cat": "performance",
-      "pipeline": true,
-      "win": "maybe"
+      "cat": "performance"
     },
     {
       "name": "pytest-dependency",
@@ -326,9 +268,7 @@
       "ghUrl": "https://github.com/RKrahl/pytest-dependency",
       "pypiUrl": "https://pypi.org/project/pytest-dependency/",
       "stars": 167,
-      "cat": "execution",
-      "pipeline": true,
-      "win": true
+      "cat": "execution"
     },
     {
       "name": "pytest-deadfixtures",
@@ -337,9 +277,7 @@
       "ghUrl": "https://github.com/jllorencetti/pytest-deadfixtures",
       "pypiUrl": "https://pypi.org/project/pytest-deadfixtures/",
       "stars": 164,
-      "cat": "fixtures",
-      "pipeline": false,
-      "win": true
+      "cat": "fixtures"
     },
     {
       "name": "pytest-json-report",
@@ -348,9 +286,7 @@
       "ghUrl": "https://github.com/numirias/pytest-json-report",
       "pypiUrl": "https://pypi.org/project/pytest-json-report/",
       "stars": 154,
-      "cat": "reporting",
-      "pipeline": false,
-      "win": true
+      "cat": "reporting"
     },
     {
       "name": "pytest-instafail",
@@ -359,9 +295,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-instafail",
       "pypiUrl": "https://pypi.org/project/pytest-instafail/",
       "stars": 145,
-      "cat": "devex",
-      "pipeline": false,
-      "win": true
+      "cat": "devex"
     },
     {
       "name": "pytest-aiohttp",
@@ -370,9 +304,7 @@
       "ghUrl": "https://github.com/aio-libs/pytest-aiohttp",
       "pypiUrl": "https://pypi.org/project/pytest-aiohttp/",
       "stars": 143,
-      "cat": "async",
-      "pipeline": false,
-      "win": true
+      "cat": "async"
     },
     {
       "name": "pytest-snapshot",
@@ -381,9 +313,7 @@
       "ghUrl": "https://github.com/joseph-roitman/pytest-snapshot",
       "pypiUrl": "https://pypi.org/project/pytest-snapshot/",
       "stars": 136,
-      "cat": "fixtures",
-      "pipeline": false,
-      "win": true
+      "cat": "fixtures"
     },
     {
       "name": "pytest-sanic",
@@ -392,9 +322,7 @@
       "ghUrl": "https://github.com/yunstanford/pytest-sanic",
       "pypiUrl": "https://pypi.org/project/pytest-sanic/",
       "stars": 135,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-grpc",
@@ -403,9 +331,7 @@
       "ghUrl": "https://github.com/kataev/pytest-grpc",
       "pypiUrl": "https://pypi.org/project/pytest-grpc/",
       "stars": 132,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-mypy-plugins",
@@ -414,9 +340,7 @@
       "ghUrl": "https://github.com/typeddjango/pytest-mypy-plugins",
       "pypiUrl": "https://pypi.org/project/pytest-mypy-plugins/",
       "stars": 123,
-      "cat": "quality",
-      "pipeline": false,
-      "win": true
+      "cat": "quality"
     },
     {
       "name": "logot",
@@ -425,9 +349,7 @@
       "ghUrl": "https://github.com/etianen/logot",
       "pypiUrl": "https://pypi.org/project/logot/",
       "stars": 122,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-leaks",
@@ -436,9 +358,7 @@
       "ghUrl": "https://github.com/abalkin/pytest-leaks",
       "pypiUrl": "https://pypi.org/project/pytest-leaks/",
       "stars": 118,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-subprocess",
@@ -447,9 +367,7 @@
       "ghUrl": "https://github.com/aklajnert/pytest-subprocess",
       "pypiUrl": "https://pypi.org/project/pytest-subprocess/",
       "stars": 117,
-      "cat": "mocking",
-      "pipeline": true,
-      "win": true
+      "cat": "mocking"
     },
     {
       "name": "pytester",
@@ -458,9 +376,7 @@
       "ghUrl": "https://github.com/databrickslabs/pytester",
       "pypiUrl": "https://pypi.org/project/pytester/",
       "stars": 117,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-spec",
@@ -469,9 +385,7 @@
       "ghUrl": "https://github.com/pchomik/pytest-spec",
       "pypiUrl": "https://pypi.org/project/pytest-spec/",
       "stars": 111,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-hot-reloading",
@@ -480,9 +394,7 @@
       "ghUrl": "https://github.com/JamesHutchison/pytest-hot-reloading",
       "pypiUrl": "https://pypi.org/project/pytest-hot-reloading/",
       "stars": 107,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "lsp-devtools",
@@ -491,9 +403,7 @@
       "ghUrl": "https://github.com/swyddfa/lsp-devtools",
       "pypiUrl": "https://pypi.org/project/lsp-devtools/",
       "stars": 106,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-datafiles",
@@ -502,9 +412,7 @@
       "ghUrl": "https://github.com/omarkohl/pytest-datafiles",
       "pypiUrl": "https://pypi.org/project/pytest-datafiles/",
       "stars": 105,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-redis",
@@ -513,9 +421,7 @@
       "ghUrl": "https://github.com/dbfixtures/pytest-redis",
       "pypiUrl": "https://pypi.org/project/pytest-redis/",
       "stars": 104,
-      "cat": "db",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "db"
     },
     {
       "name": "pytest-insta",
@@ -524,9 +430,7 @@
       "ghUrl": "https://github.com/vberlier/pytest-insta",
       "pypiUrl": "https://pypi.org/project/pytest-insta/",
       "stars": 104,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "hitchstory",
@@ -535,9 +439,7 @@
       "ghUrl": "https://github.com/hitchdev/hitchstory",
       "pypiUrl": "https://pypi.org/project/hitchstory/",
       "stars": 103,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-reportlog",
@@ -546,9 +448,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-reportlog",
       "pypiUrl": "https://pypi.org/project/pytest-reportlog/",
       "stars": 102,
-      "cat": "reporting",
-      "pipeline": false,
-      "win": true
+      "cat": "reporting"
     },
     {
       "name": "pytest-docker-tools",
@@ -557,9 +457,7 @@
       "ghUrl": "https://github.com/Jc2k/pytest-docker-tools",
       "pypiUrl": "https://pypi.org/project/pytest-docker-tools/",
       "stars": 100,
-      "cat": "db",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "db"
     },
     {
       "name": "cloudcoil",
@@ -568,9 +466,7 @@
       "ghUrl": "https://github.com/cloudcoil/cloudcoil",
       "pypiUrl": "https://pypi.org/project/cloudcoil/",
       "stars": 85,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-django-queries",
@@ -579,9 +475,7 @@
       "ghUrl": "https://github.com/NyanKiyoshi/pytest-django-queries",
       "pypiUrl": "https://pypi.org/project/pytest-django-queries/",
       "stars": 83,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-localstack",
@@ -590,9 +484,7 @@
       "ghUrl": "https://github.com/mintel/pytest-localstack",
       "pypiUrl": "https://pypi.org/project/pytest-localstack/",
       "stars": 80,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-random-order",
@@ -601,9 +493,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-random-order",
       "pypiUrl": "https://pypi.org/project/pytest-random-order/",
       "stars": 77,
-      "cat": "execution",
-      "pipeline": false,
-      "win": true
+      "cat": "execution"
     },
     {
       "name": "overhave",
@@ -612,9 +502,7 @@
       "ghUrl": "https://github.com/Tinkoff/overhave",
       "pypiUrl": "https://pypi.org/project/overhave/",
       "stars": 72,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-play",
@@ -623,9 +511,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-play",
       "pypiUrl": "https://pypi.org/project/pytest-play/",
       "stars": 71,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-elasticsearch",
@@ -634,9 +520,7 @@
       "ghUrl": "https://github.com/dbfixtures/pytest-elasticsearch",
       "pypiUrl": "https://pypi.org/project/pytest-elasticsearch/",
       "stars": 71,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-workflow",
@@ -645,9 +529,7 @@
       "ghUrl": "https://github.com/LUMC/pytest-workflow",
       "pypiUrl": "https://pypi.org/project/pytest-workflow/",
       "stars": 70,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-messenger",
@@ -656,9 +538,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-messenger",
       "pypiUrl": "https://pypi.org/project/pytest-messenger/",
       "stars": 67,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-pudb",
@@ -667,9 +547,7 @@
       "ghUrl": "https://github.com/wronglink/pytest-pudb",
       "pypiUrl": "https://pypi.org/project/pytest-pudb/",
       "stars": 62,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-edit",
@@ -678,9 +556,7 @@
       "ghUrl": "https://github.com/MrMino/pytest-edit",
       "pypiUrl": "https://pypi.org/project/pytest-edit/",
       "stars": 61,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-mimesis",
@@ -689,9 +565,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-mimesis",
       "pypiUrl": "https://pypi.org/project/pytest-mimesis/",
       "stars": 61,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-md-report",
@@ -700,9 +574,7 @@
       "ghUrl": "https://github.com/thombashi/pytest-md-report",
       "pypiUrl": "https://pypi.org/project/pytest-md-report/",
       "stars": 60,
-      "cat": "reporting",
-      "pipeline": false,
-      "win": true
+      "cat": "reporting"
     },
     {
       "name": "pytest-html-plus",
@@ -711,9 +583,7 @@
       "ghUrl": "https://github.com/reporterplus/pytest-html-plus",
       "pypiUrl": "https://pypi.org/project/pytest-html-plus/",
       "stars": 59,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-helpers-namespace",
@@ -722,9 +592,7 @@
       "ghUrl": "https://github.com/saltstack/pytest-helpers-namespace",
       "pypiUrl": "https://pypi.org/project/pytest-helpers-namespace/",
       "stars": 58,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-test-groups",
@@ -733,9 +601,7 @@
       "ghUrl": "https://github.com/mark-adams/pytest-test-groups",
       "pypiUrl": "https://pypi.org/project/pytest-test-groups/",
       "stars": 58,
-      "cat": "execution",
-      "pipeline": false,
-      "win": true
+      "cat": "execution"
     },
     {
       "name": "pytest-unordered",
@@ -744,9 +610,7 @@
       "ghUrl": "https://github.com/utapyngo/pytest-unordered",
       "pypiUrl": "https://pypi.org/project/pytest-unordered/",
       "stars": 58,
-      "cat": "fixtures",
-      "pipeline": true,
-      "win": true
+      "cat": "fixtures"
     },
     {
       "name": "pytest-dbfixtures",
@@ -755,9 +619,7 @@
       "ghUrl": "https://github.com/dbfixtures/pytest-dbfixtures",
       "pypiUrl": "https://pypi.org/project/pytest-dbfixtures/",
       "stars": 57,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-mysql",
@@ -766,9 +628,7 @@
       "ghUrl": "https://github.com/dbfixtures/pytest-mysql",
       "pypiUrl": "https://pypi.org/project/pytest-mysql/",
       "stars": 56,
-      "cat": "db",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "db"
     },
     {
       "name": "pytest-sentry",
@@ -777,9 +637,7 @@
       "ghUrl": "https://github.com/getsentry/pytest-sentry",
       "pypiUrl": "https://pypi.org/project/pytest-sentry/",
       "stars": 54,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "openai-responses-python",
@@ -788,9 +646,7 @@
       "ghUrl": "https://github.com/mharrisb1/openai-responses-python",
       "pypiUrl": "https://pypi.org/project/openai-responses-python/",
       "stars": 54,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-databases",
@@ -799,9 +655,7 @@
       "ghUrl": "https://github.com/litestar-org/pytest-databases",
       "pypiUrl": "https://pypi.org/project/pytest-databases/",
       "stars": 52,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-fixture-classes",
@@ -810,9 +664,7 @@
       "ghUrl": "https://github.com/zmievsa/pytest-fixture-classes",
       "pypiUrl": "https://pypi.org/project/pytest-fixture-classes/",
       "stars": 51,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-notebook",
@@ -821,9 +673,7 @@
       "ghUrl": "https://github.com/chrisjsewell/pytest-notebook",
       "pypiUrl": "https://pypi.org/project/pytest-notebook/",
       "stars": 51,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-rabbitmq",
@@ -832,9 +682,7 @@
       "ghUrl": "https://github.com/dbfixtures/pytest-rabbitmq",
       "pypiUrl": "https://pypi.org/project/pytest-rabbitmq/",
       "stars": 47,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-monkeytype",
@@ -843,9 +691,7 @@
       "ghUrl": "https://github.com/mariusvniekerk/pytest-monkeytype",
       "pypiUrl": "https://pypi.org/project/pytest-monkeytype/",
       "stars": 46,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-neo",
@@ -854,9 +700,7 @@
       "ghUrl": "https://github.com/MyGodIsHe/pytest-neo",
       "pypiUrl": "https://pypi.org/project/pytest-neo/",
       "stars": 45,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-blender",
@@ -865,9 +709,7 @@
       "ghUrl": "https://github.com/mondeja/pytest-blender",
       "pypiUrl": "https://pypi.org/project/pytest-blender/",
       "stars": 45,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-stress",
@@ -876,9 +718,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-stress",
       "pypiUrl": "https://pypi.org/project/pytest-stress/",
       "stars": 42,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-djangoapp",
@@ -887,9 +727,7 @@
       "ghUrl": "https://github.com/idlesign/pytest-djangoapp",
       "pypiUrl": "https://pypi.org/project/pytest-djangoapp/",
       "stars": 42,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-md",
@@ -898,9 +736,7 @@
       "ghUrl": "https://github.com/hackebrot/pytest-md",
       "pypiUrl": "https://pypi.org/project/pytest-md/",
       "stars": 42,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "nanaimo",
@@ -909,9 +745,7 @@
       "ghUrl": "https://github.com/thirtytwobits/nanaimo",
       "pypiUrl": "https://pypi.org/project/nanaimo/",
       "stars": 40,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-opentelemetry",
@@ -920,9 +754,7 @@
       "ghUrl": "https://github.com/chrisguidry/pytest-opentelemetry",
       "pypiUrl": "https://pypi.org/project/pytest-opentelemetry/",
       "stars": 38,
-      "cat": "reporting",
-      "pipeline": true,
-      "win": true
+      "cat": "reporting"
     },
     {
       "name": "looptime",
@@ -931,9 +763,7 @@
       "ghUrl": "https://github.com/nolar/looptime",
       "pypiUrl": "https://pypi.org/project/looptime/",
       "stars": 37,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-pyodide",
@@ -942,9 +772,7 @@
       "ghUrl": "https://github.com/pyodide/pytest-pyodide",
       "pypiUrl": "https://pypi.org/project/pytest-pyodide/",
       "stars": 37,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-localserver",
@@ -953,9 +781,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-localserver",
       "pypiUrl": "https://pypi.org/project/pytest-localserver/",
       "stars": 36,
-      "cat": "io",
-      "pipeline": false,
-      "win": true
+      "cat": "io"
     },
     {
       "name": "pytest-mypy-testing",
@@ -964,9 +790,7 @@
       "ghUrl": "https://github.com/davidfritzsche/pytest-mypy-testing",
       "pypiUrl": "https://pypi.org/project/pytest-mypy-testing/",
       "stars": 34,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-anki",
@@ -975,9 +799,7 @@
       "ghUrl": "https://github.com/glutanimate/pytest-anki",
       "pypiUrl": "https://pypi.org/project/pytest-anki/",
       "stars": 33,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "nonebug",
@@ -986,9 +808,7 @@
       "ghUrl": "https://github.com/nonebot/nonebug",
       "pypiUrl": "https://pypi.org/project/nonebug/",
       "stars": 30,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "seaworthy",
@@ -997,9 +817,7 @@
       "ghUrl": "https://github.com/praekeltfoundation/seaworthy",
       "pypiUrl": "https://pypi.org/project/seaworthy/",
       "stars": 29,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-kubernetes",
@@ -1008,9 +826,7 @@
       "ghUrl": "https://github.com/Blueshoe/pytest-kubernetes",
       "pypiUrl": "https://pypi.org/project/pytest-kubernetes/",
       "stars": 29,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-click",
@@ -1019,9 +835,7 @@
       "ghUrl": "https://github.com/Stranger6667/pytest-click",
       "pypiUrl": "https://pypi.org/project/pytest-click/",
       "stars": 28,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-involve",
@@ -1030,9 +844,7 @@
       "ghUrl": "https://github.com/marginalhours/pytest-involve",
       "pypiUrl": "https://pypi.org/project/pytest-involve/",
       "stars": 28,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-skipuntil",
@@ -1041,9 +853,7 @@
       "ghUrl": "https://github.com/bp72/pytest-skipuntil",
       "pypiUrl": "https://pypi.org/project/pytest-skipuntil/",
       "stars": 28,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-arraydiff",
@@ -1052,9 +862,7 @@
       "ghUrl": "https://github.com/astropy/pytest-arraydiff",
       "pypiUrl": "https://pypi.org/project/pytest-arraydiff/",
       "stars": 27,
-      "cat": "fixtures",
-      "pipeline": true,
-      "win": true
+      "cat": "fixtures"
     },
     {
       "name": "pytest-solidity",
@@ -1063,9 +871,7 @@
       "ghUrl": "https://github.com/meherett/pytest-solidity",
       "pypiUrl": "https://pypi.org/project/pytest-solidity/",
       "stars": 27,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-mock-server",
@@ -1074,9 +880,7 @@
       "ghUrl": "https://github.com/AndreyErmilov/pytest-mock-server",
       "pypiUrl": "https://pypi.org/project/pytest-mock-server/",
       "stars": 27,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-patterns",
@@ -1085,9 +889,7 @@
       "ghUrl": "https://github.com/flyingcircusio/pytest-patterns",
       "pypiUrl": "https://pypi.org/project/pytest-patterns/",
       "stars": 27,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-responsemock",
@@ -1096,9 +898,7 @@
       "ghUrl": "https://github.com/idlesign/pytest-responsemock",
       "pypiUrl": "https://pypi.org/project/pytest-responsemock/",
       "stars": 27,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest_jira",
@@ -1107,9 +907,7 @@
       "ghUrl": "https://github.com/rhevm-qe-automation/pytest_jira",
       "pypiUrl": "https://pypi.org/project/pytest_jira/",
       "stars": 26,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-split-gh-actions-demo",
@@ -1118,9 +916,7 @@
       "ghUrl": "https://github.com/jerry-git/pytest-split-gh-actions-demo",
       "pypiUrl": "https://pypi.org/project/pytest-split-gh-actions-demo/",
       "stars": 26,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-datafixtures",
@@ -1129,9 +925,7 @@
       "ghUrl": "https://github.com/idlesign/pytest-datafixtures",
       "pypiUrl": "https://pypi.org/project/pytest-datafixtures/",
       "stars": 25,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-when",
@@ -1140,9 +934,7 @@
       "ghUrl": "https://github.com/zhukovgreen/pytest-when",
       "pypiUrl": "https://pypi.org/project/pytest-when/",
       "stars": 25,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-molecule",
@@ -1151,9 +943,7 @@
       "ghUrl": "https://github.com/ansible-community/pytest-molecule",
       "pypiUrl": "https://pypi.org/project/pytest-molecule/",
       "stars": 24,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-mongo",
@@ -1162,9 +952,7 @@
       "ghUrl": "https://github.com/dbfixtures/pytest-mongo",
       "pypiUrl": "https://pypi.org/project/pytest-mongo/",
       "stars": 24,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-mpi",
@@ -1173,9 +961,7 @@
       "ghUrl": "https://github.com/aragilar/pytest-mpi",
       "pypiUrl": "https://pypi.org/project/pytest-mpi/",
       "stars": 22,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-copie",
@@ -1184,9 +970,7 @@
       "ghUrl": "https://github.com/12rambau/pytest-copie",
       "pypiUrl": "https://pypi.org/project/pytest-copie/",
       "stars": 22,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-csv",
@@ -1195,9 +979,7 @@
       "ghUrl": "https://github.com/nicoulaj/pytest-csv",
       "pypiUrl": "https://pypi.org/project/pytest-csv/",
       "stars": 21,
-      "cat": "reporting",
-      "pipeline": false,
-      "win": true
+      "cat": "reporting"
     },
     {
       "name": "extra-platforms",
@@ -1206,9 +988,7 @@
       "ghUrl": "https://github.com/kdeldycke/extra-platforms",
       "pypiUrl": "https://pypi.org/project/extra-platforms/",
       "stars": 20,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-salt-factories",
@@ -1217,9 +997,7 @@
       "ghUrl": "https://github.com/saltstack/pytest-salt-factories",
       "pypiUrl": "https://pypi.org/project/pytest-salt-factories/",
       "stars": 20,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-elk-reporter",
@@ -1228,9 +1006,7 @@
       "ghUrl": "https://github.com/fruch/pytest-elk-reporter",
       "pypiUrl": "https://pypi.org/project/pytest-elk-reporter/",
       "stars": 19,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-dynamodb",
@@ -1239,9 +1015,7 @@
       "ghUrl": "https://github.com/dbfixtures/pytest-dynamodb",
       "pypiUrl": "https://pypi.org/project/pytest-dynamodb/",
       "stars": 19,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "awssert",
@@ -1250,9 +1024,7 @@
       "ghUrl": "https://github.com/TSNobleSoftware/awssert",
       "pypiUrl": "https://pypi.org/project/awssert/",
       "stars": 19,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-inline",
@@ -1261,9 +1033,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-inline",
       "pypiUrl": "https://pypi.org/project/pytest-inline/",
       "stars": 19,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-pipeline",
@@ -1272,9 +1042,7 @@
       "ghUrl": "https://github.com/bow/pytest-pipeline",
       "pypiUrl": "https://pypi.org/project/pytest-pipeline/",
       "stars": 18,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "codecrumbs",
@@ -1283,9 +1051,7 @@
       "ghUrl": "https://github.com/15r10nk/codecrumbs",
       "pypiUrl": "https://pypi.org/project/codecrumbs/",
       "stars": 18,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-localftpserver",
@@ -1294,9 +1060,7 @@
       "ghUrl": "https://github.com/oz123/pytest-localftpserver",
       "pypiUrl": "https://pypi.org/project/pytest-localftpserver/",
       "stars": 18,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-check-links",
@@ -1305,9 +1069,7 @@
       "ghUrl": "https://github.com/jupyterlab/pytest-check-links",
       "pypiUrl": "https://pypi.org/project/pytest-check-links/",
       "stars": 18,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-visual",
@@ -1316,9 +1078,7 @@
       "ghUrl": "https://github.com/pytest-visual/pytest-visual",
       "pypiUrl": "https://pypi.org/project/pytest-visual/",
       "stars": 18,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-docker-db",
@@ -1327,9 +1087,7 @@
       "ghUrl": "https://github.com/kprestel/pytest-docker-db",
       "pypiUrl": "https://pypi.org/project/pytest-docker-db/",
       "stars": 18,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-xpara",
@@ -1338,9 +1096,7 @@
       "ghUrl": "https://github.com/tonyseek/pytest-xpara",
       "pypiUrl": "https://pypi.org/project/pytest-xpara/",
       "stars": 18,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "testgr",
@@ -1349,9 +1105,7 @@
       "ghUrl": "https://github.com/and-sm/testgr",
       "pypiUrl": "https://pypi.org/project/testgr/",
       "stars": 18,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-scrutinize",
@@ -1360,9 +1114,7 @@
       "ghUrl": "https://github.com/orf/pytest-scrutinize",
       "pypiUrl": "https://pypi.org/project/pytest-scrutinize/",
       "stars": 17,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-mqtt",
@@ -1371,9 +1123,7 @@
       "ghUrl": "https://github.com/mqtt-tools/pytest-mqtt",
       "pypiUrl": "https://pypi.org/project/pytest-mqtt/",
       "stars": 17,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-vts",
@@ -1382,9 +1132,7 @@
       "ghUrl": "https://github.com/bhodorog/pytest-vts",
       "pypiUrl": "https://pypi.org/project/pytest-vts/",
       "stars": 17,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-xflaky",
@@ -1393,9 +1141,7 @@
       "ghUrl": "https://github.com/Tesorio/pytest-xflaky",
       "pypiUrl": "https://pypi.org/project/pytest-xflaky/",
       "stars": 17,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-pycodestyle",
@@ -1404,9 +1150,7 @@
       "ghUrl": "https://github.com/henry0312/pytest-pycodestyle",
       "pypiUrl": "https://pypi.org/project/pytest-pycodestyle/",
       "stars": 16,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-jupyter",
@@ -1415,9 +1159,7 @@
       "ghUrl": "https://github.com/jupyter-server/pytest-jupyter",
       "pypiUrl": "https://pypi.org/project/pytest-jupyter/",
       "stars": 16,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-appium",
@@ -1426,9 +1168,7 @@
       "ghUrl": "https://github.com/GlobalRadio/pytest-appium",
       "pypiUrl": "https://pypi.org/project/pytest-appium/",
       "stars": 15,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-aio",
@@ -1437,9 +1177,7 @@
       "ghUrl": "https://github.com/klen/pytest-aio",
       "pypiUrl": "https://pypi.org/project/pytest-aio/",
       "stars": 15,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest_network",
@@ -1448,9 +1186,7 @@
       "ghUrl": "https://github.com/best-doctor/pytest_network",
       "pypiUrl": "https://pypi.org/project/pytest_network/",
       "stars": 15,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-pyright",
@@ -1459,9 +1195,7 @@
       "ghUrl": "https://github.com/RobertCraigie/pytest-pyright",
       "pypiUrl": "https://pypi.org/project/pytest-pyright/",
       "stars": 15,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-modified-env",
@@ -1470,9 +1204,7 @@
       "ghUrl": "https://github.com/wemake-services/pytest-modified-env",
       "pypiUrl": "https://pypi.org/project/pytest-modified-env/",
       "stars": 15,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-asyncio-concurrent",
@@ -1481,9 +1213,7 @@
       "ghUrl": "https://github.com/czl9707/pytest-asyncio-concurrent",
       "pypiUrl": "https://pypi.org/project/pytest-asyncio-concurrent/",
       "stars": 15,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-snail",
@@ -1492,9 +1222,7 @@
       "ghUrl": "https://github.com/hackebrot/pytest-snail",
       "pypiUrl": "https://pypi.org/project/pytest-snail/",
       "stars": 15,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-iam",
@@ -1503,9 +1231,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-iam",
       "pypiUrl": "https://pypi.org/project/pytest-iam/",
       "stars": 14,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-docs",
@@ -1514,9 +1240,7 @@
       "ghUrl": "https://github.com/liiight/pytest-docs",
       "pypiUrl": "https://pypi.org/project/pytest-docs/",
       "stars": 14,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-executable",
@@ -1525,9 +1249,7 @@
       "ghUrl": "https://github.com/CS-SI/pytest-executable",
       "pypiUrl": "https://pypi.org/project/pytest-executable/",
       "stars": 14,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-pydocstyle",
@@ -1536,9 +1258,7 @@
       "ghUrl": "https://github.com/henry0312/pytest-pydocstyle",
       "pypiUrl": "https://pypi.org/project/pytest-pydocstyle/",
       "stars": 14,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-bandit",
@@ -1547,9 +1267,7 @@
       "ghUrl": "https://github.com/wanderu/pytest-bandit",
       "pypiUrl": "https://pypi.org/project/pytest-bandit/",
       "stars": 14,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-pgtap",
@@ -1558,9 +1276,7 @@
       "ghUrl": "https://github.com/lmergner/pytest-pgtap",
       "pypiUrl": "https://pypi.org/project/pytest-pgtap/",
       "stars": 13,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-salt",
@@ -1569,9 +1285,7 @@
       "ghUrl": "https://github.com/vmware-archive/pytest-salt",
       "pypiUrl": "https://pypi.org/project/pytest-salt/",
       "stars": 13,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-frappe",
@@ -1580,9 +1294,7 @@
       "ghUrl": "https://github.com/0xsirsaif/pytest-frappe",
       "pypiUrl": "https://pypi.org/project/pytest-frappe/",
       "stars": 13,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-plus",
@@ -1591,9 +1303,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-plus",
       "pypiUrl": "https://pypi.org/project/pytest-plus/",
       "stars": 12,
-      "cat": "devex",
-      "pipeline": false,
-      "win": true
+      "cat": "devex"
     },
     {
       "name": "pytest-covfefe",
@@ -1602,9 +1312,7 @@
       "ghUrl": "https://github.com/hackebrot/pytest-covfefe",
       "pypiUrl": "https://pypi.org/project/pytest-covfefe/",
       "stars": 12,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-timeouts",
@@ -1613,9 +1321,7 @@
       "ghUrl": "https://github.com/Scony/pytest-timeouts",
       "pypiUrl": "https://pypi.org/project/pytest-timeouts/",
       "stars": 12,
-      "cat": "performance",
-      "pipeline": false,
-      "win": false
+      "cat": "performance"
     },
     {
       "name": "pytest-colordots",
@@ -1624,9 +1330,7 @@
       "ghUrl": "https://github.com/svenstaro/pytest-colordots",
       "pypiUrl": "https://pypi.org/project/pytest-colordots/",
       "stars": 12,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-max-warnings",
@@ -1635,9 +1339,7 @@
       "ghUrl": "https://github.com/miketheman/pytest-max-warnings",
       "pypiUrl": "https://pypi.org/project/pytest-max-warnings/",
       "stars": 12,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-skippy",
@@ -1646,9 +1348,7 @@
       "ghUrl": "https://github.com/a-feld/pytest-skippy",
       "pypiUrl": "https://pypi.org/project/pytest-skippy/",
       "stars": 11,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-execution-timer",
@@ -1657,9 +1357,7 @@
       "ghUrl": "https://github.com/miketheman/pytest-execution-timer",
       "pypiUrl": "https://pypi.org/project/pytest-execution-timer/",
       "stars": 11,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-netbox-docker",
@@ -1668,9 +1366,7 @@
       "ghUrl": "https://github.com/link-society/pytest-netbox-docker",
       "pypiUrl": "https://pypi.org/project/pytest-netbox-docker/",
       "stars": 10,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-fluent",
@@ -1679,9 +1375,7 @@
       "ghUrl": "https://github.com/Rohde-Schwarz/pytest-fluent",
       "pypiUrl": "https://pypi.org/project/pytest-fluent/",
       "stars": 10,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-postgres",
@@ -1690,9 +1384,7 @@
       "ghUrl": "https://github.com/clayman083/pytest-postgres",
       "pypiUrl": "https://pypi.org/project/pytest-postgres/",
       "stars": 10,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-emoji-output",
@@ -1701,9 +1393,7 @@
       "ghUrl": "https://github.com/utestpy/pytest-emoji-output",
       "pypiUrl": "https://pypi.org/project/pytest-emoji-output/",
       "stars": 10,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-ast-transformer",
@@ -1712,9 +1402,7 @@
       "ghUrl": "https://github.com/okorolev/pytest-ast-transformer",
       "pypiUrl": "https://pypi.org/project/pytest-ast-transformer/",
       "stars": 9,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "jestspectation",
@@ -1723,9 +1411,7 @@
       "ghUrl": "https://github.com/MaddyGuthridge/Jestspectation",
       "pypiUrl": "https://pypi.org/project/jestspectation/",
       "stars": 9,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-valgrind",
@@ -1734,9 +1420,7 @@
       "ghUrl": "https://github.com/seberg/pytest-valgrind",
       "pypiUrl": "https://pypi.org/project/pytest-valgrind/",
       "stars": 9,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-stub",
@@ -1745,9 +1429,7 @@
       "ghUrl": "https://github.com/idlesign/pytest-stub",
       "pypiUrl": "https://pypi.org/project/pytest-stub/",
       "stars": 9,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-collect-formatter",
@@ -1756,9 +1438,7 @@
       "ghUrl": "https://github.com/LaserPhaser/pytest-collect-formatter",
       "pypiUrl": "https://pypi.org/project/pytest-collect-formatter/",
       "stars": 8,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-resource-path",
@@ -1767,9 +1447,7 @@
       "ghUrl": "https://github.com/yukihiko-shinoda/pytest-resource-path",
       "pypiUrl": "https://pypi.org/project/pytest-resource-path/",
       "stars": 8,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-django-ordering",
@@ -1778,9 +1456,7 @@
       "ghUrl": "https://github.com/rlucioni/pytest-django-ordering",
       "pypiUrl": "https://pypi.org/project/pytest-django-ordering/",
       "stars": 8,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-test-categories",
@@ -1789,9 +1465,7 @@
       "ghUrl": "https://github.com/mikelane/pytest-test-categories",
       "pypiUrl": "https://pypi.org/project/pytest-test-categories/",
       "stars": 8,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest",
@@ -1800,9 +1474,7 @@
       "ghUrl": "https://github.com/xinzhen2015/pytest",
       "pypiUrl": "https://pypi.org/project/pytest/",
       "stars": 8,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-tagging",
@@ -1811,9 +1483,7 @@
       "ghUrl": "https://github.com/scastlara/pytest-tagging",
       "pypiUrl": "https://pypi.org/project/pytest-tagging/",
       "stars": 8,
-      "cat": "execution",
-      "pipeline": false,
-      "win": true
+      "cat": "execution"
     },
     {
       "name": "unflakable-python",
@@ -1822,9 +1492,7 @@
       "ghUrl": "https://github.com/unflakable/unflakable-python",
       "pypiUrl": "https://pypi.org/project/unflakable-python/",
       "stars": 7,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest_matrix",
@@ -1833,9 +1501,7 @@
       "ghUrl": "https://github.com/dburton90/pytest_matrix",
       "pypiUrl": "https://pypi.org/project/pytest_matrix/",
       "stars": 7,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-avoidance",
@@ -1844,9 +1510,7 @@
       "ghUrl": "https://github.com/walles/pytest-avoidance",
       "pypiUrl": "https://pypi.org/project/pytest-avoidance/",
       "stars": 7,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-difftest",
@@ -1855,9 +1519,7 @@
       "ghUrl": "https://github.com/PaulM5406/pytest-difftest",
       "pypiUrl": "https://pypi.org/project/pytest-difftest/",
       "stars": 7,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "antitesting",
@@ -1866,9 +1528,7 @@
       "ghUrl": "https://github.com/pomponchik/antitesting",
       "pypiUrl": "https://pypi.org/project/antitesting/",
       "stars": 7,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-joke",
@@ -1877,9 +1537,7 @@
       "ghUrl": "https://github.com/alecxe/pytest-joke",
       "pypiUrl": "https://pypi.org/project/pytest-joke/",
       "stars": 7,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "async-pytest-httpserver",
@@ -1888,9 +1546,7 @@
       "ghUrl": "https://github.com/krylosov-aa/async-pytest-httpserver",
       "pypiUrl": "https://pypi.org/project/async-pytest-httpserver/",
       "stars": 7,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-finer-verdicts",
@@ -1899,9 +1555,7 @@
       "ghUrl": "https://github.com/rvprasad/pytest-finer-verdicts",
       "pypiUrl": "https://pypi.org/project/pytest-finer-verdicts/",
       "stars": 6,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-snowflake_bdd",
@@ -1910,9 +1564,7 @@
       "ghUrl": "https://github.com/tilakpatidar/pytest-snowflake_bdd",
       "pypiUrl": "https://pypi.org/project/pytest-snowflake_bdd/",
       "stars": 6,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-ignore-flaky",
@@ -1921,9 +1573,7 @@
       "ghUrl": "https://github.com/coherent-oss/pytest-ignore-flaky",
       "pypiUrl": "https://pypi.org/project/pytest-ignore-flaky/",
       "stars": 6,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "spock",
@@ -1932,9 +1582,7 @@
       "ghUrl": "https://github.com/zen-xu/spock",
       "pypiUrl": "https://pypi.org/project/spock/",
       "stars": 6,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-describe-it",
@@ -1943,9 +1591,7 @@
       "ghUrl": "https://github.com/tkukushkin/pytest-describe-it",
       "pypiUrl": "https://pypi.org/project/pytest-describe-it/",
       "stars": 6,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-buildkite",
@@ -1954,9 +1600,7 @@
       "ghUrl": "https://github.com/pytest-buildkite/pytest-buildkite",
       "pypiUrl": "https://pypi.org/project/pytest-buildkite/",
       "stars": 6,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "discovery-pytestautomation",
@@ -1965,9 +1609,7 @@
       "ghUrl": "https://github.com/asfadmin/Discovery-PytestAutomation",
       "pypiUrl": "https://pypi.org/project/discovery-pytestautomation/",
       "stars": 6,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-results",
@@ -1976,9 +1618,7 @@
       "ghUrl": "https://github.com/100nm/pytest-results",
       "pypiUrl": "https://pypi.org/project/pytest-results/",
       "stars": 6,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-parametrize-suite",
@@ -1987,9 +1627,7 @@
       "ghUrl": "https://github.com/seandstewart/pytest-parametrize-suite",
       "pypiUrl": "https://pypi.org/project/pytest-parametrize-suite/",
       "stars": 6,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-mockservers",
@@ -1998,9 +1636,7 @@
       "ghUrl": "https://github.com/Gr1N/pytest-mockservers",
       "pypiUrl": "https://pypi.org/project/pytest-mockservers/",
       "stars": 6,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-httpdbg",
@@ -2009,9 +1645,7 @@
       "ghUrl": "https://github.com/cle-b/pytest-httpdbg",
       "pypiUrl": "https://pypi.org/project/pytest-httpdbg/",
       "stars": 6,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-circuitpython",
@@ -2020,9 +1654,7 @@
       "ghUrl": "https://github.com/notro/pytest-circuitpython",
       "pypiUrl": "https://pypi.org/project/pytest-circuitpython/",
       "stars": 5,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "nbtest",
@@ -2031,9 +1663,7 @@
       "ghUrl": "https://github.com/seal-research/NBTest",
       "pypiUrl": "https://pypi.org/project/nbtest/",
       "stars": 5,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-cdist",
@@ -2042,9 +1672,7 @@
       "ghUrl": "https://github.com/provinzkraut/pytest-cdist",
       "pypiUrl": "https://pypi.org/project/pytest-cdist/",
       "stars": 5,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest_parallel",
@@ -2053,9 +1681,7 @@
       "ghUrl": "https://github.com/onera/pytest_parallel",
       "pypiUrl": "https://pypi.org/project/pytest_parallel/",
       "stars": 5,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-discord",
@@ -2064,9 +1690,7 @@
       "ghUrl": "https://github.com/thombashi/pytest-discord",
       "pypiUrl": "https://pypi.org/project/pytest-discord/",
       "stars": 5,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-fixtures-fixtures",
@@ -2075,9 +1699,7 @@
       "ghUrl": "https://github.com/fferegrino/pytest-fixtures-fixtures",
       "pypiUrl": "https://pypi.org/project/pytest-fixtures-fixtures/",
       "stars": 5,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-gitlab-code-quality",
@@ -2086,9 +1708,7 @@
       "ghUrl": "https://github.com/NiclasvanEyk/pytest-gitlab-code-quality",
       "pypiUrl": "https://pypi.org/project/pytest-gitlab-code-quality/",
       "stars": 5,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-confluence-report",
@@ -2097,9 +1717,7 @@
       "ghUrl": "https://github.com/utestpy/pytest-confluence-report",
       "pypiUrl": "https://pypi.org/project/pytest-confluence-report/",
       "stars": 5,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-qaseio",
@@ -2108,9 +1726,7 @@
       "ghUrl": "https://github.com/saritasa-nest/pytest-qaseio",
       "pypiUrl": "https://pypi.org/project/pytest-qaseio/",
       "stars": 5,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-jinja",
@@ -2119,9 +1735,7 @@
       "ghUrl": "https://github.com/g-bon/pytest-jinja",
       "pypiUrl": "https://pypi.org/project/pytest-jinja/",
       "stars": 5,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-santa",
@@ -2130,9 +1744,7 @@
       "ghUrl": "https://github.com/inTestiGator/pytest-santa",
       "pypiUrl": "https://pypi.org/project/pytest-santa/",
       "stars": 5,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "saritasa-s3-tools",
@@ -2141,9 +1753,7 @@
       "ghUrl": "https://github.com/saritasa-nest/saritasa-s3-tools",
       "pypiUrl": "https://pypi.org/project/saritasa-s3-tools/",
       "stars": 5,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-soft-assertions",
@@ -2152,9 +1762,7 @@
       "ghUrl": "https://github.com/okorolev/pytest-soft-assertions",
       "pypiUrl": "https://pypi.org/project/pytest-soft-assertions/",
       "stars": 5,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-canonical-data",
@@ -2163,9 +1771,7 @@
       "ghUrl": "https://github.com/shuternay/pytest-canonical-data",
       "pypiUrl": "https://pypi.org/project/pytest-canonical-data/",
       "stars": 5,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-case",
@@ -2174,9 +1780,7 @@
       "ghUrl": "https://github.com/eitanwass/pytest-case",
       "pypiUrl": "https://pypi.org/project/pytest-case/",
       "stars": 4,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-matcher",
@@ -2185,9 +1789,7 @@
       "ghUrl": "https://github.com/zaufi/pytest-matcher",
       "pypiUrl": "https://pypi.org/project/pytest-matcher/",
       "stars": 4,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "qase-pytest",
@@ -2196,9 +1798,7 @@
       "ghUrl": "https://github.com/qase-tms/qase-pytest",
       "pypiUrl": "https://pypi.org/project/qase-pytest/",
       "stars": 4,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-unittest-filter",
@@ -2207,9 +1807,7 @@
       "ghUrl": "https://github.com/un-def/pytest-unittest-filter",
       "pypiUrl": "https://pypi.org/project/pytest-unittest-filter/",
       "stars": 4,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-ranking",
@@ -2218,9 +1816,7 @@
       "ghUrl": "https://github.com/softwareTestingResearch/pytest-ranking",
       "pypiUrl": "https://pypi.org/project/pytest-ranking/",
       "stars": 4,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-simple-settings",
@@ -2229,9 +1825,7 @@
       "ghUrl": "https://github.com/tkukushkin/pytest-simple-settings",
       "pypiUrl": "https://pypi.org/project/pytest-simple-settings/",
       "stars": 4,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-cli-fixtures",
@@ -2240,9 +1834,7 @@
       "ghUrl": "https://github.com/inkychris/pytest-cli-fixtures",
       "pypiUrl": "https://pypi.org/project/pytest-cli-fixtures/",
       "stars": 4,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-statsd",
@@ -2251,9 +1843,7 @@
       "ghUrl": "https://github.com/jlane9/pytest-statsd",
       "pypiUrl": "https://pypi.org/project/pytest-statsd/",
       "stars": 4,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-email",
@@ -2262,9 +1852,7 @@
       "ghUrl": "https://github.com/adiralashiva8/pytest-email",
       "pypiUrl": "https://pypi.org/project/pytest-email/",
       "stars": 4,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-resource-usage",
@@ -2273,9 +1861,7 @@
       "ghUrl": "https://github.com/joukewitteveen/pytest-resource-usage",
       "pypiUrl": "https://pypi.org/project/pytest-resource-usage/",
       "stars": 4,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "testiq",
@@ -2284,9 +1870,7 @@
       "ghUrl": "https://github.com/pydevtools/TestIQ",
       "pypiUrl": "https://pypi.org/project/testiq/",
       "stars": 4,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-static",
@@ -2295,9 +1879,7 @@
       "ghUrl": "https://github.com/56kyle/pytest-static",
       "pypiUrl": "https://pypi.org/project/pytest-static/",
       "stars": 4,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-pinpoint",
@@ -2306,9 +1888,7 @@
       "ghUrl": "https://github.com/Generalized-SBFL/pytest-pinpoint",
       "pypiUrl": "https://pypi.org/project/pytest-pinpoint/",
       "stars": 4,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "flask_fixture",
@@ -2317,9 +1897,7 @@
       "ghUrl": "https://github.com/pomponchik/flask_fixture",
       "pypiUrl": "https://pypi.org/project/flask_fixture/",
       "stars": 4,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-markers-presence",
@@ -2328,9 +1906,7 @@
       "ghUrl": "https://github.com/livestreamx/pytest-markers-presence",
       "pypiUrl": "https://pypi.org/project/pytest-markers-presence/",
       "stars": 4,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-hardware-test-report",
@@ -2339,9 +1915,7 @@
       "ghUrl": "https://github.com/trottmpq/pytest-hardware-test-report",
       "pypiUrl": "https://pypi.org/project/pytest-hardware-test-report/",
       "stars": 4,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-isolated",
@@ -2350,9 +1924,7 @@
       "ghUrl": "https://github.com/dyollb/pytest-isolated",
       "pypiUrl": "https://pypi.org/project/pytest-isolated/",
       "stars": 4,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-fixture-forms",
@@ -2361,9 +1933,7 @@
       "ghUrl": "https://github.com/Eliav2/pytest-fixture-forms",
       "pypiUrl": "https://pypi.org/project/pytest-fixture-forms/",
       "stars": 4,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-notimplemented",
@@ -2372,9 +1942,7 @@
       "ghUrl": "https://github.com/neimad/pytest-notimplemented",
       "pypiUrl": "https://pypi.org/project/pytest-notimplemented/",
       "stars": 3,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-portion",
@@ -2383,9 +1951,7 @@
       "ghUrl": "https://github.com/mgaitan/pytest-portion",
       "pypiUrl": "https://pypi.org/project/pytest-portion/",
       "stars": 3,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-bdd-html",
@@ -2394,9 +1960,7 @@
       "ghUrl": "https://github.com/slavos1/pytest-bdd-html",
       "pypiUrl": "https://pypi.org/project/pytest-bdd-html/",
       "stars": 3,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-sipp",
@@ -2405,9 +1969,7 @@
       "ghUrl": "https://github.com/sangoma/pytest-sipp",
       "pypiUrl": "https://pypi.org/project/pytest-sipp/",
       "stars": 3,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-prometheus-pushgateway",
@@ -2416,9 +1978,7 @@
       "ghUrl": "https://github.com/treussart/pytest-prometheus-pushgateway",
       "pypiUrl": "https://pypi.org/project/pytest-prometheus-pushgateway/",
       "stars": 3,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-plugins",
@@ -2427,9 +1987,7 @@
       "ghUrl": "https://github.com/exasol/pytest-plugins",
       "pypiUrl": "https://pypi.org/project/pytest-plugins/",
       "stars": 3,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-testrail-reporter",
@@ -2438,9 +1996,7 @@
       "ghUrl": "https://github.com/VStoilovskyi/pytest-testrail-reporter",
       "pypiUrl": "https://pypi.org/project/pytest-testrail-reporter/",
       "stars": 3,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "nydok",
@@ -2449,9 +2005,7 @@
       "ghUrl": "https://github.com/nykodetherapeutics/nydok",
       "pypiUrl": "https://pypi.org/project/nydok/",
       "stars": 3,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "type_comparable",
@@ -2460,9 +2014,7 @@
       "ghUrl": "https://github.com/sirkonst/type_comparable",
       "pypiUrl": "https://pypi.org/project/type_comparable/",
       "stars": 3,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-pytestrail",
@@ -2471,9 +2023,7 @@
       "ghUrl": "https://github.com/tolstislon/pytest-pytestrail",
       "pypiUrl": "https://pypi.org/project/pytest-pytestrail/",
       "stars": 3,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-smoke",
@@ -2482,9 +2032,7 @@
       "ghUrl": "https://github.com/yugokato/pytest-smoke",
       "pypiUrl": "https://pypi.org/project/pytest-smoke/",
       "stars": 3,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-git-diff",
@@ -2493,9 +2041,7 @@
       "ghUrl": "https://github.com/sponja23/pytest-git-diff",
       "pypiUrl": "https://pypi.org/project/pytest-git-diff/",
       "stars": 3,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-failed-to-verify",
@@ -2504,9 +2050,7 @@
       "ghUrl": "https://github.com/lightspeed-g-series/pytest-failed-to-verify",
       "pypiUrl": "https://pypi.org/project/pytest-failed-to-verify/",
       "stars": 3,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "saritasa-drf-tools",
@@ -2515,9 +2059,7 @@
       "ghUrl": "https://github.com/saritasa-nest/saritasa-drf-tools",
       "pypiUrl": "https://pypi.org/project/saritasa-drf-tools/",
       "stars": 3,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-catch-server",
@@ -2526,9 +2068,7 @@
       "ghUrl": "https://github.com/kiwicom/pytest-catch-server",
       "pypiUrl": "https://pypi.org/project/pytest-catch-server/",
       "stars": 3,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-qatouch",
@@ -2537,9 +2077,7 @@
       "ghUrl": "https://github.com/MohamedRaslan/pytest-qatouch",
       "pypiUrl": "https://pypi.org/project/pytest-qatouch/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytestplugin",
@@ -2548,9 +2086,7 @@
       "ghUrl": "https://github.com/GatorIncubator/PytestPlugin",
       "pypiUrl": "https://pypi.org/project/pytestplugin/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pypm-test",
@@ -2559,9 +2095,7 @@
       "ghUrl": "https://github.com/ammarkh95/pypm-test",
       "pypiUrl": "https://pypi.org/project/pypm-test/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-streaming",
@@ -2570,9 +2104,7 @@
       "ghUrl": "https://github.com/nachatz/pytest-streaming",
       "pypiUrl": "https://pypi.org/project/pytest-streaming/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-shared-session-scope",
@@ -2581,9 +2113,7 @@
       "ghUrl": "https://github.com/StefanBRas/pytest-shared-session-scope",
       "pypiUrl": "https://pypi.org/project/pytest-shared-session-scope/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-remove-stale-bytecode",
@@ -2592,9 +2122,7 @@
       "ghUrl": "https://github.com/minddistrict/pytest-remove-stale-bytecode",
       "pypiUrl": "https://pypi.org/project/pytest-remove-stale-bytecode/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-nginx",
@@ -2603,9 +2131,7 @@
       "ghUrl": "https://github.com/lahwaacz/pytest-nginx",
       "pypiUrl": "https://pypi.org/project/pytest-nginx/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-metrics",
@@ -2614,9 +2140,7 @@
       "ghUrl": "https://github.com/adiralashiva8/pytest-metrics",
       "pypiUrl": "https://pypi.org/project/pytest-metrics/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-overwatch",
@@ -2625,9 +2149,7 @@
       "ghUrl": "https://github.com/squiddy/pytest-overwatch",
       "pypiUrl": "https://pypi.org/project/pytest-overwatch/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-pyreport",
@@ -2636,9 +2158,7 @@
       "ghUrl": "https://github.com/ToghrulMirzayev/pytest-pyreport",
       "pypiUrl": "https://pypi.org/project/pytest-pyreport/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "hytest",
@@ -2647,9 +2167,7 @@
       "ghUrl": "https://github.com/vodik/hytest",
       "pypiUrl": "https://pypi.org/project/hytest/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-upload-report",
@@ -2658,9 +2176,7 @@
       "ghUrl": "https://github.com/tim2anna/pytest-upload-report",
       "pypiUrl": "https://pypi.org/project/pytest-upload-report/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-codeblock",
@@ -2669,9 +2185,7 @@
       "ghUrl": "https://github.com/barseghyanartur/pytest-codeblock",
       "pypiUrl": "https://pypi.org/project/pytest-codeblock/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-cmake-presets",
@@ -2680,9 +2194,7 @@
       "ghUrl": "https://github.com/ixm-one/pytest-cmake-presets",
       "pypiUrl": "https://pypi.org/project/pytest-cmake-presets/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-selenium-example",
@@ -2691,9 +2203,7 @@
       "ghUrl": "https://github.com/Pytest-with-Eric/pytest-selenium-example",
       "pypiUrl": "https://pypi.org/project/pytest-selenium-example/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "api-coverage",
@@ -2702,9 +2212,7 @@
       "ghUrl": "https://github.com/BarnabasG/api-coverage",
       "pypiUrl": "https://pypi.org/project/api-coverage/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-focus",
@@ -2713,9 +2221,7 @@
       "ghUrl": "https://github.com/inTestiGator/pytest-focus",
       "pypiUrl": "https://pypi.org/project/pytest-focus/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-html-dashboard",
@@ -2724,9 +2230,7 @@
       "ghUrl": "https://github.com/nireshs/pytest-html-dashboard",
       "pypiUrl": "https://pypi.org/project/pytest-html-dashboard/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-mark-no-py3",
@@ -2735,9 +2239,7 @@
       "ghUrl": "https://github.com/GoodRx/pytest-mark-no-py3",
       "pypiUrl": "https://pypi.org/project/pytest-mark-no-py3/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-asptest",
@@ -2746,9 +2248,7 @@
       "ghUrl": "https://github.com/Aluriak/pytest-asptest",
       "pypiUrl": "https://pypi.org/project/pytest-asptest/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-report-jinja",
@@ -2757,9 +2257,7 @@
       "ghUrl": "https://github.com/dzerrenner/pytest-report-jinja",
       "pypiUrl": "https://pypi.org/project/pytest-report-jinja/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-sandbox",
@@ -2768,9 +2266,7 @@
       "ghUrl": "https://github.com/natsukium/pytest-sandbox",
       "pypiUrl": "https://pypi.org/project/pytest-sandbox/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "flake8_module_name",
@@ -2779,9 +2275,7 @@
       "ghUrl": "https://github.com/Ohjeah/flake8_module_name",
       "pypiUrl": "https://pypi.org/project/flake8_module_name/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-requests",
@@ -2790,9 +2284,7 @@
       "ghUrl": "https://github.com/mariocesar/pytest-requests",
       "pypiUrl": "https://pypi.org/project/pytest-requests/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-asgi-server",
@@ -2801,9 +2293,7 @@
       "ghUrl": "https://github.com/garytyler/pytest-asgi-server",
       "pypiUrl": "https://pypi.org/project/pytest-asgi-server/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-pythonhashseed",
@@ -2812,9 +2302,7 @@
       "ghUrl": "https://github.com/mr-mixas/pytest-pythonhashseed",
       "pypiUrl": "https://pypi.org/project/pytest-pythonhashseed/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-match-skip",
@@ -2823,9 +2311,7 @@
       "ghUrl": "https://github.com/jsfehler/pytest-match-skip",
       "pypiUrl": "https://pypi.org/project/pytest-match-skip/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-info-collector",
@@ -2834,9 +2320,7 @@
       "ghUrl": "https://github.com/aragilar/pytest-info-collector",
       "pypiUrl": "https://pypi.org/project/pytest-info-collector/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest_cache_assert",
@@ -2845,9 +2329,7 @@
       "ghUrl": "https://github.com/KyleKing/pytest_cache_assert",
       "pypiUrl": "https://pypi.org/project/pytest_cache_assert/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-routes",
@@ -2856,9 +2338,7 @@
       "ghUrl": "https://github.com/JacobCoffee/pytest-routes",
       "pypiUrl": "https://pypi.org/project/pytest-routes/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-report-stream",
@@ -2867,9 +2347,7 @@
       "ghUrl": "https://github.com/kolitiri/pytest-report-stream",
       "pypiUrl": "https://pypi.org/project/pytest-report-stream/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-eval",
@@ -2878,9 +2356,7 @@
       "ghUrl": "https://github.com/doganarif/pytest-eval",
       "pypiUrl": "https://pypi.org/project/pytest-eval/",
       "stars": 2,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest_filter_case",
@@ -2889,9 +2365,7 @@
       "ghUrl": "https://github.com/Jason916/pytest_filter_case",
       "pypiUrl": "https://pypi.org/project/pytest_filter_case/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "python-selenium-webdriver",
@@ -2900,9 +2374,7 @@
       "ghUrl": "https://github.com/rafaeldalvas/python-selenium-webdriver",
       "pypiUrl": "https://pypi.org/project/python-selenium-webdriver/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-tzshift",
@@ -2911,9 +2383,7 @@
       "ghUrl": "https://github.com/spedr/pytest-tzshift",
       "pypiUrl": "https://pypi.org/project/pytest-tzshift/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-yamltree",
@@ -2922,9 +2392,7 @@
       "ghUrl": "https://github.com/MarSoft/pytest-yamltree",
       "pypiUrl": "https://pypi.org/project/pytest-yamltree/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-bug",
@@ -2933,9 +2401,7 @@
       "ghUrl": "https://github.com/tolstislon/pytest-bug",
       "pypiUrl": "https://pypi.org/project/pytest-bug/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-libfaketime",
@@ -2944,9 +2410,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-libfaketime",
       "pypiUrl": "https://pypi.org/project/pytest-libfaketime/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-variant",
@@ -2955,9 +2419,7 @@
       "ghUrl": "https://github.com/c4deszes/pytest-variant",
       "pypiUrl": "https://pypi.org/project/pytest-variant/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-ini",
@@ -2966,9 +2428,7 @@
       "ghUrl": "https://github.com/hanzhichao/pytest-ini",
       "pypiUrl": "https://pypi.org/project/pytest-ini/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-publish",
@@ -2977,9 +2437,7 @@
       "ghUrl": "https://github.com/yuvalino/pytest-publish",
       "pypiUrl": "https://pypi.org/project/pytest-publish/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "tinyvdiff",
@@ -2988,9 +2446,7 @@
       "ghUrl": "https://github.com/nanxstats/tinyvdiff",
       "pypiUrl": "https://pypi.org/project/tinyvdiff/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "agentprobe-framework",
@@ -2999,9 +2455,7 @@
       "ghUrl": "https://github.com/dyrach1o/agentprobe-framework",
       "pypiUrl": "https://pypi.org/project/agentprobe-framework/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-doctest-import",
@@ -3010,9 +2464,7 @@
       "ghUrl": "https://github.com/rossmacarthur/pytest-doctest-import",
       "pypiUrl": "https://pypi.org/project/pytest-doctest-import/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-retry-class",
@@ -3021,9 +2473,7 @@
       "ghUrl": "https://github.com/Abhishekvaish/pytest-retry-class",
       "pypiUrl": "https://pypi.org/project/pytest-retry-class/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-gcs",
@@ -3032,9 +2482,7 @@
       "ghUrl": "https://github.com/Poogles/pytest-gcs",
       "pypiUrl": "https://pypi.org/project/pytest-gcs/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-shabang",
@@ -3043,9 +2491,7 @@
       "ghUrl": "https://github.com/fruch/pytest-shabang",
       "pypiUrl": "https://pypi.org/project/pytest-shabang/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-tape",
@@ -3054,9 +2500,7 @@
       "ghUrl": "https://github.com/a-chugunov/pytest-tape",
       "pypiUrl": "https://pypi.org/project/pytest-tape/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-owner",
@@ -3065,9 +2509,7 @@
       "ghUrl": "https://github.com/hanzhichao/pytest-owner",
       "pypiUrl": "https://pypi.org/project/pytest-owner/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-xmlcomp",
@@ -3076,9 +2518,7 @@
       "ghUrl": "https://github.com/openSUSE/pytest-xmlcomp",
       "pypiUrl": "https://pypi.org/project/pytest-xmlcomp/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "selenium-framework-python",
@@ -3087,9 +2527,7 @@
       "ghUrl": "https://github.com/Tesseract-coder/Selenium-Framework-Python",
       "pypiUrl": "https://pypi.org/project/selenium-framework-python/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-cratedb",
@@ -3098,9 +2536,7 @@
       "ghUrl": "https://github.com/crate/pytest-cratedb",
       "pypiUrl": "https://pypi.org/project/pytest-cratedb/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-parametrization-annotation",
@@ -3109,9 +2545,7 @@
       "ghUrl": "https://github.com/skeletorXVI/pytest-parametrization-annotation",
       "pypiUrl": "https://pypi.org/project/pytest-parametrization-annotation/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-zulip",
@@ -3120,9 +2554,7 @@
       "ghUrl": "https://github.com/treussart/pytest-zulip",
       "pypiUrl": "https://pypi.org/project/pytest-zulip/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-remote-response",
@@ -3131,9 +2563,7 @@
       "ghUrl": "https://github.com/devanshshukla99/pytest-remote-response",
       "pypiUrl": "https://pypi.org/project/pytest-remote-response/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-aiofiles",
@@ -3142,9 +2572,7 @@
       "ghUrl": "https://github.com/buhman/pytest-aiofiles",
       "pypiUrl": "https://pypi.org/project/pytest-aiofiles/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-rt",
@@ -3153,9 +2581,7 @@
       "ghUrl": "https://github.com/and-sm/pytest-rt",
       "pypiUrl": "https://pypi.org/project/pytest-rt/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-litter",
@@ -3164,9 +2590,7 @@
       "ghUrl": "https://github.com/mam-dev/pytest-litter",
       "pypiUrl": "https://pypi.org/project/pytest-litter/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-case-provider",
@@ -3175,9 +2599,7 @@
       "ghUrl": "https://github.com/zerlok/pytest-case-provider",
       "pypiUrl": "https://pypi.org/project/pytest-case-provider/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-trace",
@@ -3186,9 +2608,7 @@
       "ghUrl": "https://github.com/scttnlsn/pytest-trace",
       "pypiUrl": "https://pypi.org/project/pytest-trace/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-testcontainers-compose",
@@ -3197,9 +2617,7 @@
       "ghUrl": "https://github.com/bakdata/pytest-testcontainers-compose",
       "pypiUrl": "https://pypi.org/project/pytest-testcontainers-compose/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-isolate-mpi",
@@ -3208,9 +2626,7 @@
       "ghUrl": "https://github.com/dlr-sp/pytest-isolate-mpi",
       "pypiUrl": "https://pypi.org/project/pytest-isolate-mpi/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-instrument",
@@ -3219,9 +2635,7 @@
       "ghUrl": "https://github.com/j19sch/pytest-instrument",
       "pypiUrl": "https://pypi.org/project/pytest-instrument/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-errxfail",
@@ -3230,9 +2644,7 @@
       "ghUrl": "https://github.com/eltimen/pytest-errxfail",
       "pypiUrl": "https://pypi.org/project/pytest-errxfail/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-kasima",
@@ -3241,9 +2653,7 @@
       "ghUrl": "https://github.com/k4sima/pytest-kasima",
       "pypiUrl": "https://pypi.org/project/pytest-kasima/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-evm",
@@ -3252,9 +2662,7 @@
       "ghUrl": "https://github.com/CrocoFactory/pytest-evm",
       "pypiUrl": "https://pypi.org/project/pytest-evm/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "bypass-bot-api",
@@ -3263,9 +2671,7 @@
       "ghUrl": "https://github.com/karolekk001/Bypass-Bot-Api",
       "pypiUrl": "https://pypi.org/project/bypass-bot-api/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-encourage",
@@ -3274,9 +2680,7 @@
       "ghUrl": "https://github.com/inTestiGator/pytest-encourage",
       "pypiUrl": "https://pypi.org/project/pytest-encourage/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-blame",
@@ -3285,9 +2689,7 @@
       "ghUrl": "https://github.com/inTestiGator/pytest-blame",
       "pypiUrl": "https://pypi.org/project/pytest-blame/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-minecraft",
@@ -3296,9 +2698,7 @@
       "ghUrl": "https://github.com/vberlier/pytest-minecraft",
       "pypiUrl": "https://pypi.org/project/pytest-minecraft/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-scim2-server",
@@ -3307,9 +2707,7 @@
       "ghUrl": "https://github.com/pytest-dev/pytest-scim2-server",
       "pypiUrl": "https://pypi.org/project/pytest-scim2-server/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-update-test-results",
@@ -3318,9 +2716,7 @@
       "ghUrl": "https://github.com/ESSS/pytest-update-test-results",
       "pypiUrl": "https://pypi.org/project/pytest-update-test-results/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "ragaliq",
@@ -3329,9 +2725,7 @@
       "ghUrl": "https://github.com/dariero/RagaliQ",
       "pypiUrl": "https://pypi.org/project/ragaliq/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-nogarbage",
@@ -3340,9 +2734,7 @@
       "ghUrl": "https://github.com/mvollrath/pytest-nogarbage",
       "pypiUrl": "https://pypi.org/project/pytest-nogarbage/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "hypothesis-property-based-testing",
@@ -3351,9 +2743,7 @@
       "ghUrl": "https://github.com/JBris/hypothesis-property-based-testing",
       "pypiUrl": "https://pypi.org/project/hypothesis-property-based-testing/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-unasync",
@@ -3362,9 +2752,7 @@
       "ghUrl": "https://github.com/florimondmanca/pytest-unasync",
       "pypiUrl": "https://pypi.org/project/pytest-unasync/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-operator",
@@ -3373,9 +2761,7 @@
       "ghUrl": "https://github.com/adam-stokes/pytest-operator",
       "pypiUrl": "https://pypi.org/project/pytest-operator/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-ditto",
@@ -3384,9 +2770,7 @@
       "ghUrl": "https://github.com/owlowlyowl/pytest-ditto",
       "pypiUrl": "https://pypi.org/project/pytest-ditto/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "handshake",
@@ -3395,9 +2779,7 @@
       "ghUrl": "https://github.com/RahulARanger/handshake",
       "pypiUrl": "https://pypi.org/project/handshake/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-markers-example",
@@ -3406,9 +2788,7 @@
       "ghUrl": "https://github.com/Pytest-with-Eric/pytest-markers-example",
       "pypiUrl": "https://pypi.org/project/pytest-markers-example/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-ckan",
@@ -3417,9 +2797,7 @@
       "ghUrl": "https://github.com/datopian/pytest-ckan",
       "pypiUrl": "https://pypi.org/project/pytest-ckan/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "loxygen",
@@ -3428,9 +2806,7 @@
       "ghUrl": "https://github.com/HomoKubrickus/loxygen",
       "pypiUrl": "https://pypi.org/project/loxygen/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-intercept-remote",
@@ -3439,9 +2815,7 @@
       "ghUrl": "https://github.com/devanshshukla99/pytest-intercept-remote",
       "pypiUrl": "https://pypi.org/project/pytest-intercept-remote/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "mce-lib-aws",
@@ -3450,9 +2824,7 @@
       "ghUrl": "https://github.com/multi-cloud-explorer/mce-lib-aws",
       "pypiUrl": "https://pypi.org/project/mce-lib-aws/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-honey",
@@ -3461,9 +2833,7 @@
       "ghUrl": "https://github.com/heykarimoff/pytest-honey",
       "pypiUrl": "https://pypi.org/project/pytest-honey/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-opentmi",
@@ -3472,9 +2842,7 @@
       "ghUrl": "https://github.com/OpenTMI/pytest-opentmi",
       "pypiUrl": "https://pypi.org/project/pytest-opentmi/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "testcato",
@@ -3483,9 +2851,7 @@
       "ghUrl": "https://github.com/anurag03/testcato",
       "pypiUrl": "https://pypi.org/project/testcato/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-odc",
@@ -3494,9 +2860,7 @@
       "ghUrl": "https://github.com/opendatacube/pytest-odc",
       "pypiUrl": "https://pypi.org/project/pytest-odc/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-psqlgraph",
@@ -3505,9 +2869,7 @@
       "ghUrl": "https://github.com/kulgan/pytest-psqlgraph",
       "pypiUrl": "https://pypi.org/project/pytest-psqlgraph/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "fastapi-checks",
@@ -3516,9 +2878,7 @@
       "ghUrl": "https://github.com/alixlahuec/fastapi-checks",
       "pypiUrl": "https://pypi.org/project/fastapi-checks/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-monitor-osxp21-slides",
@@ -3527,9 +2887,7 @@
       "ghUrl": "https://github.com/flzara/pytest-monitor-osxp21-slides",
       "pypiUrl": "https://pypi.org/project/pytest-monitor-osxp21-slides/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-passrunner",
@@ -3538,9 +2896,7 @@
       "ghUrl": "https://github.com/1313e/pytest-passrunner",
       "pypiUrl": "https://pypi.org/project/pytest-passrunner/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "tom-python",
@@ -3549,9 +2905,7 @@
       "ghUrl": "https://github.com/xxl4tomxu98/tom-python",
       "pypiUrl": "https://pypi.org/project/tom-python/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "failextract",
@@ -3560,9 +2914,7 @@
       "ghUrl": "https://github.com/dingo-actual/failextract",
       "pypiUrl": "https://pypi.org/project/failextract/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-exceptional",
@@ -3571,9 +2923,7 @@
       "ghUrl": "https://github.com/vodik/pytest-exceptional",
       "pypiUrl": "https://pypi.org/project/pytest-exceptional/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-revealtype-injector",
@@ -3582,9 +2932,7 @@
       "ghUrl": "https://github.com/abelcheung/pytest-revealtype-injector",
       "pypiUrl": "https://pypi.org/project/pytest-revealtype-injector/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-lockable",
@@ -3593,9 +2941,7 @@
       "ghUrl": "https://github.com/jupe/pytest-lockable",
       "pypiUrl": "https://pypi.org/project/pytest-lockable/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-checklist",
@@ -3604,9 +2950,7 @@
       "ghUrl": "https://github.com/examol-corp/pytest-checklist",
       "pypiUrl": "https://pypi.org/project/pytest-checklist/",
       "stars": 1,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-disrupt",
@@ -3615,9 +2959,7 @@
       "ghUrl": "https://github.com/grafuls/pytest-disrupt",
       "pypiUrl": "https://pypi.org/project/pytest-disrupt/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-exception-script",
@@ -3626,9 +2968,7 @@
       "ghUrl": "https://github.com/qporest/pytest-exception-script",
       "pypiUrl": "https://pypi.org/project/pytest-exception-script/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-inject",
@@ -3637,9 +2977,7 @@
       "ghUrl": "https://github.com/liad-inon/pytest-inject",
       "pypiUrl": "https://pypi.org/project/pytest-inject/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "basic_pytest",
@@ -3648,9 +2986,7 @@
       "ghUrl": "https://github.com/Fidencio-Codes/basic_pytest",
       "pypiUrl": "https://pypi.org/project/basic_pytest/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-addoption-example",
@@ -3659,9 +2995,7 @@
       "ghUrl": "https://github.com/Pytest-with-Eric/pytest-addoption-example",
       "pypiUrl": "https://pypi.org/project/pytest-addoption-example/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-pt",
@@ -3670,9 +3004,7 @@
       "ghUrl": "https://github.com/cynic-net/pytest-pt",
       "pypiUrl": "https://pypi.org/project/pytest-pt/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "elefast-example-uv-monorepo",
@@ -3681,9 +3013,7 @@
       "ghUrl": "https://github.com/NiclasvanEyk/elefast-example-uv-monorepo",
       "pypiUrl": "https://pypi.org/project/elefast-example-uv-monorepo/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-llm-assert",
@@ -3692,9 +3022,7 @@
       "ghUrl": "https://github.com/sbroenne/pytest-llm-assert",
       "pypiUrl": "https://pypi.org/project/pytest-llm-assert/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-neon",
@@ -3703,9 +3031,7 @@
       "ghUrl": "https://github.com/ZainRizvi/pytest-neon",
       "pypiUrl": "https://pypi.org/project/pytest-neon/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-richtrace",
@@ -3714,9 +3040,7 @@
       "ghUrl": "https://github.com/sffjunkie/pytest-richtrace",
       "pypiUrl": "https://pypi.org/project/pytest-richtrace/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-squadcast",
@@ -3725,9 +3049,7 @@
       "ghUrl": "https://github.com/treussart/pytest-squadcast",
       "pypiUrl": "https://pypi.org/project/pytest-squadcast/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "sqla-plugins",
@@ -3736,9 +3058,7 @@
       "ghUrl": "https://github.com/datek/sqla-plugins",
       "pypiUrl": "https://pypi.org/project/sqla-plugins/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-brightest",
@@ -3747,9 +3067,7 @@
       "ghUrl": "https://github.com/AstuteSource/pytest-brightest",
       "pypiUrl": "https://pypi.org/project/pytest-brightest/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "run-pytest-in-vscode-example",
@@ -3758,9 +3076,7 @@
       "ghUrl": "https://github.com/Pytest-with-Eric/run-pytest-in-vscode-example",
       "pypiUrl": "https://pypi.org/project/run-pytest-in-vscode-example/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "qmetry-pytest",
@@ -3769,9 +3085,7 @@
       "ghUrl": "https://github.com/prashanth-sams/qmetry-pytest",
       "pypiUrl": "https://pypi.org/project/qmetry-pytest/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-aiosip",
@@ -3780,9 +3094,7 @@
       "ghUrl": "https://github.com/sangoma/pytest-aiosip",
       "pypiUrl": "https://pypi.org/project/pytest-aiosip/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-oduit",
@@ -3791,9 +3103,7 @@
       "ghUrl": "https://github.com/oduit/pytest-oduit",
       "pypiUrl": "https://pypi.org/project/pytest-oduit/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-rerunclassfailures",
@@ -3802,9 +3112,7 @@
       "ghUrl": "https://github.com/wwakabobik/pytest-rerunclassfailures",
       "pypiUrl": "https://pypi.org/project/pytest-rerunclassfailures/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-enhanced",
@@ -3813,9 +3121,7 @@
       "ghUrl": "https://github.com/pgnikolov/pytest-enhanced",
       "pypiUrl": "https://pypi.org/project/pytest-enhanced/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-pickle-cache",
@@ -3824,9 +3130,7 @@
       "ghUrl": "https://github.com/daizutabi/pytest-pickle-cache",
       "pypiUrl": "https://pypi.org/project/pytest-pickle-cache/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-logfest",
@@ -3835,9 +3139,7 @@
       "ghUrl": "https://github.com/j19sch/pytest-logfest",
       "pypiUrl": "https://pypi.org/project/pytest-logfest/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-jupyter_kernel",
@@ -3846,9 +3148,7 @@
       "ghUrl": "https://github.com/yitzchak/pytest-jupyter_kernel",
       "pypiUrl": "https://pypi.org/project/pytest-jupyter_kernel/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "llm-assert",
@@ -3857,9 +3157,7 @@
       "ghUrl": "https://github.com/moonrunnerkc/llm-assert",
       "pypiUrl": "https://pypi.org/project/llm-assert/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-extra-markers",
@@ -3868,9 +3166,7 @@
       "ghUrl": "https://github.com/iwishiwasaneagle/pytest-extra-markers",
       "pypiUrl": "https://pypi.org/project/pytest-extra-markers/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-object-getter",
@@ -3879,9 +3175,7 @@
       "ghUrl": "https://github.com/boromir674/pytest-object-getter",
       "pypiUrl": "https://pypi.org/project/pytest-object-getter/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-prefer-nested-dup-tests",
@@ -3890,9 +3184,7 @@
       "ghUrl": "https://github.com/MarximusMaximus/pytest-prefer-nested-dup-tests",
       "pypiUrl": "https://pypi.org/project/pytest-prefer-nested-dup-tests/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "fastapi-mongo",
@@ -3901,9 +3193,7 @@
       "ghUrl": "https://github.com/reinaldoper/fastAPI-mongo",
       "pypiUrl": "https://pypi.org/project/fastapi-mongo/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-report",
@@ -3912,9 +3202,7 @@
       "ghUrl": "https://github.com/Hedriss10/pytest-report",
       "pypiUrl": "https://pypi.org/project/pytest-report/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-fixture-not-found-example",
@@ -3923,9 +3211,7 @@
       "ghUrl": "https://github.com/Pytest-with-Eric/pytest-fixture-not-found-example",
       "pypiUrl": "https://pypi.org/project/pytest-fixture-not-found-example/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-phmdoctest",
@@ -3934,9 +3220,7 @@
       "ghUrl": "https://github.com/tmarktaylor/pytest-phmdoctest",
       "pypiUrl": "https://pypi.org/project/pytest-phmdoctest/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-insight",
@@ -3945,9 +3229,7 @@
       "ghUrl": "https://github.com/jeffwright13/pytest-insight",
       "pypiUrl": "https://pypi.org/project/pytest-insight/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "errodex",
@@ -3956,9 +3238,7 @@
       "ghUrl": "https://github.com/jgfranco17/errodex",
       "pypiUrl": "https://pypi.org/project/errodex/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "xarray-regressions",
@@ -3967,9 +3247,7 @@
       "ghUrl": "https://github.com/aazuspan/xarray-regressions",
       "pypiUrl": "https://pypi.org/project/xarray-regressions/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "robotics_tdd",
@@ -3978,9 +3256,7 @@
       "ghUrl": "https://github.com/luckyjoy/robotics_tdd",
       "pypiUrl": "https://pypi.org/project/robotics_tdd/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-data-loader",
@@ -3989,9 +3265,7 @@
       "ghUrl": "https://github.com/yugokato/pytest-data-loader",
       "pypiUrl": "https://pypi.org/project/pytest-data-loader/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-fleetflakefinder",
@@ -4000,9 +3274,7 @@
       "ghUrl": "https://github.com/testprogress/pytest-fleetflakefinder",
       "pypiUrl": "https://pypi.org/project/pytest-fleetflakefinder/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "command-mock",
@@ -4011,9 +3283,7 @@
       "ghUrl": "https://github.com/elifarley/command-mock",
       "pypiUrl": "https://pypi.org/project/command-mock/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-extension",
@@ -4022,9 +3292,7 @@
       "ghUrl": "https://github.com/exasol/pytest-extension",
       "pypiUrl": "https://pypi.org/project/pytest-extension/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-lets-explore",
@@ -4033,9 +3301,7 @@
       "ghUrl": "https://github.com/mvousden/pytest-lets-explore",
       "pypiUrl": "https://pypi.org/project/pytest-lets-explore/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-informative-node",
@@ -4044,9 +3310,7 @@
       "ghUrl": "https://github.com/megachweng/pytest-informative-node",
       "pypiUrl": "https://pypi.org/project/pytest-informative-node/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest_simplified",
@@ -4055,9 +3319,7 @@
       "ghUrl": "https://github.com/nofusscomputing/pytest_simplified",
       "pypiUrl": "https://pypi.org/project/pytest_simplified/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-claude-agent-sdk",
@@ -4066,9 +3328,7 @@
       "ghUrl": "https://github.com/amyodov/pytest-claude-agent-sdk",
       "pypiUrl": "https://pypi.org/project/pytest-claude-agent-sdk/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "python-testing",
@@ -4077,9 +3337,7 @@
       "ghUrl": "https://github.com/apathetic-tools/python-testing",
       "pypiUrl": "https://pypi.org/project/python-testing/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-httpchain",
@@ -4088,9 +3346,7 @@
       "ghUrl": "https://github.com/aeresov/pytest-httpchain",
       "pypiUrl": "https://pypi.org/project/pytest-httpchain/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-power",
@@ -4099,9 +3355,7 @@
       "ghUrl": "https://github.com/NL-ix/pytest-power",
       "pypiUrl": "https://pypi.org/project/pytest-power/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-tiny-api-client",
@@ -4110,9 +3364,7 @@
       "ghUrl": "https://github.com/sanjacob/pytest-tiny-api-client",
       "pypiUrl": "https://pypi.org/project/pytest-tiny-api-client/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-jasmine",
@@ -4121,9 +3373,7 @@
       "ghUrl": "https://github.com/dwoz/pytest-jasmine",
       "pypiUrl": "https://pypi.org/project/pytest-jasmine/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-spug-2017",
@@ -4132,9 +3382,7 @@
       "ghUrl": "https://github.com/mvousden/pytest-spug-2017",
       "pypiUrl": "https://pypi.org/project/pytest-spug-2017/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-pretty-terminal",
@@ -4143,9 +3391,7 @@
       "ghUrl": "https://github.com/devolo/pytest-pretty-terminal",
       "pypiUrl": "https://pypi.org/project/pytest-pretty-terminal/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-jsonverdict",
@@ -4154,9 +3400,7 @@
       "ghUrl": "https://github.com/dzerrenner/pytest-jsonverdict",
       "pypiUrl": "https://pypi.org/project/pytest-jsonverdict/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "divide-and-cover",
@@ -4165,9 +3409,7 @@
       "ghUrl": "https://github.com/mwchase/divide-and-cover",
       "pypiUrl": "https://pypi.org/project/divide-and-cover/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-html-object-storage",
@@ -4176,9 +3418,7 @@
       "ghUrl": "https://github.com/treussart/pytest-html-object-storage",
       "pypiUrl": "https://pypi.org/project/pytest-html-object-storage/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-terra-fixt",
@@ -4187,9 +3427,7 @@
       "ghUrl": "https://github.com/marshall7m/pytest-terra-fixt",
       "pypiUrl": "https://pypi.org/project/pytest-terra-fixt/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-regex-dependency",
@@ -4198,9 +3436,7 @@
       "ghUrl": "https://github.com/marshall7m/pytest-regex-dependency",
       "pypiUrl": "https://pypi.org/project/pytest-regex-dependency/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-dataplugin",
@@ -4209,9 +3445,7 @@
       "ghUrl": "https://github.com/dwoz/pytest-dataplugin",
       "pypiUrl": "https://pypi.org/project/pytest-dataplugin/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-codecarbon",
@@ -4220,9 +3454,7 @@
       "ghUrl": "https://github.com/alexhroom/pytest-codecarbon",
       "pypiUrl": "https://pypi.org/project/pytest-codecarbon/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-easy-addoption",
@@ -4231,9 +3463,7 @@
       "ghUrl": "https://github.com/uriyyo/pytest-easy-addoption",
       "pypiUrl": "https://pypi.org/project/pytest-easy-addoption/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-alt-reg",
@@ -4242,9 +3472,7 @@
       "ghUrl": "https://github.com/joaopalmeiro/pytest-alt-reg",
       "pypiUrl": "https://pypi.org/project/pytest-alt-reg/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-uuid",
@@ -4253,9 +3481,7 @@
       "ghUrl": "https://github.com/CaptainDriftwood/pytest-uuid",
       "pypiUrl": "https://pypi.org/project/pytest-uuid/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-priority",
@@ -4264,9 +3490,7 @@
       "ghUrl": "https://github.com/hanzhichao/pytest-priority",
       "pypiUrl": "https://pypi.org/project/pytest-priority/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "orangehrm_automation",
@@ -4275,9 +3499,7 @@
       "ghUrl": "https://github.com/avielKogan1/OrangeHRM_Automation",
       "pypiUrl": "https://pypi.org/project/orangehrm_automation/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "mini-doc-validator",
@@ -4286,9 +3508,7 @@
       "ghUrl": "https://github.com/Krixna-Kant/Mini-Doc-Validator",
       "pypiUrl": "https://pypi.org/project/mini-doc-validator/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-case-start-from",
@@ -4297,9 +3517,7 @@
       "ghUrl": "https://github.com/joe0731/pytest-case-start-from",
       "pypiUrl": "https://pypi.org/project/pytest-case-start-from/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "playwright-reporter-python",
@@ -4308,9 +3526,7 @@
       "ghUrl": "https://github.com/QAStudio-Dev/playwright-reporter-python",
       "pypiUrl": "https://pypi.org/project/playwright-reporter-python/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "bynry",
@@ -4319,9 +3535,7 @@
       "ghUrl": "https://github.com/MitanshuDS23/Bynry",
       "pypiUrl": "https://pypi.org/project/bynry/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-cassandra",
@@ -4330,9 +3544,7 @@
       "ghUrl": "https://github.com/dwoz/pytest-cassandra",
       "pypiUrl": "https://pypi.org/project/pytest-cassandra/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-quickify",
@@ -4341,9 +3553,7 @@
       "ghUrl": "https://github.com/testprogress/pytest-quickify",
       "pypiUrl": "https://pypi.org/project/pytest-quickify/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-unittest-id-runner",
@@ -4352,9 +3562,7 @@
       "ghUrl": "https://github.com/wshanks/pytest-unittest-id-runner",
       "pypiUrl": "https://pypi.org/project/pytest-unittest-id-runner/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-keyring",
@@ -4363,9 +3571,7 @@
       "ghUrl": "https://github.com/tomasfarias/pytest-keyring",
       "pypiUrl": "https://pypi.org/project/pytest-keyring/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-broadcaster",
@@ -4374,9 +3580,7 @@
       "ghUrl": "https://github.com/charbonnierg/pytest-broadcaster",
       "pypiUrl": "https://pypi.org/project/pytest-broadcaster/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-apiver",
@@ -4385,9 +3589,7 @@
       "ghUrl": "https://github.com/reef-technologies/pytest-apiver",
       "pypiUrl": "https://pypi.org/project/pytest-apiver/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-balance-xdist",
@@ -4396,9 +3598,7 @@
       "ghUrl": "https://github.com/ichard26/pytest-balance-xdist",
       "pypiUrl": "https://pypi.org/project/pytest-balance-xdist/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest_servicediscovery",
@@ -4407,9 +3607,7 @@
       "ghUrl": "https://github.com/eugenepaniot/pytest_servicediscovery",
       "pypiUrl": "https://pypi.org/project/pytest_servicediscovery/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-failure-tracker",
@@ -4418,9 +3616,7 @@
       "ghUrl": "https://github.com/izikeros/pytest-failure-tracker",
       "pypiUrl": "https://pypi.org/project/pytest-failure-tracker/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "bugsafe",
@@ -4429,9 +3625,7 @@
       "ghUrl": "https://github.com/matbmeijer/bugsafe",
       "pypiUrl": "https://pypi.org/project/bugsafe/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-exit-code",
@@ -4440,9 +3634,7 @@
       "ghUrl": "https://github.com/sanderploegsma/pytest-exit-code",
       "pypiUrl": "https://pypi.org/project/pytest-exit-code/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-elegant",
@@ -4451,9 +3643,7 @@
       "ghUrl": "https://github.com/einenlum/pytest-elegant",
       "pypiUrl": "https://pypi.org/project/pytest-elegant/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "robotics_bdd",
@@ -4462,9 +3652,7 @@
       "ghUrl": "https://github.com/luckyjoy/robotics_bdd",
       "pypiUrl": "https://pypi.org/project/robotics_bdd/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "agentassay",
@@ -4473,9 +3661,7 @@
       "ghUrl": "https://github.com/qualixar/agentassay",
       "pypiUrl": "https://pypi.org/project/agentassay/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-pings",
@@ -4484,9 +3670,7 @@
       "ghUrl": "https://github.com/hackebrot/pytest-pings",
       "pypiUrl": "https://pypi.org/project/pytest-pings/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-tuitest",
@@ -4495,9 +3679,7 @@
       "ghUrl": "https://github.com/redant333/pytest-tuitest",
       "pypiUrl": "https://pypi.org/project/pytest-tuitest/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-dryrun",
@@ -4506,9 +3688,7 @@
       "ghUrl": "https://github.com/COMP1010UNSW/pytest-dryrun",
       "pypiUrl": "https://pypi.org/project/pytest-dryrun/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-playwright-artifacts",
@@ -4517,9 +3697,7 @@
       "ghUrl": "https://github.com/iloveitaly/pytest-playwright-artifacts",
       "pypiUrl": "https://pypi.org/project/pytest-playwright-artifacts/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "arkham-asylum-backend",
@@ -4528,9 +3706,7 @@
       "ghUrl": "https://github.com/abhijeet2829/Arkham-Asylum-Backend",
       "pypiUrl": "https://pypi.org/project/arkham-asylum-backend/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-ubuntu-notify",
@@ -4539,9 +3715,7 @@
       "ghUrl": "https://github.com/iamkhush/pytest-ubuntu-notify",
       "pypiUrl": "https://pypi.org/project/pytest-ubuntu-notify/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-libnotify",
@@ -4550,9 +3724,7 @@
       "ghUrl": "https://github.com/moser/pytest-libnotify",
       "pypiUrl": "https://pypi.org/project/pytest-libnotify/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-chaos-ai",
@@ -4561,9 +3733,7 @@
       "ghUrl": "https://github.com/srikeerthan/pytest-chaos-ai",
       "pypiUrl": "https://pypi.org/project/pytest-chaos-ai/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "automated-grading-script",
@@ -4572,9 +3742,7 @@
       "ghUrl": "https://github.com/Vsomera/Automated-Grading-Script",
       "pypiUrl": "https://pypi.org/project/automated-grading-script/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pypseudo-mutation-analysis-on-python-to-detect-pseudotestedness-danniyb",
@@ -4583,9 +3751,7 @@
       "ghUrl": "https://github.com/allegheny-college-comp-fall-2024/PyPseudo-Mutation-Analysis-on-python-to-detect-PseudoTestedness-Danniyb",
       "pypiUrl": "https://pypi.org/project/pypseudo-mutation-analysis-on-python-to-detect-pseudotestedness-danniyb/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "pytest-samples",
@@ -4594,9 +3760,7 @@
       "ghUrl": "https://github.com/devds96/pytest-samples",
       "pypiUrl": "https://pypi.org/project/pytest-samples/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     },
     {
       "name": "bigfoot",
@@ -4605,9 +3769,7 @@
       "ghUrl": "https://github.com/axiomantic/bigfoot",
       "pypiUrl": "https://pypi.org/project/bigfoot/",
       "stars": 0,
-      "cat": "other",
-      "pipeline": false,
-      "win": "maybe"
+      "cat": "other"
     }
   ]
 }

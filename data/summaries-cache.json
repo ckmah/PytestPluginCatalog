@@ -1,0 +1,2935 @@
+{
+  "pudb": {
+    "summary": "PuDB allows you to debug code right where you write and test it in a terminal.",
+    "generated_at": "2026-03-09T08:08:43.102Z",
+    "readme_fetched_at": "2026-03-09T07:09:09.270Z",
+    "readme_len": 3143,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-testinfra": {
+    "summary": "pytest-testinfra",
+    "generated_at": "2026-03-09T08:08:43.217Z",
+    "readme_fetched_at": "2026-03-09T07:09:10.346Z",
+    "readme_len": 2641,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-xdist": {
+    "summary": "pytest plugin extends pytest with new test execution modes, the most used being distributing tests across multiple CPUs, and distributing the tests randomly across them.",
+    "generated_at": "2026-03-09T08:08:43.422Z",
+    "readme_fetched_at": "2026-03-09T07:09:11.402Z",
+    "readme_len": 1165,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-asyncio": {
+    "summary": "Pytest plugin that pytest-asyncio is a pytest plugin.",
+    "generated_at": "2026-03-09T08:08:43.497Z",
+    "readme_fetched_at": "2026-03-09T07:09:12.551Z",
+    "readme_len": 2389,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-django": {
+    "summary": "pytest-django allows you to test your Django project/applications with the pytest testing tool.",
+    "generated_at": "2026-03-09T08:08:43.849Z",
+    "readme_fetched_at": "2026-03-09T07:09:13.573Z",
+    "readme_len": 2926,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-sugar": {
+    "summary": "pytest-sugar This plugin extends pytest by showing failures and errors instantly, adding a progress bar, improving the test results, and making the output look better.",
+    "generated_at": "2026-03-09T08:08:44.209Z",
+    "readme_fetched_at": "2026-03-09T07:09:14.603Z",
+    "readme_len": 3651,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-bdd": {
+    "summary": "pytest-bdd implements a subset of the Gherkin language to enable automating project requirements testing and to facilitate behavioral driven development.",
+    "generated_at": "2026-03-09T08:08:44.578Z",
+    "readme_fetched_at": "2026-03-09T07:09:15.723Z",
+    "readme_len": 51527,
+    "model": "Xenova/flan-t5-small"
+  },
+  "syrupy": {
+    "summary": "#CLI Options",
+    "generated_at": "2026-03-09T08:08:44.671Z",
+    "readme_fetched_at": "2026-03-09T07:09:16.814Z",
+    "readme_len": 40303,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-html": {
+    "summary": "We welcome contributions.",
+    "generated_at": "2026-03-09T08:08:44.751Z",
+    "readme_fetched_at": "2026-03-09T07:09:17.838Z",
+    "readme_len": 1804,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pyfakefs": {
+    "summary": "pyfakefs pyfakefs implements a fake file system that mocks the Python file system modules.",
+    "generated_at": "2026-03-09T08:08:45.109Z",
+    "readme_fetched_at": "2026-03-09T07:09:18.873Z",
+    "readme_len": 3908,
+    "model": "Xenova/flan-t5-small"
+  },
+  "inline-snapshot": {
+    "summary": "## Key Features - **support for normal assertions:** inline-snapshot can now also fix normal assertions.",
+    "generated_at": "2026-03-09T08:08:45.475Z",
+    "readme_fetched_at": "2026-03-09T07:09:19.963Z",
+    "readme_len": 7923,
+    "model": "Xenova/flan-t5-small"
+  },
+  "django-test-migrations": {
+    "summary": "\"django-test-migrations\" do?",
+    "generated_at": "2026-03-09T08:08:45.703Z",
+    "readme_fetched_at": "2026-03-09T07:09:21.073Z",
+    "readme_len": 12249,
+    "model": "Xenova/flan-t5-small"
+  },
+  "playwright-pytest": {
+    "summary": "Pytest plugin that # Pytest plugin for Playwright",
+    "generated_at": "2026-03-09T08:08:46.001Z",
+    "readme_fetched_at": "2026-03-09T07:09:22.192Z",
+    "readme_len": 632,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-postgresql": {
+    "summary": "\"Loading functions\": \"a callable or an import string\").",
+    "generated_at": "2026-03-09T08:08:46.373Z",
+    "readme_fetched_at": "2026-03-09T07:09:23.195Z",
+    "readme_len": 12232,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-flask": {
+    "summary": "Pytest plugin that provides a set of useful tools to simplify testing and development of the Flask extensions and applications.",
+    "generated_at": "2026-03-09T08:08:46.455Z",
+    "readme_fetched_at": "2026-03-09T07:09:24.327Z",
+    "readme_len": 3907,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-clarity": {
+    "summary": "Pytest plugin that You can force pytest-clarity to show a symbolic diff with :code:--diff-symbols`",
+    "generated_at": "2026-03-09T08:08:46.519Z",
+    "readme_fetched_at": "2026-03-09T07:09:25.595Z",
+    "readme_len": 1717,
+    "model": "Xenova/flan-t5-small"
+  },
+  "nbval": {
+    "summary": "Pytest plugin that To use notebooks to generate coverage for imported code, use the pytest-cov plugin.",
+    "generated_at": "2026-03-09T08:08:46.610Z",
+    "readme_fetched_at": "2026-03-09T07:09:26.604Z",
+    "readme_len": 6022,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-check": {
+    "summary": "pytest plugin that allows multiple failures per test.",
+    "generated_at": "2026-03-09T08:08:46.985Z",
+    "readme_fetched_at": "2026-03-09T07:09:27.648Z",
+    "readme_len": 15174,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-lazy-fixture": {
+    "summary": "pytest-lazy-fixture |travis-ci |appveyor| |pypypi|",
+    "generated_at": "2026-03-09T08:08:47.281Z",
+    "readme_fetched_at": "2026-03-09T07:09:28.645Z",
+    "readme_len": 2438,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-socket": {
+    "summary": "pytest to disable or restrict socket calls during tests to ensure network calls are prevented.",
+    "generated_at": "2026-03-09T08:08:47.662Z",
+    "readme_fetched_at": "2026-03-09T07:09:29.703Z",
+    "readme_len": 5615,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-split": {
+    "summary": "Pytest plugin splits the test suite to equally sized \"sub suites\" based on test execution time.",
+    "generated_at": "2026-03-09T08:08:47.862Z",
+    "readme_fetched_at": "2026-03-09T07:09:30.718Z",
+    "readme_len": 8269,
+    "model": "Xenova/flan-t5-small"
+  },
+  "datatest": {
+    "summary": "Datatest can be used directly in your own projects or as part of a testing framework like pytest or unittest.",
+    "generated_at": "2026-03-09T08:08:48.309Z",
+    "readme_fetched_at": "2026-03-09T07:09:31.843Z",
+    "readme_len": 8854,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-describe": {
+    "summary": "#Describe-style plugin for pytest.pytest.pytest** is a plugin for pytest.pytest.pytest.pytest.pytest.pytest.pytest.pytest.pytest.pytest",
+    "generated_at": "2026-03-09T08:08:48.740Z",
+    "readme_fetched_at": "2026-03-09T07:09:32.996Z",
+    "readme_len": 5869,
+    "model": "Xenova/flan-t5-small"
+  },
+  "xdoctest": {
+    "summary": "Xdoctest - Execute doctests.",
+    "generated_at": "2026-03-09T08:08:49.107Z",
+    "readme_fetched_at": "2026-03-09T07:09:34.010Z",
+    "readme_len": 20474,
+    "model": "Xenova/flan-t5-small"
+  },
+  "kubetest": {
+    "summary": "Using the [Kubernetes Python client][k8s-py] plugin, this plugin provides some cluster and object management on top of that so you can spend less time setting up and tearing down tests and more time actually writing test",
+    "generated_at": "2026-03-09T08:08:49.467Z",
+    "readme_fetched_at": "2026-03-09T07:09:35.071Z",
+    "readme_len": 2959,
+    "model": "Xenova/flan-t5-small"
+  },
+  "nbmake": {
+    "summary": "pytest-xdist",
+    "generated_at": "2026-03-09T08:08:49.576Z",
+    "readme_fetched_at": "2026-03-09T07:09:36.150Z",
+    "readme_len": 6644,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-order": {
+    "summary": "pytest-order is a pytest plugin that allows you to customize the order in which your tests are run.",
+    "generated_at": "2026-03-09T08:08:49.993Z",
+    "readme_fetched_at": "2026-03-09T07:09:37.181Z",
+    "readme_len": 6233,
+    "model": "Xenova/flan-t5-small"
+  },
+  "locust-grasshopper": {
+    "summary": "Pytest plugin that A lightweight framework for performing load tests against an environment, primarily against an API.",
+    "generated_at": "2026-03-09T08:08:50.412Z",
+    "readme_fetched_at": "2026-03-09T07:09:38.285Z",
+    "readme_len": 22699,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-monitor": {
+    "summary": "pytest-monitor is a pytest plugin designed for analyzing resource usage.",
+    "generated_at": "2026-03-09T08:08:50.807Z",
+    "readme_fetched_at": "2026-03-09T07:09:39.391Z",
+    "readme_len": 11961,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-dependency": {
+    "summary": "Copyright and License ------------------ - Copyright 2013-2015 Helmholtz-Zentrum Berlin für Materialien und Energie GmbH - Copyright 2016-2020 Rolf Krahl Licensed under the Apache License, version 2.0 (the \"License\");",
+    "generated_at": "2026-03-09T08:08:51.157Z",
+    "readme_fetched_at": "2026-03-09T07:09:40.423Z",
+    "readme_len": 1908,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-deadfixtures": {
+    "summary": "Pytest plugin that A simple plugin to list unused or duplicated fixtures in a pytest suite.",
+    "generated_at": "2026-03-09T08:08:51.522Z",
+    "readme_fetched_at": "2026-03-09T07:09:41.453Z",
+    "readme_len": 4995,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-json-report": {
+    "summary": "--- | | --json-report | Create JSON report | | --json-report-file=PATH | Target path to save JSON report (use \"none\" to not save the report) | | --json-report-summary | Just create",
+    "generated_at": "2026-03-09T08:08:51.884Z",
+    "readme_fetched_at": "2026-03-09T07:09:42.475Z",
+    "readme_len": 14716,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-instafail": {
+    "summary": "Pytest plugin that pytest-instafail is a plugin for pytest that shows failures and errors instantly instead of waiting until the end of test session.",
+    "generated_at": "2026-03-09T08:08:51.938Z",
+    "readme_fetched_at": "2026-03-09T07:09:43.559Z",
+    "readme_len": 1001,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-aiohttp": {
+    "summary": "Pytest plugin that provides resources cleanup out-of-the-box.",
+    "generated_at": "2026-03-09T08:08:52.249Z",
+    "readme_fetched_at": "2026-03-09T07:09:44.587Z",
+    "readme_len": 1362,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-snapshot": {
+    "summary": "pytest 3.0+ Installation ---------------",
+    "generated_at": "2026-03-09T08:08:52.382Z",
+    "readme_fetched_at": "2026-03-09T07:09:45.598Z",
+    "readme_len": 8511,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-sanic": {
+    "summary": "pytest-sanic is a plugin for sanic.",
+    "generated_at": "2026-03-09T08:08:52.581Z",
+    "readme_fetched_at": "2026-03-09T07:09:46.667Z",
+    "readme_len": 10676,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-grpc": {
+    "summary": "## pytest-grpc",
+    "generated_at": "2026-03-09T08:08:52.668Z",
+    "readme_fetched_at": "2026-03-09T07:09:47.692Z",
+    "readme_len": 8493,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-mypy-plugins": {
+    "summary": "pytest-mypy-plugins",
+    "generated_at": "2026-03-09T08:08:52.794Z",
+    "readme_fetched_at": "2026-03-09T07:09:48.743Z",
+    "readme_len": 9359,
+    "model": "Xenova/flan-t5-small"
+  },
+  "logot": {
+    "summary": "Pytest plugin that supports many 3rd-party asynchronous and logging frameworks, and can be extended to support many more.",
+    "generated_at": "2026-03-09T08:08:53.095Z",
+    "readme_fetched_at": "2026-03-09T07:09:49.866Z",
+    "readme_len": 2397,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-leaks": {
+    "summary": "pytest-leaks is free and open source software.## Issues",
+    "generated_at": "2026-03-09T08:08:53.232Z",
+    "readme_fetched_at": "2026-03-09T07:09:50.911Z",
+    "readme_len": 4328,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-subprocess": {
+    "summary": "pytest-subprocess ========pytest plugin to fake subprocess...",
+    "generated_at": "2026-03-09T08:08:53.593Z",
+    "readme_fetched_at": "2026-03-09T07:09:52.118Z",
+    "readme_len": 16458,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytester": {
+    "summary": "Pytest plugin that provides a set of fixtures to help you write integration tests for Databricks.",
+    "generated_at": "2026-03-09T08:08:53.959Z",
+    "readme_fetched_at": "2026-03-09T07:09:53.405Z",
+    "readme_len": 57890,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-spec": {
+    "summary": "pytest plugin \"pytest-spec\" do?",
+    "generated_at": "2026-03-09T08:08:54.332Z",
+    "readme_fetched_at": "2026-03-09T07:09:54.432Z",
+    "readme_len": 7776,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-hot-reloading": {
+    "summary": "pytest-hot-reloading ## Usage Add the plugin to the pytest arguments.",
+    "generated_at": "2026-03-09T08:08:54.694Z",
+    "readme_fetched_at": "2026-03-09T07:09:55.522Z",
+    "readme_len": 10288,
+    "model": "Xenova/flan-t5-small"
+  },
+  "lsp-devtools": {
+    "summary": "pytest-lsp is a pytest plugin for writing end-to-end tests for language servers.",
+    "generated_at": "2026-03-09T08:08:55.049Z",
+    "readme_fetched_at": "2026-03-09T07:09:56.564Z",
+    "readme_len": 3823,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-datafiles": {
+    "summary": "Answer in one sentence, describing only functionality.",
+    "generated_at": "2026-03-09T08:08:55.552Z",
+    "readme_fetched_at": "2026-03-09T07:09:57.614Z",
+    "readme_len": 7015,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-redis": {
+    "summary": "pytest-redis is a pytest plugin that enables you to test your code that relies on a running Redis database.",
+    "generated_at": "2026-03-09T08:08:56.005Z",
+    "readme_fetched_at": "2026-03-09T07:09:58.625Z",
+    "readme_len": 8823,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-insta": {
+    "summary": "# pytest-insta > A practical snapshot testing plugin for pytest.## Snapshot testing makes it easy to monitor and approve changes by comparing the result of an operation against a previous reference value.",
+    "generated_at": "2026-03-09T08:08:56.376Z",
+    "readme_fetched_at": "2026-03-09T07:09:59.654Z",
+    "readme_len": 11389,
+    "model": "Xenova/flan-t5-small"
+  },
+  "hitchstory": {
+    "summary": "Using a pytest plugin, you can use the various features of the story engine.",
+    "generated_at": "2026-03-09T08:08:56.551Z",
+    "readme_fetched_at": "2026-03-09T07:10:00.691Z",
+    "readme_len": 13981,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-reportlog": {
+    "summary": "pytest-reportlog =======pytest-reportlog ======pytest-reportlog ======pytest-reportlog =====pytest-reportlog ====",
+    "generated_at": "2026-03-09T08:08:56.913Z",
+    "readme_fetched_at": "2026-03-09T07:10:01.816Z",
+    "readme_len": 7118,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-docker-tools": {
+    "summary": "pytest-docker-tools is a set of opinionated helpers for creating py.test fixtures for smoke testing and integration testing.",
+    "generated_at": "2026-03-09T08:08:57.292Z",
+    "readme_fetched_at": "2026-03-09T07:10:02.938Z",
+    "readme_len": 35610,
+    "model": "Xenova/flan-t5-small"
+  },
+  "cloudcoil": {
+    "summary": "#cloudcoil Cloud native operations made beautifully simple with Python > Modern, async-first Kubernetes client with elegant Pythonic syntax and full type safety ## Support the Project If you find Cloudcoil useful, please",
+    "generated_at": "2026-03-09T08:08:57.661Z",
+    "readme_fetched_at": "2026-03-09T07:10:04.162Z",
+    "readme_len": 28591,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-django-queries": {
+    "summary": "Pytest plugin that ## Recommendation when Using Fixtures You might end up in the case where you want to add fixtures that are generating queries that you don't want to be counted in the results–or simply, you want to use",
+    "generated_at": "2026-03-09T08:08:58.033Z",
+    "readme_fetched_at": "2026-03-09T07:10:05.251Z",
+    "readme_len": 5371,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-localstack": {
+    "summary": "Test this works for non-localhost Docker containers.",
+    "generated_at": "2026-03-09T08:08:58.158Z",
+    "readme_fetched_at": "2026-03-09T07:10:06.267Z",
+    "readme_len": 3170,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-random-order": {
+    "summary": "::: To change the scope of re-ordering, run pytest as follows: :: To change the scope of reordering, run pytest with --random-order-bucket=option where can be class, module, package,",
+    "generated_at": "2026-03-09T08:08:58.520Z",
+    "readme_fetched_at": "2026-03-09T07:10:07.399Z",
+    "readme_len": 8448,
+    "model": "Xenova/flan-t5-small"
+  },
+  "overhave": {
+    "summary": "pytest-bdd is the web-interface for BDD: scalable, configurable, easy to use, based on Flask Admin and Pydantic.",
+    "generated_at": "2026-03-09T08:08:58.914Z",
+    "readme_fetched_at": "2026-03-09T07:10:08.707Z",
+    "readme_len": 23135,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-play": {
+    "summary": "pytest-play is a codeless, generic, pluggable and extensible **automation tool**, not necessarily **test automation** only, based on the fantastic pytest test framework that let you define and execute YAML files containi",
+    "generated_at": "2026-03-09T08:08:59.278Z",
+    "readme_fetched_at": "2026-03-09T07:10:09.736Z",
+    "readme_len": 42095,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-elasticsearch": {
+    "summary": "pytest-elasticsearch ========== pytest-elasticsearch ====================================",
+    "generated_at": "2026-03-09T08:08:59.636Z",
+    "readme_fetched_at": "2026-03-09T07:10:10.860Z",
+    "readme_len": 6694,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-workflow": {
+    "summary": "pytest-workflow is a workflow-system agnostic testing framework that aims to make pipeline/workflow testing easy by using YAML files for the test configuration.",
+    "generated_at": "2026-03-09T08:09:00.011Z",
+    "readme_fetched_at": "2026-03-09T07:10:12.000Z",
+    "readme_len": 7566,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-messenger": {
+    "summary": "pytest: Issues",
+    "generated_at": "2026-03-09T08:09:00.077Z",
+    "readme_fetched_at": "2026-03-09T07:10:13.208Z",
+    "readme_len": 1456,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-pudb": {
+    "summary": "Pytest plugin that Pytest PuDB debugger integration based on pytest PDB integration",
+    "generated_at": "2026-03-09T08:09:00.123Z",
+    "readme_fetched_at": "2026-03-09T07:10:14.287Z",
+    "readme_len": 995,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-edit": {
+    "summary": "pytest-edit - i have not tested 90% of the editor support**",
+    "generated_at": "2026-03-09T08:09:00.253Z",
+    "readme_fetched_at": "2026-03-09T07:10:15.363Z",
+    "readme_len": 1692,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-mimesis": {
+    "summary": "pytest-mimesis is licensed under the MIT License.",
+    "generated_at": "2026-03-09T08:09:00.512Z",
+    "readme_fetched_at": "2026-03-09T07:10:16.400Z",
+    "readme_len": 2475,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-md-report": {
+    "summary": "Summary ===============================================================",
+    "generated_at": "2026-03-09T08:09:00.879Z",
+    "readme_fetched_at": "2026-03-09T07:10:17.514Z",
+    "readme_len": 18962,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-html-plus": {
+    "summary": "**Test your code, not your reporting setup.** > _Get started with rich pytest reports in under 3 seconds.",
+    "generated_at": "2026-03-09T08:09:01.248Z",
+    "readme_fetched_at": "2026-03-09T07:10:18.583Z",
+    "readme_len": 7648,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-helpers-namespace": {
+    "summary": ".........................................",
+    "generated_at": "2026-03-09T08:09:01.632Z",
+    "readme_fetched_at": "2026-03-09T07:10:19.693Z",
+    "readme_len": 3696,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-test-groups": {
+    "summary": "pytest-test-groups allows you to split your tests into groups of 10 tests and run the second group.",
+    "generated_at": "2026-03-09T08:09:01.787Z",
+    "readme_fetched_at": "2026-03-09T07:10:20.742Z",
+    "readme_len": 1686,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-unordered": {
+    "summary": "pytest-unordered",
+    "generated_at": "2026-03-09T08:09:01.915Z",
+    "readme_fetched_at": "2026-03-09T07:10:22.017Z",
+    "readme_len": 5095,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-dbfixtures": {
+    "summary": "pytest-dbfixtures was a pytest plugin that makes it a lot easier to set up proper database or storage engine for testing.",
+    "generated_at": "2026-03-09T08:09:02.226Z",
+    "readme_fetched_at": "2026-03-09T07:10:23.142Z",
+    "readme_len": 1742,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-mysql": {
+    "summary": "MySQL server directory location [DEPRECATED]",
+    "generated_at": "2026-03-09T08:09:02.359Z",
+    "readme_fetched_at": "2026-03-09T07:10:24.404Z",
+    "readme_len": 8482,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-sentry": {
+    "summary": "pytest-sentry is a pytest plugin that uses Sentry to store and aggregate information about testruns.",
+    "generated_at": "2026-03-09T08:09:02.646Z",
+    "readme_fetched_at": "2026-03-09T07:10:25.625Z",
+    "readme_len": 7344,
+    "model": "Xenova/flan-t5-small"
+  },
+  "openai-responses-python": {
+    "summary": "Pytest plugin for automatically mocking OpenAI requests.",
+    "generated_at": "2026-03-09T08:09:02.995Z",
+    "readme_fetched_at": "2026-03-09T07:10:26.735Z",
+    "readme_len": 5591,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-databases": {
+    "summary": "pytest-databases is a plugin for pytest-databases, a plugin for pytest-databases.",
+    "generated_at": "2026-03-09T08:09:03.349Z",
+    "readme_fetched_at": "2026-03-09T07:10:27.794Z",
+    "readme_len": 10184,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-fixture-classes": {
+    "summary": "# Pytest Fixture Classes Typed factory fixtures that work well with dependency injection, autocompletetion, type checkers, and language servers.",
+    "generated_at": "2026-03-09T08:09:03.698Z",
+    "readme_fetched_at": "2026-03-09T07:10:28.830Z",
+    "readme_len": 6020,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-notebook": {
+    "summary": "# pytest-notebook [![CI][ci-badge]][ci-link] [![Coverage][cov-badge]][cov-link] [![RTD][rtd-badge]][rt",
+    "generated_at": "2026-03-09T08:09:04.050Z",
+    "readme_fetched_at": "2026-03-09T07:10:29.884Z",
+    "readme_len": 5005,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-rabbitmq": {
+    "summary": "Pytest plugin that enables you to test your code that relies on a running RabbitMQ Queues.",
+    "generated_at": "2026-03-09T08:09:04.401Z",
+    "readme_fetched_at": "2026-03-09T07:10:31.029Z",
+    "readme_len": 4296,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-monkeytype": {
+    "summary": "pytest-annotate",
+    "generated_at": "2026-03-09T08:09:04.445Z",
+    "readme_fetched_at": "2026-03-09T07:10:32.132Z",
+    "readme_len": 1368,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-neo": {
+    "summary": "pytest-neo",
+    "generated_at": "2026-03-09T08:09:04.513Z",
+    "readme_fetched_at": "2026-03-09T07:10:33.246Z",
+    "readme_len": 1037,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-blender": {
+    "summary": "addons_from_dirs_from_dirs_from_dirs_from_dirs_from_dirs_from_dirs_from_dirs_from_dirs_from_dirs_from_dirs_from_dirs_from_dirs_",
+    "generated_at": "2026-03-09T08:09:04.863Z",
+    "readme_fetched_at": "2026-03-09T07:10:34.318Z",
+    "readme_len": 15238,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-stress": {
+    "summary": "____ This pytest plugin was generated with Cookiecutter along with @hackebrot's cookiecutter-pytest-plugin template...",
+    "generated_at": "2026-03-09T08:09:05.216Z",
+    "readme_fetched_at": "2026-03-09T07:10:35.534Z",
+    "readme_len": 2783,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-djangoapp": {
+    "summary": "Pytest plugin that provides the `django_db mark and db fixtures.",
+    "generated_at": "2026-03-09T08:09:05.579Z",
+    "readme_fetched_at": "2026-03-09T07:10:36.751Z",
+    "readme_len": 3574,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-md": {
+    "summary": "Pytest plugin that allows us to include emojis in the generated Markdown test report:",
+    "generated_at": "2026-03-09T08:09:05.919Z",
+    "readme_fetched_at": "2026-03-09T07:10:37.855Z",
+    "readme_len": 3141,
+    "model": "Xenova/flan-t5-small"
+  },
+  "nanaimo": {
+    "summary": "Nanaimo is a set of utilities and plugins designed to enable integration of hardware test apparatuses with pytest.",
+    "generated_at": "2026-03-09T08:09:06.278Z",
+    "readme_fetched_at": "2026-03-09T07:10:38.939Z",
+    "readme_len": 5581,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-opentelemetry": {
+    "summary": "Using pytest-opentelemetry and configuring the appropriate propagators, you can connect traces from your integration test suite to your running system to analyze failures more quickly.",
+    "generated_at": "2026-03-09T08:09:06.632Z",
+    "readme_fetched_at": "2026-03-09T07:10:40.104Z",
+    "readme_len": 5192,
+    "model": "Xenova/flan-t5-small"
+  },
+  "looptime": {
+    "summary": "What is it not?",
+    "generated_at": "2026-03-09T08:09:06.985Z",
+    "readme_fetched_at": "2026-03-09T07:10:41.161Z",
+    "readme_len": 3987,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-pyodide": {
+    "summary": "pyodide pyodide for testing applications that use Pyodide ## Installation pytest-pyodide pyodide for testing applications that use Pyodide ## pyodide pyodide",
+    "generated_at": "2026-03-09T08:09:07.338Z",
+    "readme_fetched_at": "2026-03-09T07:10:42.200Z",
+    "readme_len": 10144,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-localserver": {
+    "summary": "pytest-localserver is a plugin for the pytest testing framework which enables you to test server connections locally.",
+    "generated_at": "2026-03-09T08:09:07.694Z",
+    "readme_fetched_at": "2026-03-09T07:10:43.261Z",
+    "readme_len": 11580,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-mypy-testing": {
+    "summary": "pytest-mypy-testing — Plugin to test mypy output with pytest pytest pytest-mypy-testing provides a pytest plugin to test that mypy produces a given output.",
+    "generated_at": "2026-03-09T08:09:08.059Z",
+    "readme_fetched_at": "2026-03-09T07:10:44.355Z",
+    "readme_len": 10670,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-anki": {
+    "summary": "#pytest-anki pytest-anki is currently undergoing a major rewrite and expansion of its feature-set, so the documentation below is very sparse at the moment.",
+    "generated_at": "2026-03-09T08:09:08.425Z",
+    "readme_fetched_at": "2026-03-09T07:10:45.415Z",
+    "readme_len": 7711,
+    "model": "Xenova/flan-t5-small"
+  },
+  "nonebug": {
+    "summary": "pytest plugin",
+    "generated_at": "2026-03-09T08:09:08.462Z",
+    "readme_fetched_at": "2026-03-09T07:10:46.468Z",
+    "readme_len": 1989,
+    "model": "Xenova/flan-t5-small"
+  },
+  "seaworthy": {
+    "summary": "Pytest plugin that allows you to use Docker containers and other Docker resources as fixtures for tests written in Python.",
+    "generated_at": "2026-03-09T08:09:08.536Z",
+    "readme_fetched_at": "2026-03-09T07:10:47.525Z",
+    "readme_len": 2938,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-kubernetes": {
+    "summary": "**Features:** - Set up and tear down (local) Kubernetes clusters with *minikube*, *k3d* and *kind* - Configure the cluster to recreate for each test case (default), or keep it across multiple test cases - Automatic manag",
+    "generated_at": "2026-03-09T08:09:08.905Z",
+    "readme_fetched_at": "2026-03-09T07:10:48.580Z",
+    "readme_len": 9707,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-click": {
+    "summary": "pytest-click | Build| |Coverage| |Python versions| image::.",
+    "generated_at": "2026-03-09T08:09:09.049Z",
+    "readme_fetched_at": "2026-03-09T07:10:49.727Z",
+    "readme_len": 2169,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-involve": {
+    "summary": "pytest-involve is a pytest plugin for running only tests that cover a given file or set of files.",
+    "generated_at": "2026-03-09T08:09:09.409Z",
+    "readme_fetched_at": "2026-03-09T07:10:50.786Z",
+    "readme_len": 3896,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-skipuntil": {
+    "summary": "pytest-skipuntil",
+    "generated_at": "2026-03-09T08:09:09.515Z",
+    "readme_fetched_at": "2026-03-09T07:10:51.834Z",
+    "readme_len": 2525,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-arraydiff": {
+    "summary": "pytest _ _ plugin is compatible with Python 2.7, and 3.5 and later, and requires pytest_array_diff installed.",
+    "generated_at": "2026-03-09T08:09:09.871Z",
+    "readme_fetched_at": "2026-03-09T07:10:52.840Z",
+    "readme_len": 7182,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-solidity": {
+    "summary": "pytest-solidity",
+    "generated_at": "2026-03-09T08:09:09.957Z",
+    "readme_fetched_at": "2026-03-09T07:10:53.954Z",
+    "readme_len": 3290,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-mock-server": {
+    "summary": "Tests can be run with tox, please ensure the coverage at least stays the same before before testing.",
+    "generated_at": "2026-03-09T08:09:10.314Z",
+    "readme_fetched_at": "2026-03-09T07:10:54.991Z",
+    "readme_len": 3218,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-patterns": {
+    "summary": "pytest-patterns is a plugin for pytest that provides a pattern matching engine optimized for testing.",
+    "generated_at": "2026-03-09T08:09:10.615Z",
+    "readme_fetched_at": "2026-03-09T07:10:56.143Z",
+    "readme_len": 16795,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-responsemock": {
+    "summary": "pytest-responsemock is a plugin for pytest test functions.",
+    "generated_at": "2026-03-09T08:09:10.774Z",
+    "readme_fetched_at": "2026-03-09T07:10:57.269Z",
+    "readme_len": 2971,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest_jira": {
+    "summary": "pytest plugin links tests with JIRA tickets.",
+    "generated_at": "2026-03-09T08:09:11.126Z",
+    "readme_fetched_at": "2026-03-09T07:10:58.475Z",
+    "readme_len": 8029,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-split-gh-actions-demo": {
+    "summary": "GitHub actions demo This demo repository highlights the power of pytest-split when it's combined with parallel execution features of GitHub Actions with parallelism in mind.",
+    "generated_at": "2026-03-09T08:09:11.473Z",
+    "readme_fetched_at": "2026-03-09T07:10:59.577Z",
+    "readme_len": 2658,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-datafixtures": {
+    "summary": "pytest-datafixtures",
+    "generated_at": "2026-03-09T08:09:11.550Z",
+    "readme_fetched_at": "2026-03-09T07:11:00.635Z",
+    "readme_len": 3010,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-when": {
+    "summary": "pytest-when is meant for developers who want to test for behaviour, without extra overhead.",
+    "generated_at": "2026-03-09T08:09:11.784Z",
+    "readme_fetched_at": "2026-03-09T07:11:01.748Z",
+    "readme_len": 5283,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-molecule": {
+    "summary": "adds a new pytest option named --molecule-unavailable-driver=skip",
+    "generated_at": "2026-03-09T08:09:11.961Z",
+    "readme_fetched_at": "2026-03-09T07:11:02.960Z",
+    "readme_len": 4074,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-mongo": {
+    "summary": "pytest-mongo =========================================================",
+    "generated_at": "2026-03-09T08:09:12.318Z",
+    "readme_fetched_at": "2026-03-09T07:11:04.084Z",
+    "readme_len": 4931,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-mpi": {
+    "summary": "pytest_mpi is a plugin for pytest providing some useful tools when running tests under MPI, and testing MPI-related code.",
+    "generated_at": "2026-03-09T08:09:12.487Z",
+    "readme_fetched_at": "2026-03-09T07:11:05.201Z",
+    "readme_len": 1597,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-copie": {
+    "summary": "pytest-copy is a pytest plugin that comes with a copy fixture which is a wrapper on top the copier __ API for generating projects.",
+    "generated_at": "2026-03-09T08:09:12.837Z",
+    "readme_fetched_at": "2026-03-09T07:11:06.291Z",
+    "readme_len": 3764,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-csv": {
+    "summary": "pytest-csv ======= ---- **CSV output for pytest.** ---- Installation ------------ Install using pip: :: pip install pytest-csv Usage ----- To enable the",
+    "generated_at": "2026-03-09T08:09:13.193Z",
+    "readme_fetched_at": "2026-03-09T07:11:07.486Z",
+    "readme_len": 8202,
+    "model": "Xenova/flan-t5-small"
+  },
+  "extra-platforms": {
+    "summary": "Extra Platforms detects the runtime architecture, operating system (including Linux distribution), shell, terminal, CI environment & AI coding agents, and exposes rich, cacheable metadata (version, codename, icon, canoni",
+    "generated_at": "2026-03-09T08:09:13.547Z",
+    "readme_fetched_at": "2026-03-09T07:11:08.515Z",
+    "readme_len": 14136,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-salt-factories": {
+    "summary": "Pytest plugin that It's a pytest plugin, and also the evolution of pytest-salt , a great start, but ...",
+    "generated_at": "2026-03-09T08:09:13.589Z",
+    "readme_fetched_at": "2026-03-09T07:11:09.750Z",
+    "readme_len": 2033,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-elk-reporter": {
+    "summary": "pytest-elk-reporter A plugin to send pytest test results to [ELK] stack, with extra context data ## Features: Report each test result result into Elasticsearch as they finish * Automatically append contextual data to eac",
+    "generated_at": "2026-03-09T08:09:13.941Z",
+    "readme_fetched_at": "2026-03-09T07:11:10.843Z",
+    "readme_len": 7662,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-dynamodb": {
+    "summary": "pytest-dynamodb: pytest-dynamodb: pytest-dynamodb: pytest-dynamodb: pytest-dynamodb: pytest-dynamodb: pytest-dynamodb:",
+    "generated_at": "2026-03-09T08:09:14.302Z",
+    "readme_fetched_at": "2026-03-09T07:11:12.001Z",
+    "readme_len": 5068,
+    "model": "Xenova/flan-t5-small"
+  },
+  "awssert": {
+    "summary": "The simplest way to get the most out of your data is to use it as an example.",
+    "generated_at": "2026-03-09T08:09:14.662Z",
+    "readme_fetched_at": "2026-03-09T07:11:13.110Z",
+    "readme_len": 7537,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-inline": {
+    "summary": "pytest-inline is a [pytest]()]() plugin for writing inline tests.",
+    "generated_at": "2026-03-09T08:09:15.027Z",
+    "readme_fetched_at": "2026-03-09T07:11:14.218Z",
+    "readme_len": 8660,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-pipeline": {
+    "summary": "pytest-pipeline is a pytest plugin for functional testing of data analysis pipelines.",
+    "generated_at": "2026-03-09T08:09:15.392Z",
+    "readme_fetched_at": "2026-03-09T07:11:15.316Z",
+    "readme_len": 5751,
+    "model": "Xenova/flan-t5-small"
+  },
+  "codecrumbs": {
+    "summary": "pytest-codecrumbs is free and open source software.",
+    "generated_at": "2026-03-09T08:09:15.511Z",
+    "readme_fetched_at": "2026-03-09T07:11:16.426Z",
+    "readme_len": 2192,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-localftpserver": {
+    "summary": "python 2.7 and 3.4 was dropped.",
+    "generated_at": "2026-03-09T08:09:15.873Z",
+    "readme_fetched_at": "2026-03-09T07:11:17.461Z",
+    "readme_len": 4518,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-check-links": {
+    "summary": "pytest-check-links plugin that checks URLs for HTML-containing files.",
+    "generated_at": "2026-03-09T08:09:16.231Z",
+    "readme_fetched_at": "2026-03-09T07:11:18.541Z",
+    "readme_len": 3957,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-visual": {
+    "summary": "pytest-visual can be installed with the following command: In order to run examples in this repository, you also need development dependencies.",
+    "generated_at": "2026-03-09T08:09:16.597Z",
+    "readme_fetched_at": "2026-03-09T07:11:19.685Z",
+    "readme_len": 8305,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-docker-db": {
+    "summary": "## Features: Use custom pytest-docker-db to create and teardown containers within the pytest life cycle.",
+    "generated_at": "2026-03-09T08:09:17.021Z",
+    "readme_fetched_at": "2026-03-09T07:11:20.735Z",
+    "readme_len": 4393,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-xpara": {
+    "summary": "pytest-xpara ======== pytest-xpara is an extended parametrizing plugin of pytest.",
+    "generated_at": "2026-03-09T08:09:17.197Z",
+    "readme_fetched_at": "2026-03-09T07:11:21.829Z",
+    "readme_len": 1988,
+    "model": "Xenova/flan-t5-small"
+  },
+  "testgr": {
+    "summary": "Testgr Web service provides monitoring and data store for nose2 or pytest execution results.",
+    "generated_at": "2026-03-09T08:09:17.545Z",
+    "readme_fetched_at": "2026-03-09T07:11:22.970Z",
+    "readme_len": 6297,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-scrutinize": {
+    "summary": "# pytest-scrutinize Big test suites for large projects can be a pain to optimize.",
+    "generated_at": "2026-03-09T08:09:17.900Z",
+    "readme_fetched_at": "2026-03-09T07:11:24.058Z",
+    "readme_len": 7163,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-mqtt": {
+    "summary": "pytest-mqtt supports testing systems based on MQTT by providing test fixtures for pytest.",
+    "generated_at": "2026-03-09T08:09:18.255Z",
+    "readme_fetched_at": "2026-03-09T07:11:25.263Z",
+    "readme_len": 5381,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-vts": {
+    "summary": "Pytest plugin that 2.",
+    "generated_at": "2026-03-09T08:09:18.615Z",
+    "readme_fetched_at": "2026-03-09T07:11:26.403Z",
+    "readme_len": 16061,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-xflaky": {
+    "summary": "pytest-xflaky",
+    "generated_at": "2026-03-09T08:09:18.728Z",
+    "readme_fetched_at": "2026-03-09T07:11:27.553Z",
+    "readme_len": 9741,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-pycodestyle": {
+    "summary": "# pytest-pycodestyle pytest plugin to run pycodestyle",
+    "generated_at": "2026-03-09T08:09:18.849Z",
+    "readme_fetched_at": "2026-03-09T07:11:28.616Z",
+    "readme_len": 978,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-jupyter": {
+    "summary": "pytest-jupyter",
+    "generated_at": "2026-03-09T08:09:18.960Z",
+    "readme_fetched_at": "2026-03-09T07:11:29.663Z",
+    "readme_len": 3019,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-appium": {
+    "summary": "pytest-selenium",
+    "generated_at": "2026-03-09T08:09:19.070Z",
+    "readme_fetched_at": "2026-03-09T07:11:30.832Z",
+    "readme_len": 7172,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-aio": {
+    "summary": "pytest-aio** should be installed using pip: :: Optionally extras are available: :: Usage ===== When installed the plugin runs all your async test functions/fixtures...",
+    "generated_at": "2026-03-09T08:09:19.420Z",
+    "readme_fetched_at": "2026-03-09T07:11:31.917Z",
+    "readme_len": 4170,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest_network": {
+    "summary": "We use BestDoctor python styleguide.",
+    "generated_at": "2026-03-09T08:09:19.571Z",
+    "readme_fetched_at": "2026-03-09T07:11:33.004Z",
+    "readme_len": 2779,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-pyright": {
+    "summary": "pytest-plugin:..",
+    "generated_at": "2026-03-09T08:09:19.685Z",
+    "readme_fetched_at": "2026-03-09T07:11:34.056Z",
+    "readme_len": 2400,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-modified-env": {
+    "summary": "Pytest plugin to fail a test if it leaves modified os.environ afterwards.",
+    "generated_at": "2026-03-09T08:09:19.725Z",
+    "readme_fetched_at": "2026-03-09T07:11:35.134Z",
+    "readme_len": 2018,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-asyncio-concurrent": {
+    "summary": "Explicitly specify group by providing group parameter to asyncio_concurrent mark.",
+    "generated_at": "2026-03-09T08:09:19.900Z",
+    "readme_fetched_at": "2026-03-09T07:11:36.230Z",
+    "readme_len": 5504,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-snail": {
+    "summary": "# pytest-snail Plugin for adding a marker to slow running tests.",
+    "generated_at": "2026-03-09T08:09:20.258Z",
+    "readme_fetched_at": "2026-03-09T07:11:37.334Z",
+    "readme_len": 2164,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-iam": {
+    "summary": "pytest-iam provides tools to test your application authentication mechanism against a OAuth2/OIDC server, with SCIM support:",
+    "generated_at": "2026-03-09T08:09:20.422Z",
+    "readme_fetched_at": "2026-03-09T07:11:38.468Z",
+    "readme_len": 2177,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-docs": {
+    "summary": "Pytest-docs uses the pytest plugin.",
+    "generated_at": "2026-03-09T08:09:20.552Z",
+    "readme_fetched_at": "2026-03-09T07:11:39.527Z",
+    "readme_len": 4679,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-executable": {
+    "summary": "pytest-executable* is a free and open source software, distributed under the Apache License 2.0.",
+    "generated_at": "2026-03-09T08:09:20.914Z",
+    "readme_fetched_at": "2026-03-09T07:11:40.633Z",
+    "readme_len": 3184,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-pydocstyle": {
+    "summary": "pytest-pydocstyle",
+    "generated_at": "2026-03-09T08:09:20.983Z",
+    "readme_fetched_at": "2026-03-09T07:11:41.666Z",
+    "readme_len": 977,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-bandit": {
+    "summary": "pytest-bandit:..",
+    "generated_at": "2026-03-09T08:09:21.162Z",
+    "readme_fetched_at": "2026-03-09T07:11:42.768Z",
+    "readme_len": 2351,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-pgtap": {
+    "summary": "pytest-pgtap is alpha software.** pytest-pgtap is [pytest plugin][] that allows pytest to discover, run, and aggregate [pgTap][] [PostgresQL][] tests as part",
+    "generated_at": "2026-03-09T08:09:21.532Z",
+    "readme_fetched_at": "2026-03-09T07:11:43.865Z",
+    "readme_len": 2867,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-salt": {
+    "summary": "pytest-salt",
+    "generated_at": "2026-03-09T08:09:21.587Z",
+    "readme_fetched_at": "2026-03-09T07:11:45.031Z",
+    "readme_len": 285,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-frappe": {
+    "summary": "pytest-frappe is a set of pytest fixtures for testing Frappe applications.",
+    "generated_at": "2026-03-09T08:09:21.926Z",
+    "readme_fetched_at": "2026-03-09T07:11:46.087Z",
+    "readme_len": 1501,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-plus": {
+    "summary": "pytest-plus\" does not include functionality.",
+    "generated_at": "2026-03-09T08:09:22.319Z",
+    "readme_fetched_at": "2026-03-09T07:11:47.214Z",
+    "readme_len": 3189,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-covfefe": {
+    "summary": "Pytest plugin that This pytest plugin was generated with Cookiecutter along with @hackebrot's cookiecutter-pytest-plugin template.",
+    "generated_at": "2026-03-09T08:09:22.441Z",
+    "readme_fetched_at": "2026-03-09T07:11:48.304Z",
+    "readme_len": 2296,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-timeouts": {
+    "summary": "pytest-timeouts is a free plugin for pytest-timeouts.",
+    "generated_at": "2026-03-09T08:09:22.669Z",
+    "readme_fetched_at": "2026-03-09T07:11:49.375Z",
+    "readme_len": 2665,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-colordots": {
+    "summary": "pytest-colordots",
+    "generated_at": "2026-03-09T08:09:22.734Z",
+    "readme_fetched_at": "2026-03-09T07:11:50.514Z",
+    "readme_len": 433,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-max-warnings": {
+    "summary": "Authors - @miketheman",
+    "generated_at": "2026-03-09T08:09:22.814Z",
+    "readme_fetched_at": "2026-03-09T07:11:51.561Z",
+    "readme_len": 779,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-skippy": {
+    "summary": "Pytest plugin that Add the `--skippy option to your pytest command.",
+    "generated_at": "2026-03-09T08:09:22.882Z",
+    "readme_fetched_at": "2026-03-09T07:11:52.668Z",
+    "readme_len": 1764,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-execution-timer": {
+    "summary": "pytest-execution-timer is free and open source software.",
+    "generated_at": "2026-03-09T08:09:23.014Z",
+    "readme_fetched_at": "2026-03-09T07:11:53.765Z",
+    "readme_len": 2735,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-netbox-docker": {
+    "summary": "MIT License is a proprietary license.",
+    "generated_at": "2026-03-09T08:09:23.126Z",
+    "readme_fetched_at": "2026-03-09T07:11:54.810Z",
+    "readme_len": 1751,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-fluent": {
+    "summary": "Pytest plugin that _pytest_ is one of the most powerful testing suites with a lot of functionality and many plugins.",
+    "generated_at": "2026-03-09T08:09:23.611Z",
+    "readme_fetched_at": "2026-03-09T07:11:55.905Z",
+    "readme_len": 10529,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-postgres": {
+    "summary": "Pytest plugin that pytest-postgres is an plugin for pytest, for adding PostgreSQL database as service into Docker container for tests.",
+    "generated_at": "2026-03-09T08:09:23.930Z",
+    "readme_fetched_at": "2026-03-09T07:11:56.987Z",
+    "readme_len": 1461,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-emoji-output": {
+    "summary": "# pytest-emoji-output # pytest plugin # pytest-emoji-output # pytest-emoji-output # pytest-emoji-output # pytest-emoji-",
+    "generated_at": "2026-03-09T08:09:24.301Z",
+    "readme_fetched_at": "2026-03-09T07:11:58.094Z",
+    "readme_len": 4289,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-ast-transformer": {
+    "summary": "Pytest plugin that ## About AST Transformer integrated with py.test.",
+    "generated_at": "2026-03-09T08:09:24.706Z",
+    "readme_fetched_at": "2026-03-09T07:11:59.194Z",
+    "readme_len": 1801,
+    "model": "Xenova/flan-t5-small"
+  },
+  "jestspectation": {
+    "summary": "Using a pytest plugin, you can configure Jestspectation.",
+    "generated_at": "2026-03-09T08:09:24.809Z",
+    "readme_fetched_at": "2026-03-09T07:12:00.292Z",
+    "readme_len": 1517,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-valgrind": {
+    "summary": "pytest invocation",
+    "generated_at": "2026-03-09T08:09:24.909Z",
+    "readme_fetched_at": "2026-03-09T07:12:01.448Z",
+    "readme_len": 8053,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-stub": {
+    "summary": "pytest-stub pytest-stub pytest-stub pytest-stub pytest-stub pytest-stub pytest-stub",
+    "generated_at": "2026-03-09T08:09:25.264Z",
+    "readme_fetched_at": "2026-03-09T07:12:02.711Z",
+    "readme_len": 2429,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-collect-formatter": {
+    "summary": "pytest-collect-formatter",
+    "generated_at": "2026-03-09T08:09:25.358Z",
+    "readme_fetched_at": "2026-03-09T07:12:03.819Z",
+    "readme_len": 7756,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-resource-path": {
+    "summary": "\"license Distributed under the terms of the [MIT] license, \"pytest-resource-path-path\" is a proprietary software package used under license licenses of the licensees of the licensees of the licensees of the licensees of",
+    "generated_at": "2026-03-09T08:09:25.724Z",
+    "readme_fetched_at": "2026-03-09T07:12:04.947Z",
+    "readme_len": 5676,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-django-ordering": {
+    "summary": "pytest-django-ordering |PyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPy",
+    "generated_at": "2026-03-09T08:09:26.084Z",
+    "readme_fetched_at": "2026-03-09T07:12:06.015Z",
+    "readme_len": 2250,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-test-categories": {
+    "summary": "pytest-test-categories plugin",
+    "generated_at": "2026-03-09T08:09:26.206Z",
+    "readme_fetched_at": "2026-03-09T07:12:07.092Z",
+    "readme_len": 15959,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest": {
+    "summary": "Pytest plugin that # pytest 【中文文档】（pytest framework） *** 🇨🇳 pytest 框架【中文文档】（手动翻译，持续更新...） 英文官方文档 🇨🇳 *** ## 第一章--安装与入门（Installation and Getting Started）",
+    "generated_at": "2026-03-09T08:09:26.241Z",
+    "readme_fetched_at": "2026-03-09T07:12:08.215Z",
+    "readme_len": 574,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-tagging": {
+    "summary": "It is thread-safe, so it can be used with pytest-parallel.",
+    "generated_at": "2026-03-09T08:09:26.382Z",
+    "readme_fetched_at": "2026-03-09T07:12:09.333Z",
+    "readme_len": 2276,
+    "model": "Xenova/flan-t5-small"
+  },
+  "unflakable-python": {
+    "summary": "GitHub is the official repository of Unflakable plugins for Python.",
+    "generated_at": "2026-03-09T08:09:26.490Z",
+    "readme_fetched_at": "2026-03-09T07:12:10.421Z",
+    "readme_len": 1718,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest_matrix": {
+    "summary": "Pytest Matrix Easy fixture combinations.",
+    "generated_at": "2026-03-09T08:09:26.855Z",
+    "readme_fetched_at": "2026-03-09T07:12:11.482Z",
+    "readme_len": 14430,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-avoidance": {
+    "summary": "pytest-avoidance is free and open source software.",
+    "generated_at": "2026-03-09T08:09:27.126Z",
+    "readme_fetched_at": "2026-03-09T07:12:12.567Z",
+    "readme_len": 3032,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-difftest": {
+    "summary": "# pytest-difftest **Fast test selection for pytest** - Only run tests affected by your changes, powered by Rust.",
+    "generated_at": "2026-03-09T08:09:27.499Z",
+    "readme_fetched_at": "2026-03-09T07:12:13.664Z",
+    "readme_len": 6622,
+    "model": "Xenova/flan-t5-small"
+  },
+  "antitesting": {
+    "summary": "pytest.com/pytest/pytest/pytest/pytest/pytest/pytest/pytest/pytest/pytest/pytest/pytest/pytest/pytest/pytest/p",
+    "generated_at": "2026-03-09T08:09:27.839Z",
+    "readme_fetched_at": "2026-03-09T07:12:14.735Z",
+    "readme_len": 2935,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-joke": {
+    "summary": "Pytest plugin that This is a completely useless plugin created to get some practice in creating plugins for Pytest.",
+    "generated_at": "2026-03-09T08:09:28.218Z",
+    "readme_fetched_at": "2026-03-09T07:12:15.802Z",
+    "readme_len": 2117,
+    "model": "Xenova/flan-t5-small"
+  },
+  "async-pytest-httpserver": {
+    "summary": "# async-pytest-httpserver is a fully asynchronous mock HTTP server for pytest, built on top of aiohttp and pytest-asyncio - Real TCP server - compatible with any HTTP client (",
+    "generated_at": "2026-03-09T08:09:28.561Z",
+    "readme_fetched_at": "2026-03-09T07:12:16.845Z",
+    "readme_len": 4811,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-finer-verdicts": {
+    "summary": "** Venkatesh-Prasad Ranganath**",
+    "generated_at": "2026-03-09T08:09:28.677Z",
+    "readme_fetched_at": "2026-03-09T07:12:17.955Z",
+    "readme_len": 2219,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-snowflake_bdd": {
+    "summary": "pytest-snowflake_bdd is the pytest plugin pytest-snowflake_bdd.",
+    "generated_at": "2026-03-09T08:09:29.051Z",
+    "readme_fetched_at": "2026-03-09T07:12:19.121Z",
+    "readme_len": 8425,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-ignore-flaky": {
+    "summary": "pytest plugin",
+    "generated_at": "2026-03-09T08:09:29.130Z",
+    "readme_fetched_at": "2026-03-09T07:12:20.246Z",
+    "readme_len": 2051,
+    "model": "Xenova/flan-t5-small"
+  },
+  "spock": {
+    "summary": "pytest is a BDD-style developer testing and specification framework for Python, and this is an implementation of the spock.",
+    "generated_at": "2026-03-09T08:09:29.337Z",
+    "readme_fetched_at": "2026-03-09T07:12:21.356Z",
+    "readme_len": 8363,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-describe-it": {
+    "summary": "pytest-sugar - wikipedia",
+    "generated_at": "2026-03-09T08:09:29.400Z",
+    "readme_fetched_at": "2026-03-09T07:12:22.541Z",
+    "readme_len": 2484,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-buildkite": {
+    "summary": "pytest-buildkite is free and open source software.",
+    "generated_at": "2026-03-09T08:09:29.534Z",
+    "readme_fetched_at": "2026-03-09T07:12:23.771Z",
+    "readme_len": 4796,
+    "model": "Xenova/flan-t5-small"
+  },
+  "discovery-pytestautomation": {
+    "summary": "All tests are matched to the test type, then tested.",
+    "generated_at": "2026-03-09T08:09:29.895Z",
+    "readme_fetched_at": "2026-03-09T07:12:24.922Z",
+    "readme_len": 15288,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-results": {
+    "summary": "pytest plugin",
+    "generated_at": "2026-03-09T08:09:29.948Z",
+    "readme_fetched_at": "2026-03-09T07:12:25.974Z",
+    "readme_len": 1486,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-parametrize-suite": {
+    "summary": "pytest-parametrize-suite",
+    "generated_at": "2026-03-09T08:09:30.058Z",
+    "readme_fetched_at": "2026-03-09T07:12:27.067Z",
+    "readme_len": 6187,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-mockservers": {
+    "summary": "pytest-mockservers is licensed under the MIT license.",
+    "generated_at": "2026-03-09T08:09:30.173Z",
+    "readme_fetched_at": "2026-03-09T07:12:28.274Z",
+    "readme_len": 1561,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-httpdbg": {
+    "summary": "pytest-html",
+    "generated_at": "2026-03-09T08:09:30.265Z",
+    "readme_fetched_at": "2026-03-09T07:12:29.401Z",
+    "readme_len": 3577,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-circuitpython": {
+    "summary": "pytest plugins run tests on a CircuitPython board through it's serial REPL.",
+    "generated_at": "2026-03-09T08:09:30.461Z",
+    "readme_fetched_at": "2026-03-09T07:12:30.500Z",
+    "readme_len": 6503,
+    "model": "Xenova/flan-t5-small"
+  },
+  "nbtest": {
+    "summary": "pytest is a pytest plugin that executes assertions embedded in.ipynb files.",
+    "generated_at": "2026-03-09T08:09:30.688Z",
+    "readme_fetched_at": "2026-03-09T07:12:31.616Z",
+    "readme_len": 11837,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-cdist": {
+    "summary": "Pytest plugin that allows to split a test suite into multiple parts and run them independently.",
+    "generated_at": "2026-03-09T08:09:31.037Z",
+    "readme_fetched_at": "2026-03-09T07:12:32.742Z",
+    "readme_len": 5317,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest_parallel": {
+    "summary": "pytest_parallel is a pytest plugin that automates the execution of MPI parallel tests.",
+    "generated_at": "2026-03-09T08:09:31.261Z",
+    "readme_fetched_at": "2026-03-09T07:12:33.810Z",
+    "readme_len": 22556,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-discord": {
+    "summary": "Pytest plugin that A pytest plugin to notify test results to a Discord channel.",
+    "generated_at": "2026-03-09T08:09:31.635Z",
+    "readme_fetched_at": "2026-03-09T07:12:34.890Z",
+    "readme_len": 6262,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-fixtures-fixtures": {
+    "summary": "Fixtures, for fixtures.",
+    "generated_at": "2026-03-09T08:09:31.736Z",
+    "readme_fetched_at": "2026-03-09T07:12:36.057Z",
+    "readme_len": 3421,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-gitlab-code-quality": {
+    "summary": "pytest-git-git-quality plugin",
+    "generated_at": "2026-03-09T08:09:31.849Z",
+    "readme_fetched_at": "2026-03-09T07:12:37.182Z",
+    "readme_len": 2586,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-confluence-report": {
+    "summary": "Pytest plugin to convert test results into confluence page report to proceed with tests analysis.",
+    "generated_at": "2026-03-09T08:09:32.225Z",
+    "readme_fetched_at": "2026-03-09T07:12:38.396Z",
+    "readme_len": 6103,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-qaseio": {
+    "summary": "pytest-qaseio pytest-qaseio pytest-qaseio pytest-qaseio pytest-qaseio pytest-qase",
+    "generated_at": "2026-03-09T08:09:32.602Z",
+    "readme_fetched_at": "2026-03-09T07:12:39.529Z",
+    "readme_len": 7469,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-jinja": {
+    "summary": "pytest-jinja is a plugin to generate customizable jinja-based HTML reports in pytest.",
+    "generated_at": "2026-03-09T08:09:32.972Z",
+    "readme_fetched_at": "2026-03-09T07:12:40.618Z",
+    "readme_len": 4828,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-santa": {
+    "summary": "pytest-santa pytest-santa is a plugin that collects function.",
+    "generated_at": "2026-03-09T08:09:33.276Z",
+    "readme_fetched_at": "2026-03-09T07:12:41.778Z",
+    "readme_len": 1362,
+    "model": "Xenova/flan-t5-small"
+  },
+  "saritasa-s3-tools": {
+    "summary": "saritasa-s3-tools",
+    "generated_at": "2026-03-09T08:09:33.403Z",
+    "readme_fetched_at": "2026-03-09T07:12:42.896Z",
+    "readme_len": 7350,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-soft-assertions": {
+    "summary": "pytest plugin",
+    "generated_at": "2026-03-09T08:09:33.439Z",
+    "readme_fetched_at": "2026-03-09T07:12:43.955Z",
+    "readme_len": 4131,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-canonical-data": {
+    "summary": "pytest-canonical-data",
+    "generated_at": "2026-03-09T08:09:33.554Z",
+    "readme_fetched_at": "2026-03-09T07:12:45.004Z",
+    "readme_len": 3706,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-case": {
+    "summary": "Pytest plugin that ## Using Fixtures - Using pytest built-in request fixture.",
+    "generated_at": "2026-03-09T08:09:33.849Z",
+    "readme_fetched_at": "2026-03-09T07:12:46.109Z",
+    "readme_len": 2650,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-matcher": {
+    "summary": "Pytest plugin that provides a couple of fixtures to match test output against patterns stored in files.",
+    "generated_at": "2026-03-09T08:09:34.258Z",
+    "readme_fetched_at": "2026-03-09T07:12:47.137Z",
+    "readme_len": 1318,
+    "model": "Xenova/flan-t5-small"
+  },
+  "qase-pytest": {
+    "summary": "Pytest plugin that Also you should know, that if no case id is associated with current test in pytest - attachment would not be uploaded:",
+    "generated_at": "2026-03-09T08:09:34.635Z",
+    "readme_fetched_at": "2026-03-09T07:12:48.381Z",
+    "readme_len": 5947,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-unittest-filter": {
+    "summary": "pytest-unittest-filter",
+    "generated_at": "2026-03-09T08:09:34.758Z",
+    "readme_fetched_at": "2026-03-09T07:12:49.507Z",
+    "readme_len": 3740,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-ranking": {
+    "summary": "pytest plugin allows you to find regression test failures faster and receive testing feedback sooner from CI build.",
+    "generated_at": "2026-03-09T08:09:35.142Z",
+    "readme_fetched_at": "2026-03-09T07:12:50.522Z",
+    "readme_len": 7536,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-simple-settings": {
+    "summary": "pytest-simple-settings",
+    "generated_at": "2026-03-09T08:09:35.207Z",
+    "readme_fetched_at": "2026-03-09T07:12:51.602Z",
+    "readme_len": 1075,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-cli-fixtures": {
+    "summary": "pytest-cli-fixtures [![Package Version][pypi_badge][pypi][![Python Versions][pyversions_badge][pypi] [![Build Status][c",
+    "generated_at": "2026-03-09T08:09:35.575Z",
+    "readme_fetched_at": "2026-03-09T07:12:52.713Z",
+    "readme_len": 4493,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-statsd": {
+    "summary": "pytest-statsd",
+    "generated_at": "2026-03-09T08:09:35.637Z",
+    "readme_fetched_at": "2026-03-09T07:12:53.785Z",
+    "readme_len": 1737,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-email": {
+    "summary": "Pytest plugin that *Thanks for using pytest-email!*",
+    "generated_at": "2026-03-09T08:09:35.977Z",
+    "readme_fetched_at": "2026-03-09T07:12:54.853Z",
+    "readme_len": 2840,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-resource-usage": {
+    "summary": "pytest-resource-usage",
+    "generated_at": "2026-03-09T08:09:36.057Z",
+    "readme_fetched_at": "2026-03-09T07:12:55.901Z",
+    "readme_len": 2957,
+    "model": "Xenova/flan-t5-small"
+  },
+  "testiq": {
+    "summary": "\"Testiq\" plugin is a plugin that automatically collects per-test coverage.",
+    "generated_at": "2026-03-09T08:09:36.220Z",
+    "readme_fetched_at": "2026-03-09T07:12:57.015Z",
+    "readme_len": 16156,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-static": {
+    "summary": "[Contributor Guide]: [http://codeforces.com/contributor-guide]: [http://codeforces.com/contributor-guide]: [http://codeforces.com/contributor-guide]: [http://codeforce",
+    "generated_at": "2026-03-09T08:09:36.581Z",
+    "readme_fetched_at": "2026-03-09T07:12:58.051Z",
+    "readme_len": 3224,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-pinpoint": {
+    "summary": "pytest-pinpoint",
+    "generated_at": "2026-03-09T08:09:36.661Z",
+    "readme_fetched_at": "2026-03-09T07:12:59.129Z",
+    "readme_len": 1252,
+    "model": "Xenova/flan-t5-small"
+  },
+  "flask_fixture": {
+    "summary": "pytest plugin",
+    "generated_at": "2026-03-09T08:09:36.702Z",
+    "readme_fetched_at": "2026-03-09T07:13:00.196Z",
+    "readme_len": 2114,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-markers-presence": {
+    "summary": "Pytest plugin that A simple plugin for easy staging your Python3 project's structure of PyTest tests.",
+    "generated_at": "2026-03-09T08:09:36.782Z",
+    "readme_fetched_at": "2026-03-09T07:13:01.259Z",
+    "readme_len": 4920,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-hardware-test-report": {
+    "summary": "hw-test-report | Create JSON report | | --hw-test-report-file=PATH | Target path to save JSON report (use \"none\" to not save the report) | | --hw-test-report-summary | Just",
+    "generated_at": "2026-03-09T08:09:37.147Z",
+    "readme_fetched_at": "2026-03-09T07:13:02.281Z",
+    "readme_len": 15410,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-isolated": {
+    "summary": "pytest-isolated",
+    "generated_at": "2026-03-09T08:09:37.267Z",
+    "readme_fetched_at": "2026-03-09T07:13:03.505Z",
+    "readme_len": 9114,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-fixture-forms": {
+    "summary": "pytest-fixture-forms A powerful pytest plugin that simplifies testing different forms of parameters through dynamic fixture generation.",
+    "generated_at": "2026-03-09T08:09:37.599Z",
+    "readme_fetched_at": "2026-03-09T07:13:04.624Z",
+    "readme_len": 10004,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-notimplemented": {
+    "summary": "@mark.not_implemented",
+    "generated_at": "2026-03-09T08:09:37.672Z",
+    "readme_fetched_at": "2026-03-09T07:13:05.816Z",
+    "readme_len": 1254,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-portion": {
+    "summary": "pytest-portion select a portion of the collected tests, so you can run different parts of it, in different instances to scale horizontally.",
+    "generated_at": "2026-03-09T08:09:38.027Z",
+    "readme_fetched_at": "2026-03-09T07:13:07.086Z",
+    "readme_len": 5445,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-bdd-html": {
+    "summary": "pytest-html",
+    "generated_at": "2026-03-09T08:09:38.114Z",
+    "readme_fetched_at": "2026-03-09T07:13:08.165Z",
+    "readme_len": 2987,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-sipp": {
+    "summary": "Pytest plugin that Automate sipp testing with pytest and pysipp.",
+    "generated_at": "2026-03-09T08:09:38.180Z",
+    "readme_fetched_at": "2026-03-09T07:13:09.177Z",
+    "readme_len": 1597,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-prometheus-pushgateway": {
+    "summary": "pytest-prometheus-pushgateway",
+    "generated_at": "2026-03-09T08:09:38.269Z",
+    "readme_fetched_at": "2026-03-09T07:13:10.260Z",
+    "readme_len": 1311,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-plugins": {
+    "summary": "## Plugins | Plugins | Description | PYPI | |------------------| -- pytest-exasol-backend | Fixture aggregating functionality of both of the above plugins | pytest-exasol-related projects |",
+    "generated_at": "2026-03-09T08:09:38.624Z",
+    "readme_fetched_at": "2026-03-09T07:13:11.329Z",
+    "readme_len": 2691,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-testrail-reporter": {
+    "summary": "pytest.ini options.",
+    "generated_at": "2026-03-09T08:09:38.995Z",
+    "readme_fetched_at": "2026-03-09T07:13:12.418Z",
+    "readme_len": 3968,
+    "model": "Xenova/flan-t5-small"
+  },
+  "nydok": {
+    "summary": "py.test for running tests, combined with a CLI for creating reports.",
+    "generated_at": "2026-03-09T08:09:39.360Z",
+    "readme_fetched_at": "2026-03-09T07:13:13.547Z",
+    "readme_len": 4270,
+    "model": "Xenova/flan-t5-small"
+  },
+  "type_comparable": {
+    "summary": "pytest plugin",
+    "generated_at": "2026-03-09T08:09:39.436Z",
+    "readme_fetched_at": "2026-03-09T07:13:14.576Z",
+    "readme_len": 2613,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-pytestrail": {
+    "summary": "pytest-pytestrail",
+    "generated_at": "2026-03-09T08:09:39.576Z",
+    "readme_fetched_at": "2026-03-09T07:13:15.658Z",
+    "readme_len": 4418,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-smoke": {
+    "summary": "pytest-smoke is a pytest plugin that enables smoke testing on large test suites.",
+    "generated_at": "2026-03-09T08:09:39.933Z",
+    "readme_fetched_at": "2026-03-09T07:13:16.686Z",
+    "readme_len": 9814,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-git-diff": {
+    "summary": "Pytest plugin that allows the user to select the tests *affected* by a given range of git commits.",
+    "generated_at": "2026-03-09T08:09:40.260Z",
+    "readme_fetched_at": "2026-03-09T07:13:17.767Z",
+    "readme_len": 1198,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-failed-to-verify": {
+    "summary": "pytest plugin that helps better distinguishing test failures from setup flakiness.",
+    "generated_at": "2026-03-09T08:09:40.615Z",
+    "readme_fetched_at": "2026-03-09T07:13:18.878Z",
+    "readme_len": 4205,
+    "model": "Xenova/flan-t5-small"
+  },
+  "saritasa-drf-tools": {
+    "summary": "pytest plugin \"saritasa-drf-tools\" does?",
+    "generated_at": "2026-03-09T08:09:40.984Z",
+    "readme_fetched_at": "2026-03-09T07:13:19.997Z",
+    "readme_len": 11120,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-catch-server": {
+    "summary": "pytest plugin",
+    "generated_at": "2026-03-09T08:09:41.069Z",
+    "readme_fetched_at": "2026-03-09T07:13:21.076Z",
+    "readme_len": 3121,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-qatouch": {
+    "summary": "Pytest plugin for uploading test results to your QA Touch Testrun.",
+    "generated_at": "2026-03-09T08:09:41.392Z",
+    "readme_fetched_at": "2026-03-09T07:13:22.184Z",
+    "readme_len": 4531,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytestplugin": {
+    "summary": "\"pytestplugin\" does the pytest plugin \"pytestplugin\" do?",
+    "generated_at": "2026-03-09T08:09:41.588Z",
+    "readme_fetched_at": "2026-03-09T07:13:23.367Z",
+    "readme_len": 2690,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pypm-test": {
+    "summary": "pytest-plugin is a simple, simple, and simple way to automate the use of pytest-plugins.",
+    "generated_at": "2026-03-09T08:09:41.958Z",
+    "readme_fetched_at": "2026-03-09T07:13:24.495Z",
+    "readme_len": 13625,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-streaming": {
+    "summary": "pytest-streaming &#160; ### Install pytest-streaming &#160; ### Streaming Augmenting and simplifying the flow of testing streaming applications including pulsar, google pubsub, kafka, and nats",
+    "generated_at": "2026-03-09T08:09:42.324Z",
+    "readme_fetched_at": "2026-03-09T07:13:25.608Z",
+    "readme_len": 4731,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-shared-session-scope": {
+    "summary": "## pytest plugin pytest plugin \"pytest-shared-session-scope\" do?",
+    "generated_at": "2026-03-09T08:09:42.699Z",
+    "readme_fetched_at": "2026-03-09T07:13:26.748Z",
+    "readme_len": 10200,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-remove-stale-bytecode": {
+    "summary": "pytest plugin to remove stale bytecode",
+    "generated_at": "2026-03-09T08:09:42.810Z",
+    "readme_fetched_at": "2026-03-09T07:13:27.874Z",
+    "readme_len": 1647,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-nginx": {
+    "summary": "pytest-nginx is a pytest plugin that allows you to test code, which requires you to test code, which requires communicating with a full-fledged web server.",
+    "generated_at": "2026-03-09T08:09:43.172Z",
+    "readme_fetched_at": "2026-03-09T07:13:28.999Z",
+    "readme_len": 4421,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-metrics": {
+    "summary": "Rahul Parwal --- > Inspired from robotframework-metrics",
+    "generated_at": "2026-03-09T08:09:43.307Z",
+    "readme_fetched_at": "2026-03-09T07:13:30.117Z",
+    "readme_len": 2977,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-overwatch": {
+    "summary": "pytest-xdist**",
+    "generated_at": "2026-03-09T08:09:43.386Z",
+    "readme_fetched_at": "2026-03-09T07:13:31.187Z",
+    "readme_len": 1154,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-pyreport": {
+    "summary": "PyReport is a lightweight reporting plugin for PyReport that provides concise HTML reports by parsing JunitXML test results.",
+    "generated_at": "2026-03-09T08:09:43.569Z",
+    "readme_fetched_at": "2026-03-09T07:13:32.241Z",
+    "readme_len": 3630,
+    "model": "Xenova/flan-t5-small"
+  },
+  "hytest": {
+    "summary": "pytest plugin",
+    "generated_at": "2026-03-09T08:09:43.608Z",
+    "readme_fetched_at": "2026-03-09T07:13:33.300Z",
+    "readme_len": 335,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-upload-report": {
+    "summary": "pytest-upload-report is a plugin for pytest that uploads test report files to server.",
+    "generated_at": "2026-03-09T08:09:43.961Z",
+    "readme_fetched_at": "2026-03-09T07:13:34.366Z",
+    "readme_len": 4280,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-codeblock": {
+    "summary": "**Pytest markers**: Add existing or custom pytest markers to the code blocks and hook into the tests life-cycle using conftest markers**: Add existing or custom pytest markers to the code blocks and hook into the tests l",
+    "generated_at": "2026-03-09T08:09:44.321Z",
+    "readme_fetched_at": "2026-03-09T07:13:35.511Z",
+    "readme_len": 8090,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-cmake-presets": {
+    "summary": "Pytest plugin that Tests can use the vendor.pytest-cmake-presets field to modify the expected outcome of some tests.",
+    "generated_at": "2026-03-09T08:09:44.380Z",
+    "readme_fetched_at": "2026-03-09T07:13:36.742Z",
+    "readme_len": 922,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-selenium-example": {
+    "summary": "GitHub is the only open source repository that has a GitHub repository.",
+    "generated_at": "2026-03-09T08:09:44.577Z",
+    "readme_fetched_at": "2026-03-09T07:13:37.804Z",
+    "readme_len": 716,
+    "model": "Xenova/flan-t5-small"
+  },
+  "api-coverage": {
+    "summary": "# pytest-api-cov-report",
+    "generated_at": "2026-03-09T08:09:44.707Z",
+    "readme_fetched_at": "2026-03-09T07:13:38.867Z",
+    "readme_len": 16167,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-focus": {
+    "summary": "# pytest-focus Welcome to pytest-focus, a pytest plugin designed to make you focus as you test cases.",
+    "generated_at": "2026-03-09T08:09:45.062Z",
+    "readme_fetched_at": "2026-03-09T07:13:39.997Z",
+    "readme_len": 7442,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-html-dashboard": {
+    "summary": "\"Transform your pytest HTML reports into beautiful, interactive dashboards!\" A comprehensive pytest plugin that enhances HTML reports with interactive charts, intelligent error classification, and modern styling.",
+    "generated_at": "2026-03-09T08:09:45.430Z",
+    "readme_fetched_at": "2026-03-09T07:13:41.100Z",
+    "readme_len": 13028,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-mark-no-py3": {
+    "summary": "Using the pytest plugin \"pytest-mark-no-py3\" does the trick.",
+    "generated_at": "2026-03-09T08:09:45.616Z",
+    "readme_fetched_at": "2026-03-09T07:13:42.227Z",
+    "readme_len": 2084,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-asptest": {
+    "summary": "ASP test pytest plugin to test ASP source code.",
+    "generated_at": "2026-03-09T08:09:45.980Z",
+    "readme_fetched_at": "2026-03-09T07:13:43.413Z",
+    "readme_len": 2316,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-report-jinja": {
+    "summary": "Pytest plugin that This pytest plugin uses the Jinja2 template engine to produce HTML reports.",
+    "generated_at": "2026-03-09T08:09:46.319Z",
+    "readme_fetched_at": "2026-03-09T07:13:44.483Z",
+    "readme_len": 1286,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-sandbox": {
+    "summary": "pytest.sandbox.",
+    "generated_at": "2026-03-09T08:09:46.418Z",
+    "readme_fetched_at": "2026-03-09T07:13:45.602Z",
+    "readme_len": 1005,
+    "model": "Xenova/flan-t5-small"
+  },
+  "flake8_module_name": {
+    "summary": "pytest plugin",
+    "generated_at": "2026-03-09T08:09:46.462Z",
+    "readme_fetched_at": "2026-03-09T07:13:46.714Z",
+    "readme_len": 451,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-requests": {
+    "summary": "pytest-requests is free and open source software",
+    "generated_at": "2026-03-09T08:09:46.581Z",
+    "readme_fetched_at": "2026-03-09T07:13:47.812Z",
+    "readme_len": 1989,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-asgi-server": {
+    "summary": "pytest-asgi-server",
+    "generated_at": "2026-03-09T08:09:46.643Z",
+    "readme_fetched_at": "2026-03-09T07:13:48.967Z",
+    "readme_len": 1067,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-pythonhashseed": {
+    "summary": "pytest plugin to define PYTHONHASHSEED env for tests.",
+    "generated_at": "2026-03-09T08:09:46.752Z",
+    "readme_fetched_at": "2026-03-09T07:13:50.071Z",
+    "readme_len": 305,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-match-skip": {
+    "summary": "PyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyP",
+    "generated_at": "2026-03-09T08:09:47.117Z",
+    "readme_fetched_at": "2026-03-09T07:13:51.140Z",
+    "readme_len": 3601,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-info-collector": {
+    "summary": "Pytest plugin that pytest_info_collector is a plugin for pytest providing a fixture for collecting information from tests and displaying it, independent of the test status.",
+    "generated_at": "2026-03-09T08:09:47.147Z",
+    "readme_fetched_at": "2026-03-09T07:13:52.298Z",
+    "readme_len": 2043,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest_cache_assert": {
+    "summary": "Pytest plugin that # pytest_cache_assert",
+    "generated_at": "2026-03-09T08:09:47.466Z",
+    "readme_fetched_at": "2026-03-09T07:13:53.435Z",
+    "readme_len": 1024,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-routes": {
+    "summary": "pytest-routes is a simple plugin that works with any ASGI framework, with first-class support for Litestar.",
+    "generated_at": "2026-03-09T08:09:47.842Z",
+    "readme_fetched_at": "2026-03-09T07:13:54.618Z",
+    "readme_len": 3146,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-report-stream": {
+    "summary": "pytest-report-stream is a pytest plugin that allows to stream test reports at runtime.",
+    "generated_at": "2026-03-09T08:09:48.203Z",
+    "readme_fetched_at": "2026-03-09T07:13:55.829Z",
+    "readme_len": 6079,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-eval": {
+    "summary": "pytest-eval is a plugin for pytest-eval, a plugin for pytest-eval, and a plugin for pytest-eval.",
+    "generated_at": "2026-03-09T08:09:48.573Z",
+    "readme_fetched_at": "2026-03-09T07:13:56.956Z",
+    "readme_len": 7240,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest_filter_case": {
+    "summary": "pytest_filter_case",
+    "generated_at": "2026-03-09T08:09:48.638Z",
+    "readme_fetched_at": "2026-03-09T07:13:58.014Z",
+    "readme_len": 622,
+    "model": "Xenova/flan-t5-small"
+  },
+  "python-selenium-webdriver": {
+    "summary": "Pytest plugin that ## Pré-requisitos * Python 3.9 * Google Chrome (última versão) * Selenium Webdriver * Pytest - Allure Framework",
+    "generated_at": "2026-03-09T08:09:48.961Z",
+    "readme_fetched_at": "2026-03-09T07:13:59.210Z",
+    "readme_len": 928,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-tzshift": {
+    "summary": "MIT License Released under the MIT License.",
+    "generated_at": "2026-03-09T08:09:49.083Z",
+    "readme_fetched_at": "2026-03-09T07:14:00.331Z",
+    "readme_len": 3475,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-yamltree": {
+    "summary": "pytest-yamltree is free and open source software",
+    "generated_at": "2026-03-09T08:09:49.319Z",
+    "readme_fetched_at": "2026-03-09T07:14:01.461Z",
+    "readme_len": 3119,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-bug": {
+    "summary": "-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+    "generated_at": "2026-03-09T08:09:49.686Z",
+    "readme_fetched_at": "2026-03-09T07:14:02.690Z",
+    "readme_len": 4876,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-libfaketime": {
+    "summary": "# pytest-libfaketime python-libfaketime plugin for pytest, with support for pytest-xdist.",
+    "generated_at": "2026-03-09T08:09:49.896Z",
+    "readme_fetched_at": "2026-03-09T07:14:03.751Z",
+    "readme_len": 386,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-variant": {
+    "summary": "pytest-variant is a plugin for pytest that allows handling variants in test cases.",
+    "generated_at": "2026-03-09T08:09:50.290Z",
+    "readme_fetched_at": "2026-03-09T07:14:04.844Z",
+    "readme_len": 5082,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-ini": {
+    "summary": "pytest-ini pytest-ini pytest.ini",
+    "generated_at": "2026-03-09T08:09:50.651Z",
+    "readme_fetched_at": "2026-03-09T07:14:05.967Z",
+    "readme_len": 2848,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-publish": {
+    "summary": "if xdist's xdist is run with xdist, the directory tree will be created: **NOTE**",
+    "generated_at": "2026-03-09T08:09:50.840Z",
+    "readme_fetched_at": "2026-03-09T07:14:07.194Z",
+    "readme_len": 2045,
+    "model": "Xenova/flan-t5-small"
+  },
+  "tinyvdiff": {
+    "summary": "Pytest plugin that Minimalist visual regression testing plugin for pytest.",
+    "generated_at": "2026-03-09T08:09:50.876Z",
+    "readme_fetched_at": "2026-03-09T07:14:08.423Z",
+    "readme_len": 1451,
+    "model": "Xenova/flan-t5-small"
+  },
+  "agentprobe-framework": {
+    "summary": "Using the simplest method, the software is able to perform the test, but it's not the only one that's able to perform the test.",
+    "generated_at": "2026-03-09T08:09:51.239Z",
+    "readme_fetched_at": "2026-03-09T07:14:09.552Z",
+    "readme_len": 14614,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-doctest-import": {
+    "summary": "MIT license",
+    "generated_at": "2026-03-09T08:09:51.293Z",
+    "readme_fetched_at": "2026-03-09T07:14:10.733Z",
+    "readme_len": 1362,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-retry-class": {
+    "summary": "pytest-xdist**",
+    "generated_at": "2026-03-09T08:09:51.365Z",
+    "readme_fetched_at": "2026-03-09T07:14:11.772Z",
+    "readme_len": 1225,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-gcs": {
+    "summary": "pytest-gcs",
+    "generated_at": "2026-03-09T08:09:51.428Z",
+    "readme_fetched_at": "2026-03-09T07:14:12.822Z",
+    "readme_len": 1848,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-shabang": {
+    "summary": "pytest.ini",
+    "generated_at": "2026-03-09T08:09:51.492Z",
+    "readme_fetched_at": "2026-03-09T07:14:13.936Z",
+    "readme_len": 2175,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-tape": {
+    "summary": "pytest plugin was generated with Cookiecutter and @hackebrot's cookiecutter-pytest-plugin template...",
+    "generated_at": "2026-03-09T08:09:51.858Z",
+    "readme_fetched_at": "2026-03-09T07:14:15.070Z",
+    "readme_len": 3466,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-owner": {
+    "summary": "pytest plugin",
+    "generated_at": "2026-03-09T08:09:51.895Z",
+    "readme_fetched_at": "2026-03-09T07:14:16.153Z",
+    "readme_len": 666,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-xmlcomp": {
+    "summary": "pytest.ini",
+    "generated_at": "2026-03-09T08:09:52.004Z",
+    "readme_fetched_at": "2026-03-09T07:14:17.333Z",
+    "readme_len": 5796,
+    "model": "Xenova/flan-t5-small"
+  },
+  "selenium-framework-python": {
+    "summary": null,
+    "generated_at": "2026-03-09T08:09:52.005Z",
+    "readme_fetched_at": "2026-03-09T07:14:18.414Z",
+    "readme_len": 0,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-cratedb": {
+    "summary": "pytest-cratedb",
+    "generated_at": "2026-03-09T08:09:52.132Z",
+    "readme_fetched_at": "2026-03-09T07:14:19.478Z",
+    "readme_len": 3098,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-parametrization-annotation": {
+    "summary": "pytest.com/pytest.html#pytest.com/pytest.html#pytest.com/pytest.html#pytest.com/pytest.html#pytest.com/pytest.html#pytest",
+    "generated_at": "2026-03-09T08:09:52.492Z",
+    "readme_fetched_at": "2026-03-09T07:14:20.578Z",
+    "readme_len": 3733,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-zulip": {
+    "summary": "pytest-zulip pytest-zulip pytest-zulip",
+    "generated_at": "2026-03-09T08:09:52.599Z",
+    "readme_fetched_at": "2026-03-09T07:14:21.654Z",
+    "readme_len": 993,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-remote-response": {
+    "summary": "Versions | |license| |doi| |build| |docs| |coverage| |status| |code| |pytest framework |pytest-remote-response |versions | |license| |doi| |build| |docs| |",
+    "generated_at": "2026-03-09T08:09:52.970Z",
+    "readme_fetched_at": "2026-03-09T07:14:22.776Z",
+    "readme_len": 5069,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-aiofiles": {
+    "summary": "fake filesystem fixture attached to aiofiles - automatic aiofiles monkey-patching Documentation",
+    "generated_at": "2026-03-09T08:09:53.115Z",
+    "readme_fetched_at": "2026-03-09T07:14:23.850Z",
+    "readme_len": 768,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-rt": {
+    "summary": "pytest-rt - pytest data collector for Testgr server.",
+    "generated_at": "2026-03-09T08:09:53.509Z",
+    "readme_fetched_at": "2026-03-09T07:14:24.923Z",
+    "readme_len": 914,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-litter": {
+    "summary": "pytest is the only dependency that is pytest itself.",
+    "generated_at": "2026-03-09T08:09:53.603Z",
+    "readme_fetched_at": "2026-03-09T07:14:26.014Z",
+    "readme_len": 338,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-case-provider": {
+    "summary": "pytest-case-provider",
+    "generated_at": "2026-03-09T08:09:53.714Z",
+    "readme_fetched_at": "2026-03-09T07:14:27.094Z",
+    "readme_len": 4249,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-trace": {
+    "summary": "pytest-trace",
+    "generated_at": "2026-03-09T08:09:53.756Z",
+    "readme_fetched_at": "2026-03-09T07:14:28.308Z",
+    "readme_len": 450,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-testcontainers-compose": {
+    "summary": "## License pytest_testcontainers-compose",
+    "generated_at": "2026-03-09T08:09:53.899Z",
+    "readme_fetched_at": "2026-03-09T07:14:29.494Z",
+    "readme_len": 5860,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-isolate-mpi": {
+    "summary": "Pytest plugin that `pytest-isolate-mpi is a plugin for Pytest to enable the test of MPI-parallel Python software.",
+    "generated_at": "2026-03-09T08:09:54.271Z",
+    "readme_fetched_at": "2026-03-09T07:14:30.650Z",
+    "readme_len": 2079,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-instrument": {
+    "summary": "PyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyPyP",
+    "generated_at": "2026-03-09T08:09:54.653Z",
+    "readme_fetched_at": "2026-03-09T07:14:31.708Z",
+    "readme_len": 5945,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-errxfail": {
+    "summary": "pytest-errxfail is free and open source software.",
+    "generated_at": "2026-03-09T08:09:54.811Z",
+    "readme_fetched_at": "2026-03-09T07:14:32.783Z",
+    "readme_len": 3473,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-kasima": {
+    "summary": "-s option is not required.",
+    "generated_at": "2026-03-09T08:09:54.940Z",
+    "readme_fetched_at": "2026-03-09T07:14:33.865Z",
+    "readme_len": 884,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-evm": {
+    "summary": "Pytest plugin that # pytest-evm",
+    "generated_at": "2026-03-09T08:09:55.023Z",
+    "readme_fetched_at": "2026-03-09T07:14:34.926Z",
+    "readme_len": 5010,
+    "model": "Xenova/flan-t5-small"
+  },
+  "bypass-bot-api": {
+    "summary": "'Underpass' is the first file to download.",
+    "generated_at": "2026-03-09T08:09:55.416Z",
+    "readme_fetched_at": "2026-03-09T07:14:35.964Z",
+    "readme_len": 3326,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-encourage": {
+    "summary": "Pytest plugin that provides you with constructional advice on how to improve your assertions.",
+    "generated_at": "2026-03-09T08:09:55.749Z",
+    "readme_fetched_at": "2026-03-09T07:14:37.100Z",
+    "readme_len": 1808,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-blame": {
+    "summary": "Pytest plugin that allows pytest to do a quick check to Github to make sure the most recent commit is passing your cases.",
+    "generated_at": "2026-03-09T08:09:56.121Z",
+    "readme_fetched_at": "2026-03-09T07:14:38.193Z",
+    "readme_len": 6882,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-minecraft": {
+    "summary": "MIT license",
+    "generated_at": "2026-03-09T08:09:56.192Z",
+    "readme_fetched_at": "2026-03-09T07:14:39.289Z",
+    "readme_len": 3046,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-scim2-server": {
+    "summary": "pytest-scim2-server",
+    "generated_at": "2026-03-09T08:09:56.278Z",
+    "readme_fetched_at": "2026-03-09T07:14:40.372Z",
+    "readme_len": 1471,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-update-test-results": {
+    "summary": "pytest-update-test-results Deal with flaky tests by re-running failed tests and overwrite test results on a test report from a previous run.",
+    "generated_at": "2026-03-09T08:09:56.634Z",
+    "readme_fetched_at": "2026-03-09T07:14:41.451Z",
+    "readme_len": 2726,
+    "model": "Xenova/flan-t5-small"
+  },
+  "ragaliq": {
+    "summary": "Pytest plugin that ## Pytest Plugin Reference",
+    "generated_at": "2026-03-09T08:09:57.006Z",
+    "readme_fetched_at": "2026-03-09T07:14:42.628Z",
+    "readme_len": 12485,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-nogarbage": {
+    "summary": "ensuring that portions of your Python code do not produce garbage.",
+    "generated_at": "2026-03-09T08:09:57.375Z",
+    "readme_fetched_at": "2026-03-09T07:14:43.697Z",
+    "readme_len": 3063,
+    "model": "Xenova/flan-t5-small"
+  },
+  "hypothesis-property-based-testing": {
+    "summary": "a pytest plugin",
+    "generated_at": "2026-03-09T08:09:57.419Z",
+    "readme_fetched_at": "2026-03-09T07:14:44.814Z",
+    "readme_len": 97,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-unasync": {
+    "summary": "pytest-unasync aims at solving this problem.",
+    "generated_at": "2026-03-09T08:09:57.777Z",
+    "readme_fetched_at": "2026-03-09T07:14:45.927Z",
+    "readme_len": 5102,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-operator": {
+    "summary": "pytest-operator",
+    "generated_at": "2026-03-09T08:09:57.826Z",
+    "readme_fetched_at": "2026-03-09T07:14:47.060Z",
+    "readme_len": 56,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-ditto": {
+    "summary": "-.ditto/test_fn_with_parquet_parquet_parquet_parquet_parquet_parquet_parquet_parquet_parquet_parquet_parquet_parquet_par",
+    "generated_at": "2026-03-09T08:09:58.185Z",
+    "readme_fetched_at": "2026-03-09T07:14:48.092Z",
+    "readme_len": 4023,
+    "model": "Xenova/flan-t5-small"
+  },
+  "handshake": {
+    "summary": "[X] Add support for webdriverio * [] Add Reporter for jest * [] Add support for kwffffffffffffffffffffffffffffffffff",
+    "generated_at": "2026-03-09T08:09:58.487Z",
+    "readme_fetched_at": "2026-03-09T07:14:49.240Z",
+    "readme_len": 739,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-markers-example": {
+    "summary": "GitHub is the only open source repository that allows you to create and distribute your own scripts.",
+    "generated_at": "2026-03-09T08:09:58.606Z",
+    "readme_fetched_at": "2026-03-09T07:14:50.326Z",
+    "readme_len": 716,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-ckan": {
+    "summary": "pytest-ckan",
+    "generated_at": "2026-03-09T08:09:58.711Z",
+    "readme_fetched_at": "2026-03-09T07:14:51.538Z",
+    "readme_len": 2089,
+    "model": "Xenova/flan-t5-small"
+  },
+  "loxygen": {
+    "summary": "## The Loxygen Interpreter",
+    "generated_at": "2026-03-09T08:09:58.824Z",
+    "readme_fetched_at": "2026-03-09T07:14:52.578Z",
+    "readme_len": 10781,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-intercept-remote": {
+    "summary": "Licensee ---- This plugin is licensed under a 3-clause BSD style licence - see the LICENCE file...",
+    "generated_at": "2026-03-09T08:09:59.048Z",
+    "readme_fetched_at": "2026-03-09T07:14:53.696Z",
+    "readme_len": 3210,
+    "model": "Xenova/flan-t5-small"
+  },
+  "mce-lib-aws": {
+    "summary": "mce-lib-aws",
+    "generated_at": "2026-03-09T08:09:59.158Z",
+    "readme_fetched_at": "2026-03-09T07:14:54.793Z",
+    "readme_len": 5199,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-honey": {
+    "summary": "pytest-honey is free and open source software",
+    "generated_at": "2026-03-09T08:09:59.273Z",
+    "readme_fetched_at": "2026-03-09T07:14:55.939Z",
+    "readme_len": 2176,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-opentmi": {
+    "summary": "***Stacking (stacking) * SUT_COMPONENT (array) * SUT_COMMIT_ID * SUT_BRANCH",
+    "generated_at": "2026-03-09T08:09:59.497Z",
+    "readme_fetched_at": "2026-03-09T07:14:57.052Z",
+    "readme_len": 1369,
+    "model": "Xenova/flan-t5-small"
+  },
+  "testcato": {
+    "summary": "A Python package for automatically categorizing pytest test results (passed, failed, skipped) and enabling AI-assisted debugging of test failures.",
+    "generated_at": "2026-03-09T08:09:59.868Z",
+    "readme_fetched_at": "2026-03-09T07:14:58.189Z",
+    "readme_len": 3005,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-odc": {
+    "summary": "pytest-odc A pytest plugin for simplifying Open Datacube database tests.",
+    "generated_at": "2026-03-09T08:10:00.234Z",
+    "readme_fetched_at": "2026-03-09T07:14:59.421Z",
+    "readme_len": 4317,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-psqlgraph": {
+    "summary": "Pytest plugin that An extension for pytest provide useful tools for testing applications that use psqlgraph",
+    "generated_at": "2026-03-09T08:10:00.586Z",
+    "readme_fetched_at": "2026-03-09T07:15:00.546Z",
+    "readme_len": 2188,
+    "model": "Xenova/flan-t5-small"
+  },
+  "fastapi-checks": {
+    "summary": "--internet: only show routes whose path matches a specific pattern.",
+    "generated_at": "2026-03-09T08:10:00.949Z",
+    "readme_fetched_at": "2026-03-09T07:15:01.779Z",
+    "readme_len": 9160,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-monitor-osxp21-slides": {
+    "summary": "Pytest plugin that # Pytest-monitor slides for OSXP21",
+    "generated_at": "2026-03-09T08:10:01.254Z",
+    "readme_fetched_at": "2026-03-09T07:15:02.863Z",
+    "readme_len": 725,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-passrunner": {
+    "summary": "pytest-passrunner*: A Pytest plugin that provides the 'run_on_pass' marker =======================================",
+    "generated_at": "2026-03-09T08:10:01.620Z",
+    "readme_fetched_at": "2026-03-09T07:15:03.987Z",
+    "readme_len": 5236,
+    "model": "Xenova/flan-t5-small"
+  },
+  "tom-python": {
+    "summary": null,
+    "generated_at": "2026-03-09T08:10:01.621Z",
+    "readme_fetched_at": "2026-03-09T07:15:05.109Z",
+    "readme_len": 0,
+    "model": "Xenova/flan-t5-small"
+  },
+  "failextract": {
+    "summary": "# FailExtract: Test Failure Analysis Library is a lightweight test failure extraction and reporting library for pytest environments.",
+    "generated_at": "2026-03-09T08:10:01.985Z",
+    "readme_fetched_at": "2026-03-09T07:15:06.231Z",
+    "readme_len": 9216,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-exceptional": {
+    "summary": "pytest-exceptional",
+    "generated_at": "2026-03-09T08:10:02.078Z",
+    "readme_fetched_at": "2026-03-09T07:15:07.311Z",
+    "readme_len": 3580,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-revealtype-injector": {
+    "summary": "pytest-revealtype-injector is a pytest plugin for replacing reveal_type() calls inside test functions as something more sophisticated.",
+    "generated_at": "2026-03-09T08:10:02.444Z",
+    "readme_fetched_at": "2026-03-09T07:15:08.407Z",
+    "readme_len": 6225,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-lockable": {
+    "summary": "pytest plugin",
+    "generated_at": "2026-03-09T08:10:02.516Z",
+    "readme_fetched_at": "2026-03-09T07:15:09.493Z",
+    "readme_len": 3141,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-checklist": {
+    "summary": "Pytest plugin that # Checklist: Pytest Plugin to Show Unit Coverage",
+    "generated_at": "2026-03-09T08:10:02.895Z",
+    "readme_fetched_at": "2026-03-09T07:15:10.606Z",
+    "readme_len": 8814,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-disrupt": {
+    "summary": "pytest-disrupt",
+    "generated_at": "2026-03-09T08:10:02.974Z",
+    "readme_fetched_at": "2026-03-09T07:15:11.840Z",
+    "readme_len": 1889,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-exception-script": {
+    "summary": "pytest plugin is to allow quick and easy testing of your application's resiliency.",
+    "generated_at": "2026-03-09T08:10:03.329Z",
+    "readme_fetched_at": "2026-03-09T07:15:12.963Z",
+    "readme_len": 3074,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-inject": {
+    "summary": "pytest-inject** is a pytest plugin that allows you to inject arguments into fixtures and parametrized tests using pytest command-line options, effectively transforming your existing test suite into a set of dynamic debug",
+    "generated_at": "2026-03-09T08:10:03.683Z",
+    "readme_fetched_at": "2026-03-09T07:15:14.080Z",
+    "readme_len": 2880,
+    "model": "Xenova/flan-t5-small"
+  },
+  "basic_pytest": {
+    "summary": "Pytest plugin that # basic_pytest Exercise: Creating pytests and comparing Pytest to Unittest",
+    "generated_at": "2026-03-09T08:10:04.038Z",
+    "readme_fetched_at": "2026-03-09T07:15:15.212Z",
+    "readme_len": 261,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-addoption-example": {
+    "summary": "GitHub is the only open source repository that allows you to create and distribute your own files.",
+    "generated_at": "2026-03-09T08:10:04.152Z",
+    "readme_fetched_at": "2026-03-09T07:15:16.315Z",
+    "readme_len": 737,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-pt": {
+    "summary": "pytest 5 is supported only pytest 5 and 7 and pytest 6 is supported on versions of Python up to 3.9, but not on 3.10 and above.",
+    "generated_at": "2026-03-09T08:10:04.486Z",
+    "readme_fetched_at": "2026-03-09T07:15:17.417Z",
+    "readme_len": 4026,
+    "model": "Xenova/flan-t5-small"
+  },
+  "elefast-example-uv-monorepo": {
+    "summary": "Pytest plugin that then we added elefast & pytest",
+    "generated_at": "2026-03-09T08:10:04.582Z",
+    "readme_fetched_at": "2026-03-09T07:15:18.671Z",
+    "readme_len": 1915,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-llm-assert": {
+    "summary": "pytest-llm-assert",
+    "generated_at": "2026-03-09T08:10:04.701Z",
+    "readme_fetched_at": "2026-03-09T07:15:19.736Z",
+    "readme_len": 3733,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-neon": {
+    "summary": "# pytest-neon A pytest plugin that provides Neon database branches for integration testing.",
+    "generated_at": "2026-03-09T08:10:05.060Z",
+    "readme_fetched_at": "2026-03-09T07:15:20.832Z",
+    "readme_len": 8819,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-richtrace": {
+    "summary": "# pytest-richtrace",
+    "generated_at": "2026-03-09T08:10:05.123Z",
+    "readme_fetched_at": "2026-03-09T07:15:21.977Z",
+    "readme_len": 1165,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-squadcast": {
+    "summary": "pytest-squadcast",
+    "generated_at": "2026-03-09T08:10:05.179Z",
+    "readme_fetched_at": "2026-03-09T07:15:23.066Z",
+    "readme_len": 1166,
+    "model": "Xenova/flan-t5-small"
+  },
+  "sqla-plugins": {
+    "summary": "Pytest's async and async fixtures are not for you.",
+    "generated_at": "2026-03-09T08:10:05.310Z",
+    "readme_fetched_at": "2026-03-09T07:15:24.169Z",
+    "readme_len": 1294,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-brightest": {
+    "summary": "pytest-brightest is a tool that helps software engineers run their test suites more effectively.",
+    "generated_at": "2026-03-09T08:10:05.671Z",
+    "readme_fetched_at": "2026-03-09T07:15:25.311Z",
+    "readme_len": 6938,
+    "model": "Xenova/flan-t5-small"
+  },
+  "run-pytest-in-vscode-example": {
+    "summary": "Pytest plugin that # Example code for the article **How to Run Pytest in VScode**",
+    "generated_at": "2026-03-09T08:10:05.985Z",
+    "readme_fetched_at": "2026-03-09T07:15:26.453Z",
+    "readme_len": 901,
+    "model": "Xenova/flan-t5-small"
+  },
+  "qmetry-pytest": {
+    "summary": "Ensure secure authentication and keep the configuration updated in qmetry.properties.",
+    "generated_at": "2026-03-09T08:10:06.111Z",
+    "readme_fetched_at": "2026-03-09T07:15:27.482Z",
+    "readme_len": 2550,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-aiosip": {
+    "summary": "pytest plugin for aiosip support",
+    "generated_at": "2026-03-09T08:10:06.195Z",
+    "readme_fetched_at": "2026-03-09T07:15:28.599Z",
+    "readme_len": 419,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-oduit": {
+    "summary": "pytest-subtests and pytest-xdist.",
+    "generated_at": "2026-03-09T08:10:06.546Z",
+    "readme_fetched_at": "2026-03-09T07:15:29.688Z",
+    "readme_len": 6217,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-rerunclassfailures": {
+    "summary": "Pytest plugin that # Pytest rerun class failures plugin",
+    "generated_at": "2026-03-09T08:10:06.895Z",
+    "readme_fetched_at": "2026-03-09T07:15:30.795Z",
+    "readme_len": 4651,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-enhanced": {
+    "summary": "pytest-enhanced > **Pytest Enhanced** — a smarter pytest companion that adds analytics, stability tracking, > and CLI + web reports for developers who want **insight, not just pass/fail output**.",
+    "generated_at": "2026-03-09T08:10:07.253Z",
+    "readme_fetched_at": "2026-03-09T07:15:32.045Z",
+    "readme_len": 7036,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-pickle-cache": {
+    "summary": "[pypi-v-image]: [pypi-v-image]: [pypi-v-image]: [pypi-v-image]: [pypi-v-image]: [pypi-v-image",
+    "generated_at": "2026-03-09T08:10:07.601Z",
+    "readme_fetched_at": "2026-03-09T07:15:33.080Z",
+    "readme_len": 3992,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-logfest": {
+    "summary": "pytest-instrument.",
+    "generated_at": "2026-03-09T08:10:07.969Z",
+    "readme_fetched_at": "2026-03-09T07:15:34.187Z",
+    "readme_len": 5274,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-jupyter_kernel": {
+    "summary": "pytest plugin",
+    "generated_at": "2026-03-09T08:10:08.004Z",
+    "readme_fetched_at": "2026-03-09T07:15:35.364Z",
+    "readme_len": 24,
+    "model": "Xenova/flan-t5-small"
+  },
+  "llm-assert": {
+    "summary": "**Behavioral assertion testing for LLM applications.** Created by Bradley R.",
+    "generated_at": "2026-03-09T08:10:08.375Z",
+    "readme_fetched_at": "2026-03-09T07:15:36.388Z",
+    "readme_len": 20466,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-extra-markers": {
+    "summary": "Pytest plugin that A pytest plugin to dynamically skip tests based on marks",
+    "generated_at": "2026-03-09T08:10:08.777Z",
+    "readme_fetched_at": "2026-03-09T07:15:37.615Z",
+    "readme_len": 2130,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-object-getter": {
+    "summary": "Installable with pip - get_object fixture available to your tests 2.",
+    "generated_at": "2026-03-09T08:10:09.139Z",
+    "readme_fetched_at": "2026-03-09T07:15:38.847Z",
+    "readme_len": 8126,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-prefer-nested-dup-tests": {
+    "summary": "[file an issue]",
+    "generated_at": "2026-03-09T08:10:09.224Z",
+    "readme_fetched_at": "2026-03-09T07:15:39.947Z",
+    "readme_len": 3807,
+    "model": "Xenova/flan-t5-small"
+  },
+  "fastapi-mongo": {
+    "summary": "'fastapi-mongo' is a plugin that pytest plugins do not work.",
+    "generated_at": "2026-03-09T08:10:09.408Z",
+    "readme_fetched_at": "2026-03-09T07:15:41.036Z",
+    "readme_len": 3862,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-report": {
+    "summary": "# pytest-report ## Descriço O pytestreport-md biblioteca leve que facilita a geraço de relatórios de testes em formato Markdown.",
+    "generated_at": "2026-03-09T08:10:09.766Z",
+    "readme_fetched_at": "2026-03-09T07:15:42.125Z",
+    "readme_len": 2551,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-fixture-not-found-example": {
+    "summary": "GitHub is the only open source repository that provides a repository for all of the tools and tools needed to run the project.",
+    "generated_at": "2026-03-09T08:10:09.903Z",
+    "readme_fetched_at": "2026-03-09T07:15:43.219Z",
+    "readme_len": 743,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-phmdoctest": {
+    "summary": "pytest-phmdoctest 1.0.0 ## Introduction Python syntax highlighted Markdown doctest pytest plugin.",
+    "generated_at": "2026-03-09T08:10:10.256Z",
+    "readme_fetched_at": "2026-03-09T07:15:44.557Z",
+    "readme_len": 18667,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-insight": {
+    "summary": "pytest-insight: pytest-insight: pytest-insight: pytest-insight: pytest-insight: pytest-insight: pytest-insight:",
+    "generated_at": "2026-03-09T08:10:10.610Z",
+    "readme_fetched_at": "2026-03-09T07:15:45.686Z",
+    "readme_len": 9744,
+    "model": "Xenova/flan-t5-small"
+  },
+  "errodex": {
+    "summary": "Pytest plugin that ErroDex is a Pytest plugin for QA engineers and developers who want more than just stack traces.",
+    "generated_at": "2026-03-09T08:10:10.937Z",
+    "readme_fetched_at": "2026-03-09T07:15:46.835Z",
+    "readme_len": 1428,
+    "model": "Xenova/flan-t5-small"
+  },
+  "xarray-regressions": {
+    "summary": "xarray-regressions",
+    "generated_at": "2026-03-09T08:10:11.037Z",
+    "readme_fetched_at": "2026-03-09T07:15:47.937Z",
+    "readme_len": 3615,
+    "model": "Xenova/flan-t5-small"
+  },
+  "robotics_tdd": {
+    "summary": "pytest is the only pytest plugin that enables the pytest to be tested and executed by pytest.",
+    "generated_at": "2026-03-09T08:10:11.256Z",
+    "readme_fetched_at": "2026-03-09T07:15:49.070Z",
+    "readme_len": 7035,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-data-loader": {
+    "summary": "pytest-data-loader is a pytest plugin that simplifies loading test data from files for data-driven testing.",
+    "generated_at": "2026-03-09T08:10:11.606Z",
+    "readme_fetched_at": "2026-03-09T07:15:50.168Z",
+    "readme_len": 16540,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-fleetflakefinder": {
+    "summary": "GitHub Flow Model is a tool that helps you create a tool for your Python development environment.",
+    "generated_at": "2026-03-09T08:10:11.744Z",
+    "readme_fetched_at": "2026-03-09T07:15:51.324Z",
+    "readme_len": 1344,
+    "model": "Xenova/flan-t5-small"
+  },
+  "command-mock": {
+    "summary": "if command-driver",
+    "generated_at": "2026-03-09T08:10:11.846Z",
+    "readme_fetched_at": "2026-03-09T07:15:52.434Z",
+    "readme_len": 9017,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-extension": {
+    "summary": "## pytest-exasol-extension plugin",
+    "generated_at": "2026-03-09T08:10:11.956Z",
+    "readme_fetched_at": "2026-03-09T07:15:53.577Z",
+    "readme_len": 3275,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-lets-explore": {
+    "summary": "Pytest plugin that Each example contains multiple pytest Python scripts.",
+    "generated_at": "2026-03-09T08:10:12.015Z",
+    "readme_fetched_at": "2026-03-09T07:15:54.704Z",
+    "readme_len": 1567,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-informative-node": {
+    "summary": "pytest-informative-node is free and open source software.",
+    "generated_at": "2026-03-09T08:10:12.155Z",
+    "readme_fetched_at": "2026-03-09T07:15:55.822Z",
+    "readme_len": 2895,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest_simplified": {
+    "summary": "pytest_simplified - This project is hosted on our Gitea instance and has a read-only copy hosted on Github ---- ------------------------------------------------------------------------------",
+    "generated_at": "2026-03-09T08:10:12.449Z",
+    "readme_fetched_at": "2026-03-09T07:15:56.964Z",
+    "readme_len": 1693,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-claude-agent-sdk": {
+    "summary": "pytest-claude-agent-sdk is the plugin for pytests.",
+    "generated_at": "2026-03-09T08:10:12.805Z",
+    "readme_fetched_at": "2026-03-09T07:15:58.096Z",
+    "readme_len": 8235,
+    "model": "Xenova/flan-t5-small"
+  },
+  "python-testing": {
+    "summary": "Pytest plugin that provides a focused collection of pytest fixtures and utilities designed for Apathetic Tools projects.",
+    "generated_at": "2026-03-09T08:10:13.224Z",
+    "readme_fetched_at": "2026-03-09T07:15:59.326Z",
+    "readme_len": 3582,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-httpchain": {
+    "summary": "pytest-httpchain is an integration testing framework for HTTP APIs based on httpx lib.",
+    "generated_at": "2026-03-09T08:10:13.572Z",
+    "readme_fetched_at": "2026-03-09T07:16:00.491Z",
+    "readme_len": 8059,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-power": {
+    "summary": "pytest-power",
+    "generated_at": "2026-03-09T08:10:13.649Z",
+    "readme_fetched_at": "2026-03-09T07:16:01.784Z",
+    "readme_len": 2330,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-tiny-api-client": {
+    "summary": "pytest-tiny-api-client",
+    "generated_at": "2026-03-09T08:10:13.754Z",
+    "readme_fetched_at": "2026-03-09T07:16:02.906Z",
+    "readme_len": 1998,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-jasmine": {
+    "summary": "pytest plugin",
+    "generated_at": "2026-03-09T08:10:13.790Z",
+    "readme_fetched_at": "2026-03-09T07:16:04.138Z",
+    "readme_len": 217,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-spug-2017": {
+    "summary": "pytest-spug-2017",
+    "generated_at": "2026-03-09T08:10:13.846Z",
+    "readme_fetched_at": "2026-03-09T07:16:05.305Z",
+    "readme_len": 227,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-pretty-terminal": {
+    "summary": "pytest-xdist is a plugin that is not compatible with other plugins.",
+    "generated_at": "2026-03-09T08:10:13.982Z",
+    "readme_fetched_at": "2026-03-09T07:16:06.417Z",
+    "readme_len": 1469,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-jsonverdict": {
+    "summary": "| start | python date format: %d.%m.%Y %H.%M.%S | Test suite starting time | duration | float, seconds | Duration of the test run | passed, xpassed, xfailed, errors",
+    "generated_at": "2026-03-09T08:10:14.318Z",
+    "readme_fetched_at": "2026-03-09T07:16:07.518Z",
+    "readme_len": 2112,
+    "model": "Xenova/flan-t5-small"
+  },
+  "divide-and-cover": {
+    "summary": "pytest plugin",
+    "generated_at": "2026-03-09T08:10:14.350Z",
+    "readme_fetched_at": "2026-03-09T07:16:08.679Z",
+    "readme_len": 119,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-html-object-storage": {
+    "summary": "pytest-html-object-storage",
+    "generated_at": "2026-03-09T08:10:14.422Z",
+    "readme_fetched_at": "2026-03-09T07:16:09.794Z",
+    "readme_len": 1355,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-terra-fixt": {
+    "summary": "## CLI Arguments --skip-teardown Skips running terraform destroy -auto-approve on teardown and preserves the Terraform backend tfstate for future testing.",
+    "generated_at": "2026-03-09T08:10:14.786Z",
+    "readme_fetched_at": "2026-03-09T07:16:10.944Z",
+    "readme_len": 4472,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-regex-dependency": {
+    "summary": "Test depends on tests with node IDS matching a specified pattern: # pytest-regex-dependency Management of Pytest dependencies via regex patterns # pytest-regex-dependency Management of Pytest dependencies via regex patte",
+    "generated_at": "2026-03-09T08:10:15.105Z",
+    "readme_fetched_at": "2026-03-09T07:16:12.084Z",
+    "readme_len": 2383,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-dataplugin": {
+    "summary": "pytest-dataplugin is a pytest plugin for managing an archive of test data that lives outside your code repository.",
+    "generated_at": "2026-03-09T08:10:15.425Z",
+    "readme_fetched_at": "2026-03-09T07:16:13.289Z",
+    "readme_len": 931,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-codecarbon": {
+    "summary": "pytest-codecarbon is a plugin for measuring carbon emissions.",
+    "generated_at": "2026-03-09T08:10:15.526Z",
+    "readme_fetched_at": "2026-03-09T07:16:14.414Z",
+    "readme_len": 467,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-easy-addoption": {
+    "summary": "pytest-easy-addoption",
+    "generated_at": "2026-03-09T08:10:15.593Z",
+    "readme_fetched_at": "2026-03-09T07:16:15.514Z",
+    "readme_len": 1940,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-alt-reg": {
+    "summary": "pytest-alt-reg",
+    "generated_at": "2026-03-09T08:10:15.688Z",
+    "readme_fetched_at": "2026-03-09T07:16:16.598Z",
+    "readme_len": 1373,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-uuid": {
+    "summary": "pytest-uuid",
+    "generated_at": "2026-03-09T08:10:15.804Z",
+    "readme_fetched_at": "2026-03-09T07:16:17.672Z",
+    "readme_len": 31967,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-priority": {
+    "summary": "pytest plugin",
+    "generated_at": "2026-03-09T08:10:15.846Z",
+    "readme_fetched_at": "2026-03-09T07:16:18.794Z",
+    "readme_len": 397,
+    "model": "Xenova/flan-t5-small"
+  },
+  "orangehrm_automation": {
+    "summary": "sanity-tests",
+    "generated_at": "2026-03-09T08:10:15.917Z",
+    "readme_fetched_at": "2026-03-09T07:16:20.010Z",
+    "readme_len": 739,
+    "model": "Xenova/flan-t5-small"
+  },
+  "mini-doc-validator": {
+    "summary": "\"mini-doc-validator\" is the plugin for \"mini-doc-validator\" that uses the API to test a pytest plugin, which is a pytest plugin that uses the API to test a pytest plugin, which is a py",
+    "generated_at": "2026-03-09T08:10:16.284Z",
+    "readme_fetched_at": "2026-03-09T07:16:21.114Z",
+    "readme_len": 6083,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-case-start-from": {
+    "summary": "pytest plugin that allows you to start test execution from a specific test case, skipping all tests before it.",
+    "generated_at": "2026-03-09T08:10:16.638Z",
+    "readme_fetched_at": "2026-03-09T07:16:22.197Z",
+    "readme_len": 2192,
+    "model": "Xenova/flan-t5-small"
+  },
+  "playwright-reporter-python": {
+    "summary": "pytest plugin that integrates with QAStudio.dev test management platform.",
+    "generated_at": "2026-03-09T08:10:17.002Z",
+    "readme_fetched_at": "2026-03-09T07:16:23.393Z",
+    "readme_len": 6665,
+    "model": "Xenova/flan-t5-small"
+  },
+  "bynry": {
+    "summary": "Pytest plugin that Stack: - Pytest - Playwright - Requests - BrowserStack-ready",
+    "generated_at": "2026-03-09T08:10:17.042Z",
+    "readme_fetched_at": "2026-03-09T07:16:24.539Z",
+    "readme_len": 188,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-cassandra": {
+    "summary": "pytest-cassandra",
+    "generated_at": "2026-03-09T08:10:17.096Z",
+    "readme_fetched_at": "2026-03-09T07:16:25.630Z",
+    "readme_len": 109,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-quickify": {
+    "summary": "GitHub Flow Models are the tools for pytest-fleetflake.",
+    "generated_at": "2026-03-09T08:10:17.228Z",
+    "readme_fetched_at": "2026-03-09T07:16:26.707Z",
+    "readme_len": 1021,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-unittest-id-runner": {
+    "summary": "pytest-unittest-id-runner",
+    "generated_at": "2026-03-09T08:10:17.333Z",
+    "readme_fetched_at": "2026-03-09T07:16:27.814Z",
+    "readme_len": 1526,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-keyring": {
+    "summary": "pytest-keyring",
+    "generated_at": "2026-03-09T08:10:17.482Z",
+    "readme_fetched_at": "2026-03-09T07:16:28.914Z",
+    "readme_len": 1993,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-broadcaster": {
+    "summary": "pytest-broadcaster A plugin to write pytest collect output to various destinations.",
+    "generated_at": "2026-03-09T08:10:17.854Z",
+    "readme_fetched_at": "2026-03-09T07:16:30.113Z",
+    "readme_len": 8071,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-apiver": {
+    "summary": "# pytest-apiver - pytest plugin - pytest-apiver - pytest-apiver - pytest-apiver - pytest-apiver - pytest-apiver - p",
+    "generated_at": "2026-03-09T08:10:18.200Z",
+    "readme_fetched_at": "2026-03-09T07:16:31.272Z",
+    "readme_len": 2926,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-balance-xdist": {
+    "summary": "pytest-balance-xdist",
+    "generated_at": "2026-03-09T08:10:18.269Z",
+    "readme_fetched_at": "2026-03-09T07:16:32.387Z",
+    "readme_len": 385,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest_servicediscovery": {
+    "summary": "\"pytest_servicediscovery\" is a plugin that is used to perform the functionality.",
+    "generated_at": "2026-03-09T08:10:18.440Z",
+    "readme_fetched_at": "2026-03-09T07:16:33.493Z",
+    "readme_len": 11403,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-failure-tracker": {
+    "summary": "pytest-failure-tracker: pytest plugin for tracking test failures over multiple test runs, making it easier to identify flaky tests and frequently failing tests.",
+    "generated_at": "2026-03-09T08:10:18.799Z",
+    "readme_fetched_at": "2026-03-09T07:16:34.616Z",
+    "readme_len": 2978,
+    "model": "Xenova/flan-t5-small"
+  },
+  "bugsafe": {
+    "summary": "Pytest plugin that bugsafe captures Python crashes and creates redacted, shareable bug reports.",
+    "generated_at": "2026-03-09T08:10:19.164Z",
+    "readme_fetched_at": "2026-03-09T07:16:35.698Z",
+    "readme_len": 4633,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-exit-code": {
+    "summary": "pytest.exe is free and open source software.",
+    "generated_at": "2026-03-09T08:10:19.288Z",
+    "readme_fetched_at": "2026-03-09T07:16:36.870Z",
+    "readme_len": 1773,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-elegant": {
+    "summary": "pytest-elegant plugin that provides elegant, beautiful test output inspired by PHP's aesthetic.",
+    "generated_at": "2026-03-09T08:10:19.462Z",
+    "readme_fetched_at": "2026-03-09T07:16:37.934Z",
+    "readme_len": 4246,
+    "model": "Xenova/flan-t5-small"
+  },
+  "robotics_bdd": {
+    "summary": "End-to-End DevOps & Kubernetes Workflow",
+    "generated_at": "2026-03-09T08:10:19.813Z",
+    "readme_fetched_at": "2026-03-09T07:16:39.074Z",
+    "readme_len": 7944,
+    "model": "Xenova/flan-t5-small"
+  },
+  "agentassay": {
+    "summary": "AgentAssay Test More.",
+    "generated_at": "2026-03-09T08:10:20.000Z",
+    "readme_fetched_at": "2026-03-09T07:16:40.285Z",
+    "readme_len": 15714,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-pings": {
+    "summary": "Pytest plugin that 🦊 The pytest plugin for Firefox Telemetry 📊",
+    "generated_at": "2026-03-09T08:10:20.300Z",
+    "readme_fetched_at": "2026-03-09T07:16:41.414Z",
+    "readme_len": 616,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-tuitest": {
+    "summary": "Using pyte for a test application, you will automatically install pyte.",
+    "generated_at": "2026-03-09T08:10:20.423Z",
+    "readme_fetched_at": "2026-03-09T07:16:42.538Z",
+    "readme_len": 2066,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-dryrun": {
+    "summary": "pytest-dryrun",
+    "generated_at": "2026-03-09T08:10:20.484Z",
+    "readme_fetched_at": "2026-03-09T07:16:43.625Z",
+    "readme_len": 1116,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-playwright-artifacts": {
+    "summary": "#### Per-test #### Per-folder Add a pytest mark to conflate pytest.",
+    "generated_at": "2026-03-09T08:10:20.768Z",
+    "readme_fetched_at": "2026-03-09T07:16:44.741Z",
+    "readme_len": 7491,
+    "model": "Xenova/flan-t5-small"
+  },
+  "arkham-asylum-backend": {
+    "summary": "Layered beneath StrictDjangoDjango.com",
+    "generated_at": "2026-03-09T08:10:20.911Z",
+    "readme_fetched_at": "2026-03-09T07:16:45.838Z",
+    "readme_len": 14522,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-ubuntu-notify": {
+    "summary": "pytest-ubuntu-notify is free and open source software",
+    "generated_at": "2026-03-09T08:10:21.044Z",
+    "readme_fetched_at": "2026-03-09T07:16:46.959Z",
+    "readme_len": 2298,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-libnotify": {
+    "summary": "PARTICULAR PURPOSE AND NONINFRINGEMENT PARTICULAR PURPOSE AND NONINFRINGEMENT",
+    "generated_at": "2026-03-09T08:10:21.224Z",
+    "readme_fetched_at": "2026-03-09T07:16:48.067Z",
+    "readme_len": 1314,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-chaos-ai": {
+    "summary": null,
+    "generated_at": "2026-03-09T08:10:21.225Z",
+    "readme_fetched_at": "2026-03-09T07:16:49.124Z",
+    "readme_len": 0,
+    "model": "Xenova/flan-t5-small"
+  },
+  "automated-grading-script": {
+    "summary": "pytest plugin",
+    "generated_at": "2026-03-09T08:10:21.258Z",
+    "readme_fetched_at": "2026-03-09T07:16:50.225Z",
+    "readme_len": 27,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pypseudo-mutation-analysis-on-python-to-detect-pseudotestedness-danniyb": {
+    "summary": "pytest plugin \"pypseudo-mutation-analysis-on-python-to-detect-pseudotestedness-danniyb\" is the plugin for \"pypseudo-mutation-",
+    "generated_at": "2026-03-09T08:10:21.623Z",
+    "readme_fetched_at": "2026-03-09T07:16:51.446Z",
+    "readme_len": 8879,
+    "model": "Xenova/flan-t5-small"
+  },
+  "pytest-samples": {
+    "summary": "pytest plugin",
+    "generated_at": "2026-03-09T08:10:21.727Z",
+    "readme_fetched_at": "2026-03-09T07:16:52.583Z",
+    "readme_len": 10825,
+    "model": "Xenova/flan-t5-small"
+  },
+  "bigfoot": {
+    "summary": "Plugins bigfoot ships with 14 plugins covering the most common external dependencies: | Category | Plugins | Plugins | Intercepts | | ----------| | **General** | MockPlugin, LoggingPlugin | Named mock proxies, logging mo",
+    "generated_at": "2026-03-09T08:10:22.093Z",
+    "readme_fetched_at": "2026-03-09T07:16:53.812Z",
+    "readme_len": 6591,
+    "model": "Xenova/flan-t5-small"
+  }
+}

@@ -30,8 +30,6 @@ const plugins = Object.keys(knowledge).map((pkgName) => {
     pypiUrl: `https://pypi.org/project/${pkgName}/`,
     stars: 0,
     cat: k.cat || 'other',
-    pipeline: k.pipeline || false,
-    win: k.win !== undefined ? k.win : 'maybe',
   };
 });
 

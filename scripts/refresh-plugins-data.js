@@ -69,8 +69,6 @@ async function main() {
       pypiUrl: `https://pypi.org/project/${pkgName}/`,
       stars: repo.stars || 0,
       cat: k.cat || 'other',
-      pipeline: k.pipeline || false,
-      win: k.win !== undefined ? k.win : 'maybe',
     };
   });
 

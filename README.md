@@ -8,7 +8,7 @@ Browse pytest plugins discovered from GitHub (topic: `pytest-plugin`), with cate
 
 Open `index.html` in a browser. The page fetches `plugins-data.json` from the same origin, so use a local server if needed:
 
-```bash
+```powershell
 # Python
 python3 -m http.server 8000
 
@@ -20,13 +20,32 @@ Then visit `http://localhost:8000`.
 
 ## Data and scripts
 
-- **`plugins-data.json`** – Plugin list (name, summary, stars, category, pipeline, win, ghUrl, pypiUrl, latestDate). The UI reads this file.
-- **`scripts/refresh-plugins-data.js`** – Fetches up to 5 pages from GitHub’s search API (`topic:pytest-plugin`, by stars), merges with category/pipeline/win “knowledge” embedded in `index.html`, and overwrites `plugins-data.json`. Set `GITHUB_TOKEN` for higher rate limits.
+- **`plugins-data.json`** – Plugin list (name, summary, stars, category, ghUrl, pypiUrl, latestDate). The UI reads this file.
+- **`scripts/refresh-plugins-data.js`** – Fetches up to 5 pages from GitHub’s search API (`topic:pytest-plugin`, by stars), merges with category “knowledge” embedded in `index.html`, and overwrites `plugins-data.json`. Set `GITHUB_TOKEN` for higher rate limits.
 - **`scripts/generate-plugins-json.js`** – Builds `plugins-data.json` from the knowledge block in `index.html` only (no API); entries get placeholder summary/stars/dates.
+ - **`scripts/fetch-readmes.js`** – Fetches full READMEs for each plugin in `plugins-data.json` and writes `data/readme-cache.json`. Uses `GITHUB_TOKEN` / `GH_TOKEN` from the environment (or `.env`) to avoid rate limiting.
+ - **`scripts/generate-summaries-transformers.js`** – Uses a local `transformers.js` model (default `Xenova/flan-t5-base`) to turn each README into a short “what the plugin does” sentence. Writes `data/summaries-cache.json`.
+ - **`scripts/generate-embeddings.py`** – Uses `sentence-transformers` + PCA to encode the summaries into 64‑dimensional vectors, stored in `data/embeddings.json` (used for semantic search in the UI).
 
-```bash
-node scripts/refresh-plugins-data.js   # full refresh from GitHub
-node scripts/generate-plugins-json.js   # from index.html knowledge only
+```powershell
+# Install JS deps (once)
+npm install
+
+# Refresh from GitHub (requires a GitHub token for reasonable rate limits)
+$env:GITHUB_TOKEN = "<your GitHub token>"
+node scripts/refresh-plugins-data.js
+
+# (Optional) Generate from index.html knowledge only
+node scripts/generate-plugins-json.js
+
+# Fetch full READMEs for each plugin
+node scripts/fetch-readmes.js
+
+# Generate short functional summaries with a local transformers.js model
+node scripts/generate-summaries-transformers.js
+
+# Generate embeddings from summaries (Python 3.11+ with uv)
+uv run scripts/generate-embeddings.py
 ```
 
 ## CI

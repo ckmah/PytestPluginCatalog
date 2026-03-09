@@ -5,337 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>pytest plugins</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-/* ─── tokens ─────────────────────────────────────────────── */
-:root {
-  --radius: 6px;
-  --t: 140ms ease;
-  --page-pad: clamp(16px, 5vw, 48px);
-}
-
-[data-theme="dark"] {
-  --bg:        #111110;
-  --surface:   #161615;
-  --surface2:  #1c1c1a;
-  --border:    #252523;
-  --border2:   #2e2e2b;
-  --text:      #e8e6e1;
-  --text2:     #908e87;
-  --text3:     #4a4845;
-  --accent:    #d4a853;
-  --acc-bg:    #d4a85312;
-  --acc-bdr:   #d4a85330;
-  --win-y:     #6db89a;
-  --win-n:     #c97070;
-  --win-m:     #b89056;
-  --ca:        #e8e6e1;
-  --cat:       #111110;
-}
-[data-theme="light"] {
-  --bg:        #faf9f7;
-  --surface:   #ffffff;
-  --surface2:  #f5f4f1;
-  --border:    #e8e6e0;
-  --border2:   #d8d6cf;
-  --text:      #1a1917;
-  --text2:     #6b6860;
-  --text3:     #b5b3ab;
-  --accent:    #b5892a;
-  --acc-bg:    #b5892a0e;
-  --acc-bdr:   #b5892a28;
-  --win-y:     #3d8a6a;
-  --win-n:     #b05050;
-  --win-m:     #9a7030;
-  --ca:        #1a1917;
-  --cat:       #faf9f7;
-}
-
-/* ─── base ───────────────────────────────────────────────── */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  background:var(--bg);color:var(--text);
-  font-family:'Geist',system-ui,sans-serif;
-  font-size:13px;font-weight:400;line-height:1.5;
-  min-height:100vh;
-  transition:background var(--t),color var(--t);
-  -webkit-font-smoothing:antialiased;
-}
-a{text-decoration:none;color:inherit}
-
-/* ─── layout ─────────────────────────────────────────────── */
-.page{
-  max-width:1140px;
-  margin:0 auto;
-  padding:0 var(--page-pad) 80px;
-}
-
-/* ─── header ─────────────────────────────────────────────── */
-header{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  padding:clamp(28px,6vw,52px) 0 clamp(24px,4vw,40px);
-  border-bottom:1px solid var(--border);
-  flex-wrap:wrap;
-}
-.wordmark{
-  font-family:'DM Mono',monospace;
-  font-weight:400;font-size:clamp(13px,2.5vw,15px);
-  letter-spacing:-0.02em;color:var(--text);
-}
-.wordmark em{font-style:normal;color:var(--text3)}
-.header-sub{font-size:11px;color:var(--text3);font-weight:300}
-.header-right{margin-left:auto;display:flex;align-items:center;gap:10px;flex-shrink:0}
-
-.header-status{
-  font-family:'DM Mono',monospace;
-  font-size:10px;color:var(--text3);font-weight:300;
-  letter-spacing:0.02em;
-}
-
-.theme-btn{
-  width:30px;height:30px;
-  border-radius:var(--radius);
-  border:1px solid var(--border);
-  background:var(--surface);
-  color:var(--text2);
-  cursor:pointer;
-  display:flex;align-items:center;justify-content:center;
-  font-size:13px;
-  transition:all var(--t);
-}
-.theme-btn:hover{border-color:var(--border2);color:var(--text)}
-
-/* ─── toolbar ────────────────────────────────────────────── */
-.toolbar{
-  display:flex;
-  align-items:flex-start;
-  gap:20px;
-  padding:clamp(16px,3vw,24px) 0 0;
-  flex-wrap:wrap;
-}
-
-/* search */
-.search-wrap{position:relative;width:min(220px,100%);flex-shrink:0}
-.search-ico{
-  position:absolute;left:9px;top:50%;transform:translateY(-50%);
-  color:var(--text3);font-size:12px;pointer-events:none;
-  font-family:'DM Mono',monospace;
-}
-input[type=text]{
-  width:100%;height:32px;
-  padding:0 10px 0 28px;
-  background:var(--surface);border:1px solid var(--border);
-  border-radius:var(--radius);
-  color:var(--text);
-  font-family:'DM Mono',monospace;font-size:12px;font-weight:300;
-  outline:none;transition:border-color var(--t);letter-spacing:0.01em;
-}
-input[type=text]::placeholder{color:var(--text3)}
-input[type=text]:focus{border-color:var(--border2)}
-
-/* sort */
-.sort-wrap{display:flex;align-items:center;gap:7px;flex-shrink:0}
-.sort-lbl{font-size:10px;color:var(--text3);font-weight:300;letter-spacing:0.06em;text-transform:uppercase;white-space:nowrap}
-select{
-  height:32px;padding:0 22px 0 10px;
-  background:var(--surface);border:1px solid var(--border);
-  border-radius:var(--radius);
-  color:var(--text2);
-  font-family:'DM Mono',monospace;font-size:11px;font-weight:300;
-  outline:none;cursor:pointer;appearance:none;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' fill='none'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23666' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;background-position:right 7px center;
-  transition:border-color var(--t);letter-spacing:0.01em;
-}
-select:focus{border-color:var(--border2)}
-
-/* filters */
-.filters-area{display:flex;flex-direction:column;gap:7px;flex:1;min-width:0}
-.filter-row{display:flex;align-items:flex-start;gap:7px;flex-wrap:wrap}
-.filter-lbl{
-  font-size:10px;color:var(--text3);font-weight:300;
-  letter-spacing:0.06em;text-transform:uppercase;
-  white-space:nowrap;padding-top:5px;
-  width:52px;flex-shrink:0;
-}
-.chips{display:flex;gap:4px;flex-wrap:wrap}
-.chip{
-  height:26px;padding:0 10px;
-  border-radius:99px;border:1px solid var(--border);
-  background:transparent;color:var(--text3);
-  font-family:'Geist',system-ui,sans-serif;
-  font-size:11px;font-weight:400;
-  cursor:pointer;white-space:nowrap;
-  transition:all var(--t);user-select:none;
-  display:flex;align-items:center;
-}
-.chip:hover{border-color:var(--border2);color:var(--text2)}
-.chip.active{background:var(--ca);border-color:var(--ca);color:var(--cat)}
-.chip.win-y.active{background:var(--win-y);border-color:var(--win-y);color:var(--bg)}
-.chip.win-n.active{background:var(--win-n);border-color:var(--win-n);color:var(--bg)}
-.chip.win-m.active{background:var(--win-m);border-color:var(--win-m);color:var(--bg)}
-
-/* ─── results bar ────────────────────────────────────────── */
-.results-bar{
-  display:flex;align-items:center;gap:12px;
-  padding:clamp(14px,2.5vw,20px) 0 0;
-  border-top:1px solid var(--border);
-  margin-top:clamp(14px,2.5vw,20px);
-  flex-wrap:wrap;
-}
-.results-count{
-  font-family:'DM Mono',monospace;
-  font-size:11px;color:var(--text3);font-weight:300;letter-spacing:0.02em;
-}
-.clear-btn{
-  font-size:11px;color:var(--text3);cursor:pointer;
-  background:none;border:none;
-  font-family:'Geist',system-ui,sans-serif;font-weight:300;
-  padding:0;transition:color var(--t);letter-spacing:0.01em;
-}
-.clear-btn:hover{color:var(--text2)}
-
-/* ─── loading overlay ───────────────────────────────────── */
-.loading-state{
-  padding:clamp(40px,8vw,80px) 0;
-  text-align:center;
-  display:flex;flex-direction:column;align-items:center;gap:16px;
-}
-.loading-spinner{
-  width:32px;height:32px;
-  border:2px solid var(--border2);
-  border-top-color:var(--accent);
-  border-radius:50%;
-  animation:spin 0.8s linear infinite;
-}
-@keyframes spin{to{transform:rotate(360deg)}}
-.loading-label{
-  font-family:'DM Mono',monospace;
-  font-size:11px;color:var(--text3);font-weight:300;
-  letter-spacing:0.04em;
-}
-.loading-progress{
-  font-family:'DM Mono',monospace;
-  font-size:10px;color:var(--text3);font-weight:300;
-}
-
-/* ─── category section ───────────────────────────────────── */
-main{margin-top:0}
-.cat-section{padding:clamp(20px,4vw,32px) 0 0}
-.cat-header{
-  display:flex;align-items:baseline;gap:10px;
-  margin-bottom:clamp(10px,2vw,16px);
-  flex-wrap:wrap;gap:6px 10px;
-}
-.cat-name{font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--text2)}
-.cat-desc{font-size:11px;color:var(--text3);font-weight:300}
-.cat-count{margin-left:auto;font-family:'DM Mono',monospace;font-size:10px;color:var(--text3);font-weight:300}
-
-/* ─── plugin grid ────────────────────────────────────────── */
-.plugin-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr));
-  gap:1px;
-  background:var(--border);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  overflow:hidden;
-}
-
-/* ─── plugin card ────────────────────────────────────────── */
-.plugin-card{
-  background:var(--surface);
-  padding:clamp(12px,2.5vw,16px) clamp(14px,3vw,18px) clamp(16px,3vw,20px);
-  display:flex;flex-direction:column;gap:6px;
-  transition:background var(--t);
-  position:relative;cursor:pointer;
-}
-.plugin-card:hover{background:var(--surface2)}
-.card-top{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
-.plugin-name{
-  font-family:'DM Mono',monospace;font-size:12px;font-weight:400;
-  color:var(--text);letter-spacing:-0.01em;flex-shrink:0;
-}
-.plugin-desc{
-  font-size:11px;color:var(--text2);
-  line-height:1.55;font-weight:300;
-}
-.card-meta{display:flex;align-items:center;gap:5px;margin-top:2px;flex-wrap:wrap}
-
-/* badges */
-.badge{
-  font-family:'DM Mono',monospace;font-size:9px;font-weight:400;
-  letter-spacing:0.03em;padding:2px 5px;
-  border-radius:3px;flex-shrink:0;
-}
-.badge.win-y{
-  color:var(--win-y);
-  background:color-mix(in srgb,var(--win-y) 10%,transparent);
-  border:1px solid color-mix(in srgb,var(--win-y) 25%,transparent);
-}
-.badge.win-n{
-  color:var(--win-n);
-  background:color-mix(in srgb,var(--win-n) 10%,transparent);
-  border:1px solid color-mix(in srgb,var(--win-n) 25%,transparent);
-}
-.badge.win-m{
-  color:var(--win-m);
-  background:color-mix(in srgb,var(--win-m) 10%,transparent);
-  border:1px solid color-mix(in srgb,var(--win-m) 25%,transparent);
-}
-.badge.os-label{font-size:9px;color:var(--text3);margin-right:2px}
-.badge.version{color:var(--text3);background:transparent;border:none;font-size:9px}
-.rank-badge{
-  font-family:'DM Mono',monospace;font-size:9px;
-  color:var(--accent);font-weight:300;margin-left:auto;opacity:0.8;
-}
-
-/* ─── empty / error ──────────────────────────────────────── */
-.empty{
-  padding:clamp(40px,8vw,60px) 0;
-  text-align:center;color:var(--text3);
-  font-size:12px;font-weight:300;letter-spacing:0.02em;
-}
-
-/* ─── legend ─────────────────────────────────────────────── */
-.legend{
-  display:flex;gap:clamp(12px,3vw,20px);
-  padding:clamp(28px,5vw,40px) 0 0;
-  flex-wrap:wrap;
-}
-.legend-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text3);font-weight:300}
-
-.pypi-link{
-  font-family:'DM Mono',monospace;font-size:9px;color:var(--text3);
-  text-decoration:none;margin-left:auto;flex-shrink:0;
-  padding:2px 0;transition:color var(--t);
-}
-.pypi-link:hover{color:var(--text2)}
-
-/* ─── hidden ─────────────────────────────────────────────── */
-.hidden{display:none!important}
-
-/* ─── mobile overrides ───────────────────────────────────── */
-@media (max-width:540px){
-  .toolbar{gap:12px}
-  .search-wrap{width:100%}
-  .filters-area{width:100%}
-  .filter-lbl{width:44px;font-size:9px}
-  .sort-wrap{width:100%}
-  select{flex:1}
-  .cat-desc{display:none}
-  .plugin-grid{grid-template-columns:1fr}
-  .results-bar{gap:8px}
-  header{gap:8px}
-  .header-sub{display:none}
-}
-@media (max-width:360px){
-  .filter-lbl{display:none}
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Zen+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="page">
@@ -345,39 +16,55 @@ main{margin-top:0}
     <span class="header-sub">updated daily</span>
     <div class="header-right">
       <span class="header-status" id="statusLabel">—</span>
+      <div class="view-toggle">
+        <button class="view-btn active" id="listViewBtn" title="List view">≡</button>
+        <button class="view-btn" id="graphViewBtn" title="Graph view">⬡</button>
+      </div>
       <button class="theme-btn" id="themeBtn" title="Toggle theme">☽</button>
     </div>
   </header>
 
   <div class="toolbar">
-    <div class="search-wrap">
-      <span class="search-ico">⌕</span>
-      <input type="text" id="search" placeholder="search…" autocomplete="off" spellcheck="false">
-    </div>
-    <div class="sort-wrap">
-      <span class="sort-lbl">Sort</span>
-      <select id="sortSel">
-        <option value="category">by category</option>
-        <option value="rank">by stars</option>
-        <option value="name">by name</option>
-        <option value="updated">recently updated</option>
-      </select>
-    </div>
-    <div class="filters-area">
-      <div class="filter-row">
-        <span class="filter-lbl">Category</span>
-        <div class="chips" id="catChips"></div>
+    <div class="toolbar-main">
+      <div class="search-wrap">
+        <span class="search-ico">⌕</span>
+        <input type="text" id="search" placeholder="search plugins…" autocomplete="off" spellcheck="false">
+        <span id="searchStatus" class="search-status"></span>
       </div>
-      <div class="filter-row">
-        <span class="filter-lbl">Tags</span>
-        <div class="chips" id="tagChips"></div>
+      <div class="cat-scroll" id="catChips"></div>
+      <div class="sort-wrap">
+        <select id="sortSel">
+          <option value="category">by category</option>
+          <option value="rank" selected>by stars</option>
+          <option value="name">by name</option>
+          <option value="updated">recently updated</option>
+        </select>
       </div>
     </div>
   </div>
 
+  <div id="filterPanel" class="filter-panel"></div>
+
   <div class="results-bar">
     <span class="results-count" id="resCount">—</span>
     <button class="clear-btn hidden" id="clearBtn">clear ×</button>
+  </div>
+
+  <div id="graphPanel" class="hidden">
+    <div class="graph-controls">
+      <span class="graph-ctrl-lbl">Neighbors</span>
+      <input type="range" id="topKSlider" min="2" max="10" value="5" step="1">
+      <span class="graph-ctrl-val" id="topKVal">5</span>
+      <span class="graph-ctrl-lbl" style="margin-left:6px">Labels</span>
+      <label class="graph-ctrl-check">
+        <input type="checkbox" id="showLabels" checked>
+      </label>
+      <span class="graph-stat" id="graphStat">—</span>
+      <button class="graph-expand-btn" id="expandGraph" title="Expand">⤢</button>
+    </div>
+    <svg id="graphSvg" style="height:clamp(360px,60vh,640px)"></svg>
+    <div class="graph-legend-row" id="graphLegend"></div>
+    <div id="nodeDetail" class="hidden"></div>
   </div>
 
   <main id="main">
@@ -388,340 +75,11 @@ main{margin-top:0}
   </main>
 
   <div class="legend">
-    <div class="legend-item"><span class="badge win-y">✓</span> supported</div>
-    <div class="legend-item"><span class="badge win-n">✗</span> unsupported</div>
-    <div class="legend-item"><span class="badge win-m">?</span> uncertain</div>
     <div class="legend-item"><span style="font-family:'DM Mono',monospace;font-size:10px;color:var(--accent)">★ N</span> GitHub stars</div>
   </div>
 
 </div>
 
-<script>
-const CAT_META = {
-  async:       { name:'Async & Concurrency',     desc:'Asyncio, trio, anyio, tornado, twisted' },
-  browser:     { name:'Browser & E2E',            desc:'Playwright, Selenium, BDD, end-to-end' },
-  coverage:    { name:'Coverage & Profiling',     desc:'Code coverage, memray, quality gates' },
-  databases:   { name:'Databases & Services',     desc:'PostgreSQL, Redis, Docker, testinfra' },
-  devex:       { name:'Developer Experience',    desc:'Output, logging, progress, diffs' },
-  execution:   { name:'Test Execution',           desc:'Parallel, timeout, retry, order' },
-  fixtures:    { name:'Fixtures & Snapshots',     desc:'Parametrization, snapshots, env' },
-  io:          { name:'I/O & Data',               desc:'Datadir, remotedata, localserver' },
-  mocking:     { name:'Mocking & Isolation',     desc:'Mock, VCR, httpx, freezegun' },
-  performance: { name:'Performance',             desc:'Benchmark, duration, profiling' },
-  quality:     { name:'Code Quality',            desc:'Mypy, ruff, black, hypothesis' },
-  reporting:   { name:'Reporting',               desc:'HTML/JSON reports, CI integration' },
-  web:         { name:'Web Frameworks',          desc:'Django, Flask' },
-  other:       { name:'Other',                   desc:'Uncategorized plugins' },
-};
-
-/* ═══════════════════════════════════════════════════════════
-   STATE
-══════════════════════════════════════════════════════════════ */
-let plugins = []; // enriched with live PyPI data
-const state = {
-  search: '',
-  sort: 'category',
-  cats: new Set(),
-  tags: new Set(),
-};
-
-const CACHE_KEY = 'pytest-plugins-data';
-const CACHE_TTL_MS = 60 * 60 * 1000; // 1 hour
-
-function getCachedPlugins() {
-  try {
-    const raw = localStorage.getItem(CACHE_KEY);
-    if (!raw) return null;
-    const { plugins: cached, fetchedAt } = JSON.parse(raw);
-    if (!Array.isArray(cached) || !cached.length || !fetchedAt) return null;
-    if (Date.now() - fetchedAt > CACHE_TTL_MS) return null;
-    return cached;
-  } catch (e) {
-    return null;
-  }
-}
-
-function setCachedPlugins(list) {
-  try {
-    localStorage.setItem(CACHE_KEY, JSON.stringify({
-      plugins: list,
-      fetchedAt: Date.now(),
-    }));
-  } catch (e) { /* quota or disabled */ }
-}
-
-const LOCAL_CACHE_FILE = 'plugins-data.json';
-
-async function loadLocalCacheFile() {
-  try {
-    const r = await fetch(LOCAL_CACHE_FILE);
-    if (!r.ok) return null;
-    const data = await r.json();
-    const list = Array.isArray(data) ? data : (data.plugins);
-    if (!Array.isArray(list) || !list.length) return null;
-    return list;
-  } catch (e) {
-    return null;
-  }
-}
-
-function normalizePlugin(p) {
-  if (p.os) return p;
-  const w = p.win;
-  p.os = { Mac: true, Linux: true, Windows: w === false ? false : w === true ? true : 'maybe' };
-  return p;
-}
-
-function applyPluginsAndRender(list, labelSuffix = '') {
-  plugins = list.map(normalizePlugin);
-  const el = document.getElementById('statusLabel');
-  if (el) el.textContent = `${plugins.length} plugins${labelSuffix}`;
-  document.getElementById('loadingState')?.remove();
-  buildChips();
-  render();
-}
-
-async function loadAllPlugins() {
-  const cached = getCachedPlugins();
-  if (cached) {
-    applyPluginsAndRender(cached, ' (cached)');
-    return;
-  }
-  const local = await loadLocalCacheFile();
-  if (local) {
-    applyPluginsAndRender(local);
-    return;
-  }
-  applyPluginsAndRender([], ' (no data)');
-}
-
-/* ═══════════════════════════════════════════════════════════
-   CHIPS
-══════════════════════════════════════════════════════════════ */
-function buildChips() {
-  const catC = document.getElementById('catChips');
-  catC.innerHTML = '';
-  Object.entries(CAT_META).forEach(([id, m]) => {
-    const b = document.createElement('button');
-    b.className = 'chip';
-    b.dataset.val = id;
-    // Short labels to save space on mobile
-    const shortNames = {
-      async:'Async', browser:'Browser', coverage:'Coverage', databases:'Databases',
-      devex:'Dev UX', execution:'Execution', fixtures:'Fixtures', io:'I/O',
-      mocking:'Mocking', performance:'Perf', quality:'Quality', reporting:'Reporting',
-      web:'Web', other:'Other'
-    };
-    b.textContent = shortNames[id] || m.name.split(' ')[0];
-    b.title = m.name;
-    catC.appendChild(b);
-  });
-
-  const tagC = document.getElementById('tagChips');
-  tagC.innerHTML = '';
-  [
-    {val:'win-y', lbl:'Win ✓', cls:'win-y'},
-    {val:'win-m', lbl:'Win ?', cls:'win-m'},
-    {val:'win-n', lbl:'Win ✗', cls:'win-n'},
-  ].forEach(t => {
-    const b = document.createElement('button');
-    b.className = `chip ${t.cls}`;
-    b.dataset.val = t.val;
-    b.textContent = t.lbl;
-    tagC.appendChild(b);
-  });
-}
-
-function bindChipListeners() {
-  document.getElementById('catChips').addEventListener('click', e => {
-    const b = e.target.closest('.chip'); if (!b) return;
-    const v = b.dataset.val;
-    state.cats.has(v) ? state.cats.delete(v) : state.cats.add(v);
-    b.classList.toggle('active', state.cats.has(v));
-    render();
-  });
-  document.getElementById('tagChips').addEventListener('click', e => {
-    const b = e.target.closest('.chip'); if (!b) return;
-    const v = b.dataset.val;
-    state.tags.has(v) ? state.tags.delete(v) : state.tags.add(v);
-    b.classList.toggle('active', state.tags.has(v));
-    render();
-  });
-}
-
-/* ═══════════════════════════════════════════════════════════
-   FILTER + SORT
-══════════════════════════════════════════════════════════════ */
-function osVal(p, platform) {
-  const v = p.os && p.os[platform];
-  return v === true ? 'win-y' : v === false ? 'win-n' : 'win-m';
-}
-
-function visible(p) {
-  if (state.search) {
-    const q = state.search;
-    if (!p.name.toLowerCase().includes(q) && !p.summary.toLowerCase().includes(q)) return false;
-  }
-  if (state.cats.size > 0 && !state.cats.has(p.cat)) return false;
-  const wv = osVal(p, 'Windows');
-  const winFilters = ['win-y','win-m','win-n'].filter(t => state.tags.has(t));
-  if (winFilters.length > 0 && !winFilters.includes(wv)) return false;
-  return true;
-}
-
-function sorted(list) {
-  const s = state.sort;
-  return [...list].sort((a, b) => {
-    if (s === 'rank') {
-      // sort by stars descending
-      return (b.stars || 0) - (a.stars || 0);
-    }
-    if (s === 'name') return a.name.localeCompare(b.name);
-    if (s === 'updated') {
-      if (!a.latestDate && !b.latestDate) return 0;
-      if (!a.latestDate) return 1;
-      if (!b.latestDate) return -1;
-      return new Date(b.latestDate) - new Date(a.latestDate);
-    }
-    // category: cat order then stars within cat
-    const cO = Object.keys(CAT_META);
-    const ca = cO.indexOf(a.cat), cb = cO.indexOf(b.cat);
-    if (ca !== cb) return ca - cb;
-    return (b.stars || 0) - (a.stars || 0);
-  });
-}
-
-/* ═══════════════════════════════════════════════════════════
-   RENDER
-══════════════════════════════════════════════════════════════ */
-function osBadges(p) {
-  if (!p.os) return '';
-  const sym = (v) => v === true ? '<span class="badge win-y">Y</span>' : v === false ? '<span class="badge win-n">N</span>' : '<span class="badge win-m">?</span>';
-  return `<span class="badge os-label">Mac</span>${sym(p.os.Mac)} <span class="badge os-label">Linux</span>${sym(p.os.Linux)} <span class="badge os-label">Win</span>${sym(p.os.Windows)}`;
-}
-
-function makeCard(p, showCat = false) {
-  const card = document.createElement('a');
-  card.href = p.ghUrl || p.homepage || `https://pypi.org/project/${p.name}/`;
-  card.target = '_blank';
-  card.rel = 'noopener';
-  card.className = 'plugin-card';
-
-  const catLabel = showCat && CAT_META[p.cat]
-    ? `<span style="font-size:9px;color:var(--text3);font-family:'DM Mono',monospace;font-weight:300">${CAT_META[p.cat].name}</span>`
-    : '';
-
-  const dateStr = p.latestDate
-    ? `<span class="badge version">${p.latestDate.slice(0,10)}</span>`
-    : '';
-
-  const pypiLink = p.pypiUrl
-    ? `<a class="pypi-link" href="${p.pypiUrl}" target="_blank" rel="noopener" onclick="event.stopPropagation()">pypi ↗</a>`
-    : '';
-
-  const starsStr = p.stars > 0
-    ? `<span class="rank-badge">★ ${p.stars >= 1000 ? (p.stars/1000).toFixed(1)+'k' : p.stars}</span>`
-    : '';
-
-  card.innerHTML = `
-    <div class="card-top">
-      <span class="plugin-name">${p.name}</span>
-      ${starsStr}
-    </div>
-    <div class="plugin-desc">${p.summary}</div>
-    <div class="card-meta">
-      ${osBadges(p)}
-      ${dateStr}
-      ${catLabel}
-      ${pypiLink}
-    </div>
-  `;
-  return card;
-}
-
-function render() {
-  if (!plugins.length) return;
-  const main = document.getElementById('main');
-  main.innerHTML = '';
-
-  const vis = sorted(plugins.filter(visible));
-  const hasFilters = state.search || state.cats.size > 0 || state.tags.size > 0;
-
-  if (state.sort === 'category') {
-    Object.entries(CAT_META).forEach(([id, m]) => {
-      const catPlugins = vis.filter(p => p.cat === id);
-      if (!catPlugins.length) return;
-      const sec = document.createElement('div');
-      sec.className = 'cat-section';
-      sec.innerHTML = `
-        <div class="cat-header">
-          <span class="cat-name">${m.name}</span>
-          <span class="cat-desc">— ${m.desc}</span>
-          <span class="cat-count">${catPlugins.length}</span>
-        </div>
-        <div class="plugin-grid" id="g-${id}"></div>
-      `;
-      main.appendChild(sec);
-      const grid = sec.querySelector(`#g-${id}`);
-      catPlugins.forEach(p => grid.appendChild(makeCard(p)));
-    });
-  } else {
-    if (vis.length) {
-      const sortLabels = {rank:'sorted by stars',name:'alphabetical',updated:'recently updated'};
-      const sec = document.createElement('div');
-      sec.className = 'cat-section';
-      sec.innerHTML = `
-        <div class="cat-header">
-          <span class="cat-name">${sortLabels[state.sort] || 'plugins'}</span>
-          <span class="cat-count">${vis.length}</span>
-        </div>
-        <div class="plugin-grid" id="flat-g"></div>
-      `;
-      main.appendChild(sec);
-      const grid = sec.querySelector('#flat-g');
-      vis.forEach(p => grid.appendChild(makeCard(p, true)));
-    }
-  }
-
-  if (!vis.length) {
-    main.innerHTML = '<div class="empty">no plugins match</div>';
-  }
-
-  document.getElementById('resCount').textContent =
-    `${vis.length} plugin${vis.length !== 1 ? 's' : ''}`;
-  document.getElementById('clearBtn').classList.toggle('hidden', !hasFilters);
-}
-
-/* ═══════════════════════════════════════════════════════════
-   CONTROLS
-══════════════════════════════════════════════════════════════ */
-document.getElementById('search').addEventListener('input', e => {
-  state.search = e.target.value.toLowerCase().trim();
-  render();
-});
-document.getElementById('sortSel').addEventListener('change', e => {
-  state.sort = e.target.value;
-  render();
-});
-document.getElementById('clearBtn').addEventListener('click', () => {
-  state.search = ''; state.cats.clear(); state.tags.clear(); state.sort = 'category';
-  document.getElementById('search').value = '';
-  document.getElementById('sortSel').value = 'category';
-  document.querySelectorAll('.chip.active').forEach(c => c.classList.remove('active'));
-  render();
-});
-
-/* ─── theme ──────────────────────────────────────────────── */
-let dark = true;
-document.getElementById('themeBtn').addEventListener('click', () => {
-  dark = !dark;
-  document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
-  document.getElementById('themeBtn').textContent = dark ? '☽' : '○';
-});
-
-/* ─── init ───────────────────────────────────────────────── */
-bindChipListeners();
-loadAllPlugins();
-</script>
+<script src="app.js"></script>
 </body>
 </html>

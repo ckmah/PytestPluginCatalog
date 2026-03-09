@@ -57,8 +57,7 @@ async function main() {
       ghUrl: repo.html_url,
       pypiUrl: `https://pypi.org/project/${pkgName}/`,
       stars: repo.stars || 0,
-      cat,
-      os,
+      cat: k.cat || 'other',
     };
   });
 

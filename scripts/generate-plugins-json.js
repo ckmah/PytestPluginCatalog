@@ -6,18 +6,31 @@ const { inferCat, inferOS } = require('./metadata-inference.js');
 
 const dataPath = path.join(__dirname, '..', 'plugins-data.json');
 
-let data;
-try {
-  data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
-} catch (e) {
-  data = { plugins: [] };
+const html = fs.readFileSync(htmlPath, 'utf8');
+// Match each "name": { cat:"...", pipeline:..., win:... } line (optional rank at end)
+const re = /^\s*"([^"]+)"\s*:\s*\{\s*cat:\s*"([^"]+)"\s*,\s*pipeline:\s*(true|false)\s*,\s*win:\s*(true|false|"maybe")/gm;
+const knowledge = {};
+let m;
+while ((m = re.exec(html)) !== null) {
+  const [, name, cat, pipeline, win] = m;
+  knowledge[name] = {
+    cat,
+    pipeline: pipeline === 'true',
+    win: win === '"maybe"' ? 'maybe' : win === 'true',
+  };
 }
 
-const plugins = (data.plugins || []).map((p) => {
-  const cat = inferCat(p.name, p.summary || '');
-  const os = inferOS(p.name, p.summary || '', p.win);
-  const { name, summary, latestDate, ghUrl, pypiUrl, stars } = p;
-  return { name, summary, latestDate, ghUrl, pypiUrl, stars, cat, os };
+const plugins = Object.keys(knowledge).map((pkgName) => {
+  const k = knowledge[pkgName] || {};
+  return {
+    name: pkgName,
+    summary: `pytest plugin: ${pkgName}`,
+    latestDate: null,
+    ghUrl: `https://pypi.org/project/${pkgName}/`,
+    pypiUrl: `https://pypi.org/project/${pkgName}/`,
+    stars: 0,
+    cat: k.cat || 'other',
+  };
 });
 
 fs.writeFileSync(dataPath, JSON.stringify({ plugins }, null, 2), 'utf8');
